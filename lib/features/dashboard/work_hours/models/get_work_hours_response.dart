@@ -44,7 +44,7 @@ class Data {
     startTime = json['startTime'];
     endTime = json['endTime'];
     sessionDuration = json['sessionDuration'];
-    id = json['id'];
+    id = json['_id'];
   }
   String? day;
   String? startTime;
@@ -58,7 +58,7 @@ class Data {
     map['startTime'] = startTime;
     map['endTime'] = endTime;
     map['sessionDuration'] = sessionDuration;
-    map['id'] = id;
+    map['_id'] = id;
     return map;
   }
 

@@ -13,8 +13,8 @@ import 'package:pety/features/search_vet/book_vet_screen/book_vet.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/search_for_vet_screen/search_for_vet.dart';
 import 'package:pety/features/search_vet/vet_details_screen/vet_details_screen.dart';
-import 'package:pety/layouts/pety_layout/cubit/pety_layout_cubit.dart';
-import 'package:pety/layouts/pety_layout/pety_layout.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/features/pety_layout/pety_layout.dart';
 import 'package:pety/shared/di/dependency_injection.dart';
 import 'package:pety/shared/routing/routes.dart';
 
@@ -92,6 +92,7 @@ class AppRouter {
               BlocProvider.value(
                   value: BlocProvider.of<DashboardCubit>(cubitContext)
                     ..getAllAppointments(role)
+                    ..getWorkHours(role)
                     ..getPetyInfo(role),
                   child: DashboardLayout(role: role,)
               ),

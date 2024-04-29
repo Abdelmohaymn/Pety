@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pety/layouts/pety_layout/cubit/pety_layout_cubit.dart';
-import 'package:pety/layouts/pety_layout/cubit/pet_layout_states.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/shared/styles/colors.dart';
 
 class PetLayout extends StatelessWidget{

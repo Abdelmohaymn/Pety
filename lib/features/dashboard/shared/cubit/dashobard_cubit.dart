@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pety/features/dashboard/appointments/models/appointment_status_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_body.dart';
@@ -9,6 +10,10 @@ import 'package:pety/features/dashboard/pety_information/models/pety_information
 import 'package:pety/features/dashboard/pety_information/models/update_pety_data_body.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/data/repository/dashboard_repository.dart';
+import 'package:pety/features/dashboard/work_hours/models/get_work_hours_body.dart';
+import 'package:pety/features/dashboard/work_hours/models/get_work_hours_response.dart';
+import 'package:pety/features/dashboard/work_hours/models/work_hour_model.dart';
+import 'package:pety/features/dashboard/work_hours/models/work_hours_body.dart';
 import 'package:pety/shared/extensions.dart';
 
 
@@ -20,6 +25,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
   List<String>? roles;
   String currentRole='';
   AppointmentsResponse? appointmentsResponse;
+  List<WorkHourModel>? workHours;
 
   //Text edit for pety Info
   final TextEditingController nameController = TextEditingController();
@@ -118,8 +124,59 @@ class DashboardCubit extends Cubit<DashboardStates>{
     );
   }
 
+  void getWorkHours(String role) async{
+    emit(const DashboardStates.loadGetWorkHours());
+    final response = await _dashboardRepository.getWorkHours(getWorkHoursBody: GetWorkHoursBody(role: role));
+    response.when(
+        success: (data){
+          workHours = data;
+          emit(DashboardStates.successGetWorkHours(data));
+        },
+        failure: (error){
+          emit(DashboardStates.errorGetWorkHours(error: error.apiErrorModel.message!));
+        }
+    );
+  }
+
+  void updateWorkHours() async{
+    emit(const DashboardStates.loadUpdateWorkHours());
+    final response = await _dashboardRepository.addWorkHours(model: workHours!, role: currentRole);
+    response.when(
+        success: (data){
+          emit(DashboardStates.successUpdateWorkHours(data));
+        },
+        failure: (error){
+          emit(DashboardStates.errorUpdatePetyInfo(error: error.apiErrorModel.message!));
+        }
+    );
+  }
+
+  void changeWorkHourAvailability(int index,bool value){
+    emit(const DashboardStates.loadGeneralData());
+    workHours![index].isActive = value;
+    emit(const DashboardStates.successGeneralData());
+  }
+
+  void updateWorkHourTime(TimeOfDay data,int index, bool from){
+    emit(const DashboardStates.loadGeneralData());
+    String time = '${data.hourOfPeriod.toString().padLeft(2,'0')}:${data.minute.toString().padLeft(2,'0')} ${data.period.name.toUpperCase()}';
+    if(from){
+      workHours![index].from=time;
+    }else{
+      workHours![index].to=time;
+    }
+    emit(const DashboardStates.successGeneralData());
+  }
+
+  void setWorkHourSessionDuration(int index, String value){
+    emit(const DashboardStates.loadGeneralData());
+    workHours![index].sessionDuration = value;
+    emit(const DashboardStates.successGeneralData());
+  }
+
   void onBackPressed(BuildContext context){
     appointmentsResponse = null;
+    workHours = null;
     nameController.text='';
     serviceController.text='';
     phoneController.text='';

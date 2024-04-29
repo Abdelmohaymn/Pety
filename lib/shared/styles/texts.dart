@@ -17,6 +17,11 @@ class TextStyles {
     fontSize: 12.sp,
   );
 
+  static TextStyle font12GreyLight = TextStyle(
+    color: ColorManager.hintOFSearchTextField,
+    fontSize: 10.sp,
+    fontWeight: FontWeightHelper.light,
+  );
 
   static TextStyle font14GreyLight = TextStyle(
     color: ColorManager.hintOFSearchTextField,

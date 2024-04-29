@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pety/layouts/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/network/remote/api_constants.dart';
 import 'package:pety/shared/routing/routes.dart';

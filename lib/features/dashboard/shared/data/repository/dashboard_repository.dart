@@ -10,8 +10,10 @@ import 'package:pety/features/dashboard/pety_information/models/pety_information
 import 'package:pety/features/dashboard/pety_information/models/pety_information_response.dart';
 import 'package:pety/features/dashboard/pety_information/models/update_pety_data_response.dart';
 import 'package:pety/features/dashboard/shared/data/models/all_roles_response.dart';
+import 'package:pety/features/dashboard/work_hours/mapper/get_work_hour_mapper.dart';
 import 'package:pety/features/dashboard/work_hours/models/get_work_hours_body.dart';
 import 'package:pety/features/dashboard/work_hours/models/get_work_hours_response.dart';
+import 'package:pety/features/dashboard/work_hours/models/work_hour_model.dart';
 import 'package:pety/features/dashboard/work_hours/models/work_hours_body.dart';
 import 'package:pety/features/dashboard/work_hours/models/work_hours_response.dart';
 import 'package:pety/shared/extensions.dart';
@@ -84,10 +86,12 @@ class DashboardRepository {
   }
 
   /// work hours
-  Future<ApiResult<WorkHoursResponse>> addWorkHours({required WorkHoursBody workHoursBody}) async{
+  Future<ApiResult<WorkHoursResponse>> addWorkHours({required List<WorkHourModel> model,required String role}) async{
     try{
+      WorkHoursBody body = GetWorkHourMapper.mapToBody(model);
+      body.role=role;
       final WorkHoursResponse response = await _apiService.addWorkHours(
-          workHoursBody,
+          body,
           'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
       );
       return ApiResult.success(response);
@@ -96,13 +100,14 @@ class DashboardRepository {
     }
   }
 
-  Future<ApiResult<GetWorkHoursResponse>> getWorkHours({required GetWorkHoursBody getWorkHoursBody}) async{
+  Future<ApiResult<List<WorkHourModel>>> getWorkHours({required GetWorkHoursBody getWorkHoursBody}) async{
     try{
       final GetWorkHoursResponse response = await _apiService.getWorkHours(
           getWorkHoursBody,
           'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
       );
-      return ApiResult.success(response);
+
+      return ApiResult.success(GetWorkHourMapper.mapFromResponse(response));
     }catch(error){
       return ApiResult.failure(ErrorHandler.handle(error));
     }

@@ -18,4 +18,12 @@ class DashboardStates<T> with _$DashboardStates<T>{
   const factory DashboardStates.loadUpdatePetyInfo() = UpdatePetyInfoLoading;
   const factory DashboardStates.successUpdatePetyInfo(T data) = UpdatePetyInfoSuccess;
   const factory DashboardStates.errorUpdatePetyInfo({required String error}) = UpdatePetyInfoError;
+  const factory DashboardStates.loadGetWorkHours() = GetWorkHoursLoading;
+  const factory DashboardStates.successGetWorkHours(T data) = GetWorkHoursSuccess;
+  const factory DashboardStates.errorGetWorkHours({required String error}) = GetWorkHoursError;
+  const factory DashboardStates.loadUpdateWorkHours() = UpdateWorkHoursLoading;
+  const factory DashboardStates.successUpdateWorkHours(T data) = UpdateWorkHoursSuccess;
+  const factory DashboardStates.errorUpdateWorkHours({required String error}) = UpdateWorkHoursError;
+  const factory DashboardStates.loadGeneralData() = LoadGeneralData;
+  const factory DashboardStates.successGeneralData() = SuccessGeneralData;
 }

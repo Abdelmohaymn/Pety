@@ -5,11 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pety/features/home/widgets/be_a_vet_card.dart';
 import 'package:pety/features/home/widgets/jobs_list.dart';
 import 'package:pety/features/home/widgets/know_about_community.dart';
-import 'package:pety/layouts/pety_layout/cubit/pety_layout_cubit.dart';
-import 'package:pety/layouts/pety_layout/cubit/pet_layout_states.dart';
-import 'package:pety/shared/extensions.dart';
-import 'package:pety/shared/routing/routes.dart';
-import 'package:pety/shared/widgets/default_search.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

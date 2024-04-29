@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pety/features/home/widgets/job_item_widget.dart';
-import 'package:pety/layouts/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 
 class JobsList extends StatelessWidget {
 

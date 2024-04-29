@@ -6,7 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pety/features/community/community_Screen.dart';
 import 'package:pety/features/home/home_Screen.dart';
 import 'package:pety/features/profile/profile_screen.dart';
-import 'package:pety/layouts/pety_layout/cubit/pet_layout_states.dart';
+import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 

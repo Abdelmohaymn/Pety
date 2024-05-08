@@ -6,6 +6,7 @@ import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -57,7 +58,7 @@ class RolesScreen extends StatelessWidget {
 
                         return Container(
                           decoration: BoxDecoration(
-                              color: ColorManager.orange,
+                              color: ColorManager.defaultColor,
                               borderRadius: BorderRadius.circular(15)
                           ),
                           child: InkWell(
@@ -76,7 +77,10 @@ class RolesScreen extends StatelessWidget {
                                   height: 100,
                                 ),
                                 const VerticalSpace(height: 20),
-                                Text(role),
+                                Text(
+                                  role,
+                                  style: TextStyles.font13WhiteBold,
+                                ),
                               ],
                             ),
                           ),

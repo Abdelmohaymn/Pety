@@ -4,7 +4,7 @@ class WorkHourModel{
   String day;
   String from;
   String to="None";
-  String sessionDuration;
+  int sessionDuration;
   bool isActive;
 
   WorkHourModel({
@@ -12,7 +12,7 @@ class WorkHourModel{
     this.id,
     this.from='None',
     this.to="None",
-    this.sessionDuration="",
+    this.sessionDuration=30,
     this.isActive=false
   });
 

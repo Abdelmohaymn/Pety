@@ -4,6 +4,7 @@ import 'package:pety/features/dashboard/appointments/appointments_screen.dart';
 import 'package:pety/features/dashboard/pety_information/pety_information_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/dashboard/work_hours/work_hours_screen.dart';
+import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
 
 
@@ -44,13 +45,12 @@ class _DashboardLayoutState extends State<DashboardLayout>
         title: const Center(child: Text('Dashboard')),
         bottom: TabBar(
           controller: _tabController,
-          tabs: const [
+          tabs:  const [
             Text('Appointments'),
             Text('Work Hours'),
             Text('Pety Information'),
           ],
-          onTap: (index) {
-          },
+
         ),
       ),
       body: TabBarView(

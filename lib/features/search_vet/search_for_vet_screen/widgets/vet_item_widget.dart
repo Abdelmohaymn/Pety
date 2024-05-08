@@ -7,6 +7,7 @@ import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/circle_avatar_default_image.dart';
 import 'package:pety/shared/widgets/default_rating_indicator.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 
@@ -27,9 +28,9 @@ class VetItemWidget extends StatelessWidget{
       borderRadius: BorderRadius.circular(35),
       child: Row(
         children: [
-          CircleAvatar(
+          CircleAvatarDefaultImage(
+            imageUrl: item.photo?.url,
             radius: 35,
-             backgroundImage: vetImage(item.photo?.url),
           ),
           SizedBox(width: 8.w,),
           Expanded(
@@ -86,11 +87,5 @@ class VetItemWidget extends StatelessWidget{
     );
   }
 
-  ImageProvider vetImage(String? image){
-    if(image!=null){
-      return NetworkImage(image);
-    }
-    return const AssetImage('assets/images/default_vet_image.jpg');
-  }
 
 }

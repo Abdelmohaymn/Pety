@@ -1,19 +1,19 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pety/features/home/widgets/job_item_widget.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 
 class JobsList extends StatelessWidget {
 
-  final PetLayoutCubit cubit;
   const JobsList({
     super.key,
-    required this.cubit
   });
 
   @override
   Widget build(BuildContext context) {
+    PetLayoutCubit cubit = context.read<PetLayoutCubit>();
     return SizedBox(
       height: 160.h,
       child: ListView.separated(

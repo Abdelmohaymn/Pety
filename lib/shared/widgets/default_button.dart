@@ -13,6 +13,7 @@ class DefaultButton extends StatelessWidget{
   final double? width;
   final double? height;
   final double? radius;
+  final double? horizontalPadding;
   final TextStyle? textStyle;
 
   const DefaultButton({
@@ -22,29 +23,25 @@ class DefaultButton extends StatelessWidget{
     this.color,
     this.width,
     this.height,
+    this.horizontalPadding,
     this.radius,
     this.textStyle,
   });
 
   @override
   Widget build(BuildContext context) {
-    //padding: MaterialStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: 5.w)),
     return SizedBox(
       height: height??60.h,
-      width: width??200.w,
-
-      child: IconButton(
-          onPressed: onClick,
-          padding: EdgeInsets.zero,
-          style: ButtonStyle(
-              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              backgroundColor: MaterialStatePropertyAll<Color>(color??ColorManager.defaultColor),
-              shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius??10)))
-          ),
-          icon: Text(
-            text,
-            style: textStyle??TextStyles.font26WhiteMedium
-          )
+      width: width,
+      child: FilledButton.tonal(
+        onPressed: onClick,
+        style: ButtonStyle(
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          padding: MaterialStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: horizontalPadding??5.w)),
+          backgroundColor: MaterialStatePropertyAll<Color>(color??ColorManager.defaultColor),
+          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius??10))),
+        ),
+        child: Text(text,style: textStyle??TextStyles.font26WhiteMedium),
       ),
     );
   }

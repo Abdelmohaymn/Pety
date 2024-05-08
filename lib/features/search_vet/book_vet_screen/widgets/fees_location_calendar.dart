@@ -18,7 +18,7 @@ class FeesLocationCalendar extends StatelessWidget{
         Row(
           children: [
             Image(
-              image: const AssetImage('images/location.png'),
+              image: const AssetImage('assets/images/location.png'),
               width: 32.w,
               height: 32.h,
             ),
@@ -36,7 +36,7 @@ class FeesLocationCalendar extends StatelessWidget{
         Row(
           children: [
             Image(
-              image: const AssetImage('images/calender.png'),
+              image: const AssetImage('assets/images/calender.png'),
               width: 32.w,
               height: 32.h,
             ),
@@ -54,7 +54,7 @@ class FeesLocationCalendar extends StatelessWidget{
         Row(
           children: [
             Image(
-              image: const AssetImage('images/dollar.png'),
+              image: const AssetImage('assets/images/dollar.png'),
               width: 32.w,
               height: 32.h,
             ),

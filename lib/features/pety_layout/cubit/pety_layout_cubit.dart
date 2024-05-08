@@ -1,26 +1,84 @@
 
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pety/features/community/community_Screen.dart';
 import 'package:pety/features/home/home_Screen.dart';
-import 'package:pety/features/profile/profile_screen.dart';
+import 'package:pety/features/pety_layout/data/models/chat_bot_body.dart';
+import 'package:pety/features/pety_layout/data/repository/pety_repository.dart';
+import 'package:pety/features/profile/cubit/profile_cubit.dart';
+import 'package:pety/features/profile/pre_profile/pre_profile_screen.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
+import 'package:pety/shared/constants/pety_constants.dart';
+import 'package:pety/shared/di/dependency_injection.dart';
+import 'package:pety/shared/extensions.dart';
+import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PetLayoutCubit extends Cubit<PetLayoutStates>{
 
-  PetLayoutCubit() : super(const PetLayoutStates.initial());
+  final PetyRepository _petyRepository;
+  PetLayoutCubit(this._petyRepository) : super(const PetLayoutStates.initial());
 
-  static PetLayoutCubit get(context) => BlocProvider.of(context);
 
+  // chatBot beginning
+  List<String> chatBotMessages=[ChatBotConstants.initialMessage];
+  TextEditingController chatController = TextEditingController();
+  ScrollController scrollController = ScrollController();
+  bool allowAnimatedText = true;
+
+  void predictForChatBot() async{
+    emit(const PetLayoutStates.loadChatBotMessages());
+    allowAnimatedText = true;
+    if(chatBotMessages[0]==ChatBotConstants.initialMessage){
+      chatBotMessages.removeAt(0);
+    }
+    if(chatController.text.isNotBlank()){
+      chatBotMessages.insert(0,chatController.text);
+    }
+    chatController.clear();
+    final response = await _petyRepository.predictMessages(
+      ChatBotBody(messages: chatBotMessages.reversed.toList())
+    );
+    response.when(
+        success: (data){
+          chatBotMessages.insert(0,data.response!);
+          emit(const PetLayoutStates.successChatBotMessages());
+        },
+        failure: (error){
+          emit(PetLayoutStates.errorChatBotMessages(error: error.apiErrorModel.message!));
+        }
+    );
+  }
+
+  void clearChat(){
+    emit(const PetLayoutStates.loadClearMessages());
+    chatBotMessages=[ChatBotConstants.initialMessage];
+    allowAnimatedText = true;
+    emit(const PetLayoutStates.successClearMessages());
+  }
+
+  void stopAnimatedText(){
+    emit(const PetLayoutStates.loadAllowAnimatedText());
+    allowAnimatedText = false;
+    emit(const PetLayoutStates.successAllowAnimatedText());
+  }
+
+  // chatBot finishing
+
+  // pety layout beginning
   int currentIndex = 0;
   List<Widget> screens = [
     const HomeScreen(),
     const CommunityScreen(),
-    ProfileScreen()
+    BlocProvider(
+        create: (context) => getIt<ProfileCubit>()..getUserData(),
+        child: const PreProfileScreen()
+    ),
   ];
 
   List<BottomNavigationBarItem> bottomItems = [
@@ -107,11 +165,22 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
     JobListItem(title: 'Pet taxi', image:'assets/images/pet_taxi.png'),
   ];
 
-
   void changeBottomNavIndex(int index){
     currentIndex = index;
     emit(const PetLayoutStates.initial());
     emit(const PetLayoutStates.changeBottomNavIndexState());
+  }
+
+  // pety layout finishing
+
+  void moveToChatBotScreen(BuildContext context){
+    context.pushNamed(Routes.chatBotScreen,arguments: context);
+  }
+
+  Future<void> moveToWebPage(String url) async {
+    if (!await launchUrl(Uri.parse(url))) {
+      throw Exception('Could not launch $url');
+    }
   }
 
 }

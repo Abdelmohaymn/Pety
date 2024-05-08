@@ -12,7 +12,7 @@ class PetLayout extends StatelessWidget{
   Widget build(BuildContext context) {
     return BlocBuilder<PetLayoutCubit,PetLayoutStates>(
       builder: (BuildContext context, PetLayoutStates state) {
-        PetLayoutCubit cubit = PetLayoutCubit.get(context);
+        PetLayoutCubit cubit = context.read<PetLayoutCubit>();
         return Scaffold(
           appBar: cubit.titles[cubit.currentIndex],
           body: cubit.screens[cubit.currentIndex],

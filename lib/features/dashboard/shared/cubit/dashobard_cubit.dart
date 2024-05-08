@@ -1,5 +1,7 @@
 
 
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -168,7 +170,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
     emit(const DashboardStates.successGeneralData());
   }
 
-  void setWorkHourSessionDuration(int index, String value){
+  void setWorkHourSessionDuration(int index, int value){
     emit(const DashboardStates.loadGeneralData());
     workHours![index].sessionDuration = value;
     emit(const DashboardStates.successGeneralData());

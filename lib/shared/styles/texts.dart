@@ -40,6 +40,12 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium
   );
 
+  static TextStyle font20WhiteMedium = TextStyle(
+      color: Colors.white,
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelper.medium
+  );
+
   static TextStyle font14WhiteRegular = TextStyle(
       color: Colors.white,
       fontSize: 14.sp,

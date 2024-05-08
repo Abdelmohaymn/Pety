@@ -12,7 +12,7 @@ part of 'search_vet_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SearchVetStates<T> {
@@ -27,6 +27,9 @@ mixin _$SearchVetStates<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,6 +43,9 @@ mixin _$SearchVetStates<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -53,6 +59,9 @@ mixin _$SearchVetStates<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -67,6 +76,9 @@ mixin _$SearchVetStates<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -80,6 +92,9 @@ mixin _$SearchVetStates<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -93,6 +108,9 @@ mixin _$SearchVetStates<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -163,6 +181,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return initial();
   }
@@ -179,6 +200,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return initial?.call();
   }
@@ -195,6 +219,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -215,6 +242,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return initial(this);
   }
@@ -231,6 +261,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return initial?.call(this);
   }
@@ -247,6 +280,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -307,6 +343,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return loading();
   }
@@ -323,6 +362,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return loading?.call();
   }
@@ -339,6 +381,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -359,6 +404,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return loading(this);
   }
@@ -375,6 +423,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return loading?.call(this);
   }
@@ -391,6 +442,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -478,6 +532,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return success(data);
   }
@@ -494,6 +551,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return success?.call(data);
   }
@@ -510,6 +570,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -530,6 +593,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return success(this);
   }
@@ -546,6 +612,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return success?.call(this);
   }
@@ -562,6 +631,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -653,6 +725,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return error(this.error);
   }
@@ -669,6 +744,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return error?.call(this.error);
   }
@@ -685,6 +763,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -705,6 +786,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return error(this);
   }
@@ -721,6 +805,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return error?.call(this);
   }
@@ -737,6 +824,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -803,6 +893,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return changeFilterValue();
   }
@@ -819,6 +912,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return changeFilterValue?.call();
   }
@@ -835,6 +931,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (changeFilterValue != null) {
@@ -855,6 +954,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return changeFilterValue(this);
   }
@@ -871,6 +973,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return changeFilterValue?.call(this);
   }
@@ -887,6 +992,9 @@ class _$ChangeFilterValueImpl<T> implements ChangeFilterValue<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (changeFilterValue != null) {
@@ -948,6 +1056,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return moveToNextScreen();
   }
@@ -964,6 +1075,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return moveToNextScreen?.call();
   }
@@ -980,6 +1094,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (moveToNextScreen != null) {
@@ -1000,6 +1117,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return moveToNextScreen(this);
   }
@@ -1016,6 +1136,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return moveToNextScreen?.call(this);
   }
@@ -1032,6 +1155,9 @@ class _$MoveToNextScreenImpl<T> implements MoveToNextScreen<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (moveToNextScreen != null) {
@@ -1093,6 +1219,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return moveToPrevScreen();
   }
@@ -1109,6 +1238,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return moveToPrevScreen?.call();
   }
@@ -1125,6 +1257,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (moveToPrevScreen != null) {
@@ -1145,6 +1280,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return moveToPrevScreen(this);
   }
@@ -1161,6 +1299,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return moveToPrevScreen?.call(this);
   }
@@ -1177,6 +1318,9 @@ class _$MoveToPrevScreenImpl<T> implements MoveToPrevScreen<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (moveToPrevScreen != null) {
@@ -1237,6 +1381,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return loadUserData();
   }
@@ -1253,6 +1400,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return loadUserData?.call();
   }
@@ -1269,6 +1419,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (loadUserData != null) {
@@ -1289,6 +1442,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return loadUserData(this);
   }
@@ -1305,6 +1461,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return loadUserData?.call(this);
   }
@@ -1321,6 +1480,9 @@ class _$LoadingUserDataImpl<T> implements LoadingUserData<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (loadUserData != null) {
@@ -1381,6 +1543,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     required TResult Function() moveToPrevScreen,
     required TResult Function() loadUserData,
     required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
   }) {
     return successUserData();
   }
@@ -1397,6 +1562,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     TResult? Function()? moveToPrevScreen,
     TResult? Function()? loadUserData,
     TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
   }) {
     return successUserData?.call();
   }
@@ -1413,6 +1581,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     TResult Function()? moveToPrevScreen,
     TResult Function()? loadUserData,
     TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
     required TResult orElse(),
   }) {
     if (successUserData != null) {
@@ -1433,6 +1604,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
     required TResult Function(LoadingUserData<T> value) loadUserData,
     required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
   }) {
     return successUserData(this);
   }
@@ -1449,6 +1623,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult? Function(LoadingUserData<T> value)? loadUserData,
     TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
   }) {
     return successUserData?.call(this);
   }
@@ -1465,6 +1642,9 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
     TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
     TResult Function(LoadingUserData<T> value)? loadUserData,
     TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
     required TResult orElse(),
   }) {
     if (successUserData != null) {
@@ -1476,4 +1656,525 @@ class _$SuccessUserDataImpl<T> implements SuccessUserData<T> {
 
 abstract class SuccessUserData<T> implements SearchVetStates<T> {
   const factory SuccessUserData() = _$SuccessUserDataImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$LoadingAddReviewImplCopyWith<T, $Res> {
+  factory _$$LoadingAddReviewImplCopyWith(_$LoadingAddReviewImpl<T> value,
+          $Res Function(_$LoadingAddReviewImpl<T>) then) =
+      __$$LoadingAddReviewImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingAddReviewImplCopyWithImpl<T, $Res>
+    extends _$SearchVetStatesCopyWithImpl<T, $Res, _$LoadingAddReviewImpl<T>>
+    implements _$$LoadingAddReviewImplCopyWith<T, $Res> {
+  __$$LoadingAddReviewImplCopyWithImpl(_$LoadingAddReviewImpl<T> _value,
+      $Res Function(_$LoadingAddReviewImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadingAddReviewImpl<T> implements LoadingAddReview<T> {
+  const _$LoadingAddReviewImpl();
+
+  @override
+  String toString() {
+    return 'SearchVetStates<$T>.loadAddReview()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingAddReviewImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() changeFilterValue,
+    required TResult Function() moveToNextScreen,
+    required TResult Function() moveToPrevScreen,
+    required TResult Function() loadUserData,
+    required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
+  }) {
+    return loadAddReview();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? changeFilterValue,
+    TResult? Function()? moveToNextScreen,
+    TResult? Function()? moveToPrevScreen,
+    TResult? Function()? loadUserData,
+    TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
+  }) {
+    return loadAddReview?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? changeFilterValue,
+    TResult Function()? moveToNextScreen,
+    TResult Function()? moveToPrevScreen,
+    TResult Function()? loadUserData,
+    TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (loadAddReview != null) {
+      return loadAddReview();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(ChangeFilterValue<T> value) changeFilterValue,
+    required TResult Function(MoveToNextScreen<T> value) moveToNextScreen,
+    required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
+    required TResult Function(LoadingUserData<T> value) loadUserData,
+    required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
+  }) {
+    return loadAddReview(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult? Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult? Function(LoadingUserData<T> value)? loadUserData,
+    TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
+  }) {
+    return loadAddReview?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult Function(LoadingUserData<T> value)? loadUserData,
+    TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (loadAddReview != null) {
+      return loadAddReview(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingAddReview<T> implements SearchVetStates<T> {
+  const factory LoadingAddReview() = _$LoadingAddReviewImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessAddReviewImplCopyWith<T, $Res> {
+  factory _$$SuccessAddReviewImplCopyWith(_$SuccessAddReviewImpl<T> value,
+          $Res Function(_$SuccessAddReviewImpl<T>) then) =
+      __$$SuccessAddReviewImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessAddReviewImplCopyWithImpl<T, $Res>
+    extends _$SearchVetStatesCopyWithImpl<T, $Res, _$SuccessAddReviewImpl<T>>
+    implements _$$SuccessAddReviewImplCopyWith<T, $Res> {
+  __$$SuccessAddReviewImplCopyWithImpl(_$SuccessAddReviewImpl<T> _value,
+      $Res Function(_$SuccessAddReviewImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessAddReviewImpl<T> implements SuccessAddReview<T> {
+  const _$SuccessAddReviewImpl();
+
+  @override
+  String toString() {
+    return 'SearchVetStates<$T>.successAddReview()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessAddReviewImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() changeFilterValue,
+    required TResult Function() moveToNextScreen,
+    required TResult Function() moveToPrevScreen,
+    required TResult Function() loadUserData,
+    required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
+  }) {
+    return successAddReview();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? changeFilterValue,
+    TResult? Function()? moveToNextScreen,
+    TResult? Function()? moveToPrevScreen,
+    TResult? Function()? loadUserData,
+    TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
+  }) {
+    return successAddReview?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? changeFilterValue,
+    TResult Function()? moveToNextScreen,
+    TResult Function()? moveToPrevScreen,
+    TResult Function()? loadUserData,
+    TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (successAddReview != null) {
+      return successAddReview();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(ChangeFilterValue<T> value) changeFilterValue,
+    required TResult Function(MoveToNextScreen<T> value) moveToNextScreen,
+    required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
+    required TResult Function(LoadingUserData<T> value) loadUserData,
+    required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
+  }) {
+    return successAddReview(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult? Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult? Function(LoadingUserData<T> value)? loadUserData,
+    TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
+  }) {
+    return successAddReview?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult Function(LoadingUserData<T> value)? loadUserData,
+    TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (successAddReview != null) {
+      return successAddReview(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessAddReview<T> implements SearchVetStates<T> {
+  const factory SuccessAddReview() = _$SuccessAddReviewImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorAddReviewImplCopyWith<T, $Res> {
+  factory _$$ErrorAddReviewImplCopyWith(_$ErrorAddReviewImpl<T> value,
+          $Res Function(_$ErrorAddReviewImpl<T>) then) =
+      __$$ErrorAddReviewImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorAddReviewImplCopyWithImpl<T, $Res>
+    extends _$SearchVetStatesCopyWithImpl<T, $Res, _$ErrorAddReviewImpl<T>>
+    implements _$$ErrorAddReviewImplCopyWith<T, $Res> {
+  __$$ErrorAddReviewImplCopyWithImpl(_$ErrorAddReviewImpl<T> _value,
+      $Res Function(_$ErrorAddReviewImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorAddReviewImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorAddReviewImpl<T> implements ErrorAddReview<T> {
+  const _$ErrorAddReviewImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'SearchVetStates<$T>.errorAddReview(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorAddReviewImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorAddReviewImplCopyWith<T, _$ErrorAddReviewImpl<T>> get copyWith =>
+      __$$ErrorAddReviewImplCopyWithImpl<T, _$ErrorAddReviewImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() changeFilterValue,
+    required TResult Function() moveToNextScreen,
+    required TResult Function() moveToPrevScreen,
+    required TResult Function() loadUserData,
+    required TResult Function() successUserData,
+    required TResult Function() loadAddReview,
+    required TResult Function() successAddReview,
+    required TResult Function(String error) errorAddReview,
+  }) {
+    return errorAddReview(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? changeFilterValue,
+    TResult? Function()? moveToNextScreen,
+    TResult? Function()? moveToPrevScreen,
+    TResult? Function()? loadUserData,
+    TResult? Function()? successUserData,
+    TResult? Function()? loadAddReview,
+    TResult? Function()? successAddReview,
+    TResult? Function(String error)? errorAddReview,
+  }) {
+    return errorAddReview?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? changeFilterValue,
+    TResult Function()? moveToNextScreen,
+    TResult Function()? moveToPrevScreen,
+    TResult Function()? loadUserData,
+    TResult Function()? successUserData,
+    TResult Function()? loadAddReview,
+    TResult Function()? successAddReview,
+    TResult Function(String error)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (errorAddReview != null) {
+      return errorAddReview(this.error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(ChangeFilterValue<T> value) changeFilterValue,
+    required TResult Function(MoveToNextScreen<T> value) moveToNextScreen,
+    required TResult Function(MoveToPrevScreen<T> value) moveToPrevScreen,
+    required TResult Function(LoadingUserData<T> value) loadUserData,
+    required TResult Function(SuccessUserData<T> value) successUserData,
+    required TResult Function(LoadingAddReview<T> value) loadAddReview,
+    required TResult Function(SuccessAddReview<T> value) successAddReview,
+    required TResult Function(ErrorAddReview<T> value) errorAddReview,
+  }) {
+    return errorAddReview(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult? Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult? Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult? Function(LoadingUserData<T> value)? loadUserData,
+    TResult? Function(SuccessUserData<T> value)? successUserData,
+    TResult? Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult? Function(SuccessAddReview<T> value)? successAddReview,
+    TResult? Function(ErrorAddReview<T> value)? errorAddReview,
+  }) {
+    return errorAddReview?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(ChangeFilterValue<T> value)? changeFilterValue,
+    TResult Function(MoveToNextScreen<T> value)? moveToNextScreen,
+    TResult Function(MoveToPrevScreen<T> value)? moveToPrevScreen,
+    TResult Function(LoadingUserData<T> value)? loadUserData,
+    TResult Function(SuccessUserData<T> value)? successUserData,
+    TResult Function(LoadingAddReview<T> value)? loadAddReview,
+    TResult Function(SuccessAddReview<T> value)? successAddReview,
+    TResult Function(ErrorAddReview<T> value)? errorAddReview,
+    required TResult orElse(),
+  }) {
+    if (errorAddReview != null) {
+      return errorAddReview(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorAddReview<T> implements SearchVetStates<T> {
+  const factory ErrorAddReview({required final String error}) =
+      _$ErrorAddReviewImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorAddReviewImplCopyWith<T, _$ErrorAddReviewImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
 }

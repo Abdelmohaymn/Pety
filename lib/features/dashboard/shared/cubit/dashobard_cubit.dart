@@ -1,5 +1,7 @@
 
 
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -82,7 +84,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
   }
 
   void getPetyInfo(String role) async{
-    emit(const DashboardStates.loading());
+    emit(const DashboardStates.loadPetyInfo());
     final response = await _dashboardRepository.getPetyInformation(petyInformationBody: PetyInformationBody(role: role));
     response.when(
         success: (data){
@@ -93,10 +95,10 @@ class DashboardCubit extends Cubit<DashboardStates>{
           priceController.text = data.data![0].price!.toString();
           locationController.text = data.data![0].address!;
           descriptionController.text = data.data![0].description!;
-          emit(DashboardStates.success(data));
+          emit(DashboardStates.successPetyInfo(data));
         },
         failure: (error){
-          emit(DashboardStates.error(error: error.apiErrorModel.message!));
+          emit(DashboardStates.errorPetyInfo(error: error.apiErrorModel.message!));
         }
     );
   }
@@ -168,7 +170,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
     emit(const DashboardStates.successGeneralData());
   }
 
-  void setWorkHourSessionDuration(int index, String value){
+  void setWorkHourSessionDuration(int index, int value){
     emit(const DashboardStates.loadGeneralData());
     workHours![index].sessionDuration = value;
     emit(const DashboardStates.successGeneralData());

@@ -1,8 +1,13 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/default_button.dart';
+import 'package:pety/shared/widgets/vertical_space.dart';
 
 class BeAVetCard extends StatelessWidget{
   const BeAVetCard({super.key});
@@ -29,21 +34,18 @@ class BeAVetCard extends StatelessWidget{
                     'earn extra income by\nsharing your love and\ncare for pets',
                     style: TextStyles.font13WhiteRegular
                 ),
-                SizedBox(height: 10.h,),
-                SizedBox(
+                const VerticalSpace(height: 10),
+                DefaultButton(
                   height: 30.h,
-                  child: FilledButton.tonal(
-                    onPressed: (){},
-                    style: ButtonStyle(
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      padding: MaterialStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: 5.w)),
-                      backgroundColor: const MaterialStatePropertyAll<Color>(ColorManager.orange),
-                      shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-                    ),
-                    child: Text('Learn more',style: TextStyles.font10WhiteRegular,),
-                  ),
+                  radius: 5,
+                  color: ColorManager.orange,
+                  textStyle: TextStyles.font10WhiteRegular,
+                  text: 'Learn more',
+                  onClick: () {
+                    context.read<PetLayoutCubit>().moveToWebPage(PetyWebsiteUrls.becomeAPety);
+                  },
                 ),
-                SizedBox(height: 10.h,)
+                const VerticalSpace(height: 10)
               ],
             ),
             Positioned(

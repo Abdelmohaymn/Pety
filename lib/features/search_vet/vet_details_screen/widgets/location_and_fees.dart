@@ -21,7 +21,7 @@ class LocationAndFees extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image(
-                image: const AssetImage('images/dollar.png'),
+                image: const AssetImage('assets/images/dollar.png'),
                 width: 32.w,
                 height: 32.h,
               ),
@@ -38,7 +38,7 @@ class LocationAndFees extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image(
-                image: const AssetImage('images/location.png'),
+                image: const AssetImage('assets/images/location.png'),
                 width: 32.w,
                 height: 32.h,
               ),

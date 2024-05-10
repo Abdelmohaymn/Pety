@@ -15,6 +15,7 @@ import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/network/local/shared_pred_constants.dart';
 import 'package:pety/shared/network/local/shared_pref_helper.dart';
 import 'package:pety/shared/routing/routes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfileCubit extends Cubit<ProfileStates>{
 
@@ -42,7 +43,6 @@ class ProfileCubit extends Cubit<ProfileStates>{
     phoneController.text = user.phone!;
     emit(const ProfileStates.successGeneralData());
   }
-
 
   void emitProfileStates() async{
     emit(const ProfileStates.loading());
@@ -79,6 +79,16 @@ class ProfileCubit extends Cubit<ProfileStates>{
     SharedPrefHelper.removeData(key: SharedPrefConstants.tokenKey).then((value){
       context.pushNamedAndRemoveUntil(Routes.loginScreen,predicate: (Route<dynamic> route) => false);
     });
+  }
+
+  void onBackFromEditProfileScreen(){
+    profImage=null;
+  }
+
+  Future<void> moveToWebPage(String url) async {
+    if (!await launchUrl(Uri.parse(url))) {
+      throw Exception('Could not launch $url');
+    }
   }
 
 }

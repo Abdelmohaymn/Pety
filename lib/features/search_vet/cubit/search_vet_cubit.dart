@@ -1,19 +1,17 @@
 
 
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:pety/features/profile/data/models/update_profile_response.dart';
 import 'package:pety/features/search_vet/book_vet_screen/data/models/book_vet_body.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pety/features/search_vet/data/models/animal_model.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
 import 'package:pety/features/search_vet/data/repository/search_vet_repo.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/add_review_body.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/pety_details_body.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/pety_details_response.dart';
+import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/extensions.dart';
-import 'package:pety/shared/network/local/shared_pred_constants.dart';
-import 'package:pety/shared/network/local/shared_pref_helper.dart';
-import 'package:pety/shared/network/remote/api_constants.dart';
 import 'package:pety/shared/routing/routes.dart';
 
 
@@ -33,6 +31,7 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
   String availability = AvailabilityConstants.anyDay;
   String sort = SortByConstants.rate;
   TextEditingController searchController = TextEditingController();
+  TextEditingController reviewController = TextEditingController();
   List<AnimalModel> animals =
   [
     AnimalModel('Cat',AnimalsConstants.cat),
@@ -40,9 +39,12 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
   ];
 
   Data? chosenVet;
+  List<Reviews>? reviews;
   int clickedAppointment=-1;
   String? chosenTime;
   String userName='';
+  double initialRate = 3;
+
 
   void getVets({
     int page = 1,
@@ -94,6 +96,43 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
     );
   }
 
+  void getPetyDetails() async{
+    emit(const SearchVetStates.loading());
+    final response = await _searchVetRepository.getPetyDetails(
+        petyDetailsBody: PetyDetailsBody(
+            id: chosenVet!.id!,
+        )
+    );
+    response.when(
+        success: (data){
+          reviews=data.data!.reviews;
+          emit(SearchVetStates.success(data));
+        },
+        failure: (error){
+          emit(SearchVetStates.error(error: error.apiErrorModel.message!));
+        }
+    );
+  }
+
+  void addNewReview() async{
+    emit(const SearchVetStates.loadAddReview());
+    final response = await _searchVetRepository.addNewReview(
+        reviewBody: AddReviewBody(
+          petyId: chosenVet!.id,
+          review: reviewController.text,
+          rating: initialRate
+        )
+    );
+    response.when(
+        success: (data){
+          emit(const SearchVetStates.successAddReview());
+        },
+        failure: (error){
+          emit(SearchVetStates.errorAddReview(error: error.apiErrorModel.message!));
+        }
+    );
+  }
+
   void bookVet() async{
     emit(const SearchVetStates.loading());
     final response = await _searchVetRepository.bookVet(
@@ -113,6 +152,7 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
     );
   }
 
+  // filter functions
   void changePriceRanges(RangeValues ranges){
     emit(const SearchVetStates.loading());
     minPrice = ranges.start.toInt();
@@ -164,8 +204,15 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
     emit(const SearchVetStates.changeFilterValue());
   }
 
+  void changeReviewRate(double rate){
+    emit(const SearchVetStates.loading());
+    initialRate = rate;
+    emit(const SearchVetStates.moveToPrevScreen());
+  }
+
   void moveToVetDetails(Data vet,BuildContext context){
     emit(const SearchVetStates.loading());
+    // call pety details
     chosenVet = vet;
     context.pushNamed(Routes.vetDetails,arguments: context);
     emit(const SearchVetStates.moveToNextScreen());
@@ -177,11 +224,13 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
     context.pushNamed(Routes.bookVet,arguments: context);
     emit(const SearchVetStates.moveToNextScreen());
   }
-  
-  void onBackPressed(BuildContext context){
+
+  void onBackPressedFromDetails(BuildContext context){
     emit(const SearchVetStates.loading());
     context.pop();
+    reviews=null;
     clickedAppointment=-1;
+    reviewController.text='';
     emit(const SearchVetStates.moveToPrevScreen());
   }
 
@@ -193,13 +242,6 @@ class SearchVetCubit extends Cubit<SearchVetStates> {
       clickedAppointment=index;
     }
     emit(const SearchVetStates.moveToPrevScreen());
-  }
-
-  void getUserData() async{
-    emit(const SearchVetStates.loadUserData());
-    User user = User.fromJson(jsonDecode(SharedPrefHelper.getData(key: SharedPrefConstants.userData)));
-    userName = '${user.firstName!} ${user.lastName!}';
-    emit(const SearchVetStates.successUserData());
   }
 
 }

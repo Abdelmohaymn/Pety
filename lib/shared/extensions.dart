@@ -29,5 +29,10 @@ extension Regex on String{
   String capitalizeFirstLetter(){
     return substring(0, 1).toUpperCase() + substring(1);
   }
+}
 
+extension ListToString<T> on List<T>{
+  String toStringCustom(String separate){
+    return map((e) => e.toString()).join(separate);
+  }
 }

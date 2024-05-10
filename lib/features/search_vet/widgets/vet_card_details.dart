@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
+import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_rating_indicator.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
@@ -46,7 +47,7 @@ class VetCardDetails extends StatelessWidget{
                   ],
                 ),
                 Text(
-                  cubit.chosenVet!.animals==null?'':cubit.chosenVet!.animals!.toString(),
+                  cubit.chosenVet!.animals==null?'':cubit.chosenVet!.animals!.toStringCustom(' - '),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyles.font12LightGreyRegular,

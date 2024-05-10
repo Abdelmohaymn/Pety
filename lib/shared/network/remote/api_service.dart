@@ -1,5 +1,4 @@
 
-import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:pety/features/dashboard/appointments/models/appointment_status_body.dart';
@@ -22,6 +21,9 @@ import 'package:pety/features/register/data/models/register_response.dart';
 import 'package:pety/features/search_vet/book_vet_screen/data/models/book_vet_body.dart';
 import 'package:pety/features/search_vet/book_vet_screen/data/models/book_vet_response.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/add_review_body.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/pety_details_body.dart';
+import 'package:pety/features/search_vet/vet_details_screen/models/pety_details_response.dart';
 import 'package:pety/shared/network/remote/api_constants.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -54,6 +56,11 @@ abstract class ApiService {
       @Query("animals") String? animals,
       @Query("limit") int? limit,
   });
+
+  @POST(ApiConstants.petyDetails)
+  Future<PetyDetailsResponse> getPetyDetails(
+      @Body() PetyDetailsBody petyDetailsBody,
+  );
 
   @POST(ApiConstants.bookVet)
   Future<BookVetResponse> bookVet(
@@ -105,6 +112,12 @@ abstract class ApiService {
 
   @GET(ApiConstants.dashboardGetAllRoles)
   Future<AllRolesResponse> getPetyRoles(
+      @Header('Authorization') String token,
+  );
+
+  @POST(ApiConstants.reviewsAddNewOne)
+  Future addNewReview(
+      @Body() AddReviewBody reviewBody,
       @Header('Authorization') String token,
   );
 

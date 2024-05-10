@@ -27,7 +27,7 @@ class GetWorkHourMapper{
         workHours[index].id=element.id;
         workHours[index].from=element.startTime!;
         workHours[index].to=element.endTime!;
-        workHours[index].sessionDuration=element.sessionDuration!;
+        workHours[index].sessionDuration=_getSessionDuration(element.sessionDuration!);
         workHours[index].isActive=true;
       }
     }
@@ -46,12 +46,29 @@ class GetWorkHourMapper{
             day:element.day.toLowerCase(),
             startTime: element.from,
             endTime: element.to,
-            sessionDuration: element.sessionDuration
+            sessionDuration: _toSessionDuration(element.sessionDuration)
           )
         );
       }
     }
     return body;
+  }
+
+  static int _getSessionDuration(String duration){
+    List<String> parts = duration.split(':'); // Splitting hours and minutes
+    int hours = int.parse(parts[0]);
+    int minutes = int.parse(parts[1]);
+    return hours * 60 + minutes;
+  }
+
+  static String _toSessionDuration(int minutes){
+    int hours = minutes ~/ 60;
+    minutes = minutes % 60;
+
+    String formattedHours = hours.toString().padLeft(2, '0');
+    String formattedMinutes = minutes.toString().padLeft(2, '0');
+
+    return '$formattedHours:$formattedMinutes';
   }
 
 }

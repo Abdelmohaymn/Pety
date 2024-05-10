@@ -55,6 +55,10 @@ dependencies:
   fluttertoast: ^8.2.4
   image_picker: ^1.0.8
   flutter_advanced_switch: ^3.1.0
+  url_launcher: ^6.2.6
+  google_fonts: ^6.2.1
+  animated_text_kit: ^4.2.2
+  loading_animation_widget: ^1.2.1
 
 
 dev_dependencies:

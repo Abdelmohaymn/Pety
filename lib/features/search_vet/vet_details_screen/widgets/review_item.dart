@@ -1,29 +1,56 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/circle_avatar_default_image.dart';
 import 'package:pety/shared/widgets/default_rating_indicator.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class ReviewItem extends StatelessWidget{
-  const ReviewItem({super.key});
+  int index;
+  ReviewItem({super.key,required this.index});
 
   @override
   Widget build(BuildContext context) {
+    SearchVetCubit cubit = context.read<SearchVetCubit>();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const DefaultRatingIndicator(rate: 3.2),
-        const VerticalSpace(height: 5),
-        Text('Very good service',style: TextStyles.font10BlackRegular,),
-        const VerticalSpace(height: 5),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Ahmed',style: TextStyles.font8BlackBold,),
+            CircleAvatarDefaultImage(
+              imageUrl: cubit.reviews?[index].user?.photo?.url,
+              radius: 25,
+            ),
             const HorizontalSpace(width: 10),
-            Text('29/2/2024',style: TextStyles.font8BlackRegular,),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${cubit.reviews?[index].user?.firstName} ${cubit.reviews?[index].user?.lastName}',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyles.font13BlackBold,
+                ),
+                DefaultRatingIndicator(rate: cubit.reviews![index].rating!.toDouble())
+              ],
+            ),
+            const Spacer(),
+            Text(
+              cubit.reviews![index].createdAt!,
+              style: TextStyles.font12GreyLight,
+            )
           ],
         ),
+        const VerticalSpace(height: 20),
+        Text(
+          cubit.reviews![index].review!,
+          style: TextStyles.font12BlackRegular,
+        )
       ],
     );
   }

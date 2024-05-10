@@ -12,4 +12,7 @@ class SearchVetStates<T> with _$SearchVetStates<T> {
   const factory SearchVetStates.moveToPrevScreen() = MoveToPrevScreen;
   const factory SearchVetStates.loadUserData() = LoadingUserData;
   const factory SearchVetStates.successUserData() = SuccessUserData;
+  const factory SearchVetStates.loadAddReview() = LoadingAddReview;
+  const factory SearchVetStates.successAddReview() = SuccessAddReview;
+  const factory SearchVetStates.errorAddReview({required String error}) = ErrorAddReview;
 }

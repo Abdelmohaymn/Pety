@@ -4,6 +4,7 @@ class ApiConstants{
   static const String login = 'api/users/signin';
   static const String register = 'api/users/signup';
   static const String searchVet = 'api/pety?';
+  static const String petyDetails = 'api/pety/details';
   static const String bookVet = 'api/pety/appointment';
   static const String updateProfile = 'api/users/updateMe';
   static const String dashboardGetAppointments = 'api/dashboard/allAppointments';
@@ -13,6 +14,7 @@ class ApiConstants{
   static const String dashboardTimeTable = 'api/dashboard/timeTable';
   static const String dashboardGetWorkHours = 'api/dashboard/workingHours';
   static const String dashboardGetAllRoles = 'api/dashboard/allRoles';
+  static const String reviewsAddNewOne = 'api/reviews';
 }
 
 
@@ -35,25 +37,3 @@ class ApiErrors {
   static const String ok = "Ok";
 }
 
-class PetyRolesConstants{
-  static const String vet = 'vet';
-  static const String groomer = 'groomer';
-  static const String petSitter = 'petSitter';
-}
-
-class AnimalsConstants{
-  static const String dog = 'dog';
-  static const String cat = 'cat';
-}
-
-class SortByConstants{
-  static const String offer = 'offer';
-  static const String rate = 'averageRate';
-  static const String price = 'price';
-}
-
-class AvailabilityConstants{
-  static const String today = 'today';
-  static const String tomorrow = 'tomorrow';
-  static const String anyDay = 'anyDay';
-}

@@ -1,4 +1,5 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,103 +25,106 @@ class PetyInfoScreen extends StatelessWidget{
       padding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 16.w),
       child: Form(
         key: formKey,
-        child: Stack(
-          alignment: Alignment.bottomCenter,
+        child: Column(
           children: [
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.nameController,
-                      keyboardType: TextInputType.text,
-                      label: 'Name',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Name must not be empty';
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.symmetric(vertical: 20.h),
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  children: [
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.nameController,
+                        keyboardType: TextInputType.text,
+                        label: 'Name',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Name must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.serviceController,
-                      keyboardType: TextInputType.text,
-                      label: 'Service Name',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Service name must not be empty';
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.serviceController,
+                        keyboardType: TextInputType.text,
+                        label: 'Service Name',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Service name must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.phoneController,
-                      keyboardType: TextInputType.text,
-                      label: 'Phone',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Phone must not be empty';
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.phoneController,
+                        keyboardType: TextInputType.text,
+                        label: 'Phone',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Phone must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.emailController,
-                      keyboardType: TextInputType.text,
-                      label: 'Email',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Email must not be empty';
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.emailController,
+                        keyboardType: TextInputType.text,
+                        label: 'Email',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Email must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.priceController,
-                      keyboardType: TextInputType.text,
-                      label: 'Price',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Price must not be empty';
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.priceController,
+                        keyboardType: TextInputType.text,
+                        label: 'Price',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Price must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.locationController,
-                      keyboardType: TextInputType.text,
-                      label: 'Location',
-                      validate: (value){
-                        if(value==null||!value.isNotBlank()){
-                          return 'Location must not be empty';
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.locationController,
+                        keyboardType: TextInputType.text,
+                        label: 'Location',
+                        validate: (value){
+                          if(value==null||!value.isNotBlank()){
+                            return 'Location must not be empty';
+                          }
+                          return null;
                         }
-                        return null;
-                      }
-                  ),
-                  const VerticalSpace(height: 20),
-                  DefaultTextField(
-                      context: context,
-                      controller: cubit.descriptionController,
-                      keyboardType: TextInputType.text,
-                      label: 'Description',
-                      validate: (value){
-                        return null;
-                      }
-                  ),
-                  //const VerticalSpace(height: 20),
-                ],
+                    ),
+                    const VerticalSpace(height: 20),
+                    DefaultTextField(
+                        context: context,
+                        controller: cubit.descriptionController,
+                        keyboardType: TextInputType.text,
+                        label: 'Description',
+                        validate: (value){
+                          return null;
+                        }
+                    ),
+                  ],
+                ),
               ),
             ),
+            const VerticalSpace(height: 40),
             DefaultButton(
                 text: 'Save changes',
                 color: ColorManager.orange,
@@ -131,7 +135,7 @@ class PetyInfoScreen extends StatelessWidget{
                   }
                 }
             ),
-            const PetyInfoBlocListener(),
+            //const PetyInfoBlocListener(),
           ],
         )
       ),

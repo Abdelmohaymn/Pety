@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +6,9 @@ import 'package:pety/features/dashboard/roles/roles_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
 import 'package:pety/features/login/login_screen.dart';
+import 'package:pety/features/pety_layout/chat_bot_screen/chat_bot_screen.dart';
+import 'package:pety/features/profile/cubit/profile_cubit.dart';
+import 'package:pety/features/profile/profile_screen.dart';
 import 'package:pety/features/register/cubit/register_cubit.dart';
 import 'package:pety/features/register/register_screen.dart';
 import 'package:pety/features/search_vet/book_vet_screen/book_vet.dart';
@@ -41,7 +43,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) =>
               BlocProvider(
-                create: (context) => PetLayoutCubit(),
+                create: (context) => getIt<PetLayoutCubit>(),
                 child: const PetLayout(),
               ),
         );
@@ -61,7 +63,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) =>
               BlocProvider.value(
-                value: BlocProvider.of<SearchVetCubit>(settings.arguments as BuildContext),
+                value: BlocProvider.of<SearchVetCubit>(settings.arguments as BuildContext)..getPetyDetails(),
                 child: const VetDetailsScreen(),
               ),
         );
@@ -72,6 +74,14 @@ class AppRouter {
                 value: BlocProvider.of<SearchVetCubit>(settings.arguments as BuildContext),
               child: const BookVetScreen()
           ),
+        );
+      case Routes.editProfileScreen :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<ProfileCubit>(settings.arguments as BuildContext),
+                  child: const ProfileScreen()
+              ),
         );
       case Routes.dashboardRoles :
         return MaterialPageRoute(
@@ -95,6 +105,14 @@ class AppRouter {
                     ..getWorkHours(role)
                     ..getPetyInfo(role),
                   child: DashboardLayout(role: role,)
+              ),
+        );
+      case Routes.chatBotScreen :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
+                  child: const ChatBotScreen()
               ),
         );
       default :

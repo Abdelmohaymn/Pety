@@ -26,11 +26,11 @@ class VetDetailsScreen extends StatelessWidget{
       canPop: false,
       onPopInvoked: (didPop){
         if(didPop)return;
-        cubit.onBackPressed(context);
+        cubit.onBackPressedFromDetails(context);
       },
       child: Scaffold(
         appBar: AppBar(
-          leading: DefaultBackAppBar(context: context,onBack: (){cubit.onBackPressed(context);},),
+          leading: DefaultBackAppBar(context: context,onBack: (){cubit.onBackPressedFromDetails(context);},),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 8.0),

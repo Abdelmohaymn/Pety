@@ -19,7 +19,7 @@ class WorkHourItem extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final DashboardCubit cubit = context.read<DashboardCubit>();
-    controller.text = cubit.workHours![index].sessionDuration;
+    controller.text = cubit.workHours![index].sessionDuration.toString();
 
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 8.w,vertical: 8.h),
@@ -77,10 +77,10 @@ class WorkHourItem extends StatelessWidget{
                     hintStyle: TextStyles.font12GreyLight.copyWith(color: ColorManager.hintOFSearchTextField)
                   ),
                   onSubmitted: (value){
-                    cubit.setWorkHourSessionDuration(index,value);
+                    cubit.setWorkHourSessionDuration(index,int.parse(value));
                   },
                   onTapOutside: (value){
-                    cubit.setWorkHourSessionDuration(index,controller.text);
+                    cubit.setWorkHourSessionDuration(index,int.parse(controller.text));
                   },
                 ),
               ),

@@ -128,6 +128,35 @@ class _ApiService implements ApiService {
   }
 
   @override
+  Future<PetyDetailsResponse> getPetyDetails(
+      PetyDetailsBody petyDetailsBody) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(petyDetailsBody.toJson());
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<PetyDetailsResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              'api/pety/details',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final value = PetyDetailsResponse.fromJson(_result.data!);
+    return value;
+  }
+
+  @override
   Future<BookVetResponse> bookVet(
     BookVetBody bookVetBody,
     String token,
@@ -406,6 +435,37 @@ class _ApiService implements ApiService {
               baseUrl,
             ))));
     final value = AllRolesResponse.fromJson(_result.data!);
+    return value;
+  }
+
+  @override
+  Future<dynamic> addNewReview(
+    AddReviewBody reviewBody,
+    String token,
+  ) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': token};
+    _headers.removeWhere((k, v) => v == null);
+    final _data = <String, dynamic>{};
+    _data.addAll(reviewBody.toJson());
+    final _result = await _dio.fetch(_setStreamType<dynamic>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'api/reviews',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        ))));
+    final value = _result.data;
     return value;
   }
 

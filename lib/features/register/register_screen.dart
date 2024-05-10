@@ -127,6 +127,7 @@ class RegisterScreen extends StatelessWidget{
                   ),
                   SizedBox(height: 40.h,),
                   DefaultButton(
+                      horizontalPadding: 30.w,
                       text: 'Sign up',
                       color: ColorManager.defaultColor,
                       onClick: (){

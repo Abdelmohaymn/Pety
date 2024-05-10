@@ -67,6 +67,12 @@ class TextStyles {
     fontSize: 12.sp,
   );
 
+  static TextStyle font14DefaultBold = TextStyle(
+    color: ColorManager.defaultColor,
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium
+  );
+
   static TextStyle font8BlackLight = TextStyle(
     color: Colors.black,
     fontSize: 8.sp,

@@ -84,7 +84,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
   }
 
   void getPetyInfo(String role) async{
-    emit(const DashboardStates.loading());
+    emit(const DashboardStates.loadPetyInfo());
     final response = await _dashboardRepository.getPetyInformation(petyInformationBody: PetyInformationBody(role: role));
     response.when(
         success: (data){
@@ -95,10 +95,10 @@ class DashboardCubit extends Cubit<DashboardStates>{
           priceController.text = data.data![0].price!.toString();
           locationController.text = data.data![0].address!;
           descriptionController.text = data.data![0].description!;
-          emit(DashboardStates.success(data));
+          emit(DashboardStates.successPetyInfo(data));
         },
         failure: (error){
-          emit(DashboardStates.error(error: error.apiErrorModel.message!));
+          emit(DashboardStates.errorPetyInfo(error: error.apiErrorModel.message!));
         }
     );
   }

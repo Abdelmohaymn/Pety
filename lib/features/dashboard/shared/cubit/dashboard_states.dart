@@ -26,4 +26,7 @@ class DashboardStates<T> with _$DashboardStates<T>{
   const factory DashboardStates.errorUpdateWorkHours({required String error}) = UpdateWorkHoursError;
   const factory DashboardStates.loadGeneralData() = LoadGeneralData;
   const factory DashboardStates.successGeneralData() = SuccessGeneralData;
+  const factory DashboardStates.loadPetyInfo() = PetyInfoLoading;
+  const factory DashboardStates.successPetyInfo(T data) = PetyInfoSuccess;
+  const factory DashboardStates.errorPetyInfo({required String error}) = PetyInfoError;
 }

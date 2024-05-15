@@ -9,6 +9,12 @@ class PetyRolesConstants{
 class AnimalsConstants{
   static const String dog = 'dog';
   static const String cat = 'cat';
+  static const String bird = 'bird';
+
+  static const List<String> animalsList=[
+    cat, dog, bird
+  ];
+
 }
 
 class SortByConstants{

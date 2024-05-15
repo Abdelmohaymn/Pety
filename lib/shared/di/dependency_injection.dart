@@ -17,6 +17,7 @@ import 'package:pety/features/search_vet/data/repository/search_vet_repo.dart';
 import 'package:pety/shared/network/remote/api_service.dart';
 import 'package:pety/shared/network/remote/chatbot_api/chatbot_service.dart';
 import 'package:pety/shared/network/remote/dio_helper.dart';
+import 'package:pety/shared/network/remote/find_pet_api/find_pet_service.dart';
 
 final getIt = GetIt.instance;
 
@@ -26,6 +27,7 @@ Future<void> setupGetIt() async{
   Dio dio = DioHelper.getDio();
   getIt.registerLazySingleton<ApiService>(() => ApiService(dio));
   getIt.registerLazySingleton<ChatBotService>(()=>ChatBotService(dio));
+  getIt.registerLazySingleton<FindPetService>(()=>FindPetService(dio));
 
   // login
   getIt.registerLazySingleton<LoginRepository>(() => LoginRepository(getIt()));
@@ -35,8 +37,8 @@ Future<void> setupGetIt() async{
   getIt.registerLazySingleton<RegisterRepository>(() => RegisterRepository(getIt()));
   getIt.registerFactory<RegisterCubit>(() => RegisterCubit(getIt()));
 
-  //pet layout -- chat_bot
-  getIt.registerLazySingleton<PetyRepository>(() => PetyRepository(getIt()));
+  //pet layout -- chat_bot -- find_missing_pet
+  getIt.registerLazySingleton<PetyRepository>(() => PetyRepository(getIt(),getIt(),ImagePicker()));
   getIt.registerFactory<PetLayoutCubit>(() => PetLayoutCubit(getIt()));
 
   // search vet

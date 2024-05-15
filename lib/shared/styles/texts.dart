@@ -2,10 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/font_weights.dart';
 
 class TextStyles {
+
+  static TextStyle font13HintGreyRegular = TextStyle(
+    color: ColorManager.hintGrey,
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular
+  );
+
 
   static TextStyle font15GreyRegular = TextStyle(
     color: ColorManager.grey,
@@ -62,8 +70,14 @@ class TextStyles {
       fontWeight: FontWeightHelper.bold
   );
 
+  static TextStyle font16WhiteBold = TextStyle(
+      color: Colors.white,
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.bold
+  );
+
   static TextStyle font12DefaultRegular = TextStyle(
-    color: ColorManager.resetButtonColor,
+    color: ColorManager.defaultColor,//resetColorButton
     fontSize: 12.sp,
   );
 
@@ -144,6 +158,17 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold
   );
 
+  static TextStyle font18LightBlackBold = TextStyle(
+    color: ColorManager.lightBlack,
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.bold,
+  );
+
+  static TextStyle font16LightBlackRegular = TextStyle(
+    color: ColorManager.lightBlack,
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.regular,
+  );
 
   static TextStyle font43BlackBold = TextStyle(
     color: Colors.black,
@@ -153,6 +178,12 @@ class TextStyles {
   static TextStyle font12filtersGreyColorRegular = TextStyle(
     color: ColorManager.filtersGreyColor,
     fontSize: 12.sp,
+  );
+
+  static TextStyle font18LightBueSemiBold = TextStyle(
+    color: ColorManager.lightBlue,
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.semiBold,
   );
 
 }

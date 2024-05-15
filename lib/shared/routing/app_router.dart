@@ -7,6 +7,9 @@ import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
 import 'package:pety/features/login/login_screen.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/chat_bot_screen.dart';
+import 'package:pety/features/pety_layout/find_my_pet/result_of_search/missing_pets_screen.dart';
+import 'package:pety/features/pety_layout/find_my_pet/search_for_pet/search_for_missing_pet.dart';
+import 'package:pety/features/pety_layout/find_my_pet/upload_pet/upload_missing_pet.dart';
 import 'package:pety/features/profile/cubit/profile_cubit.dart';
 import 'package:pety/features/profile/profile_screen.dart';
 import 'package:pety/features/register/cubit/register_cubit.dart';
@@ -43,7 +46,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) =>
               BlocProvider(
-                create: (context) => getIt<PetLayoutCubit>(),
+                create: (context) => getIt<PetLayoutCubit>()..getLocationsData(),
                 child: const PetLayout(),
               ),
         );
@@ -113,6 +116,30 @@ class AppRouter {
               BlocProvider.value(
                   value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
                   child: const ChatBotScreen()
+              ),
+        );
+      case Routes.searchForMissingPet :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
+                  child: const SearchForMissingPetScreen()
+              ),
+        );
+      case Routes.uploadMissingPet :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
+                  child: const UploadMissingPetScreen()
+              ),
+        );
+      case Routes.missingPetsScreen :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
+                  child: const MissingPetsScreen()
               ),
         );
       default :

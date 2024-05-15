@@ -1,5 +1,7 @@
 
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,12 +10,18 @@ import 'package:pety/features/community/community_Screen.dart';
 import 'package:pety/features/home/home_Screen.dart';
 import 'package:pety/features/pety_layout/data/models/chat_bot_body.dart';
 import 'package:pety/features/pety_layout/data/repository/pety_repository.dart';
+import 'package:pety/features/pety_layout/find_my_pet/models/cities_model.dart';
+import 'package:pety/features/pety_layout/find_my_pet/models/find_pet_body.dart';
+import 'package:pety/features/pety_layout/find_my_pet/models/find_pet_response.dart';
+import 'package:pety/features/pety_layout/find_my_pet/models/governments_model.dart';
 import 'package:pety/features/profile/cubit/profile_cubit.dart';
 import 'package:pety/features/profile/pre_profile/pre_profile_screen.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/di/dependency_injection.dart';
 import 'package:pety/shared/extensions.dart';
+import 'package:pety/shared/network/local/shared_pred_constants.dart';
+import 'package:pety/shared/network/local/shared_pref_helper.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
@@ -67,8 +75,166 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
     allowAnimatedText = false;
     emit(const PetLayoutStates.successAllowAnimatedText());
   }
-
   // chatBot finishing
+
+
+  // find my pet beginning
+  String? country='Egypt', city, government,animal;
+  List<DropdownMenuItem<String>> countries=[
+    const DropdownMenuItem(
+      value: 'Egypt',
+      child: Text('Egypt'),
+    ),
+  ];
+  List<DropdownMenuItem<String>> governments=[];
+  List<DropdownMenuItem<String>> cities=[];
+  List<DropdownMenuItem<String>> animals=[];
+
+  TextEditingController addressController = TextEditingController();
+  TextEditingController notesController = TextEditingController();
+  // locations form json
+  List<GovernmentsData>?governLocations;
+  List<CitiesData>? citiesLocations;
+
+  File? petImage;
+  bool uploadPet=false;
+  List<Data>? missingPets;
+
+  void getLocationsData()async{
+    emit(const PetLayoutStates.loadGetLocations());
+    //get governs
+    List<GovernmentsModel> list = await _petyRepository.fetchGovernmentsFromJson();
+    governLocations = list[2].data!;
+    governLocations?.forEach((element) {
+      governments.add(
+          DropdownMenuItem(
+            value: element.governorateNameEn,
+            child: Text(element.governorateNameEn!),
+          )
+      );
+    });
+    //get cities
+    List<CitiesModel> list2 = await _petyRepository.fetchCitiesFromJson();
+    citiesLocations = list2[2].data!;
+    citiesLocations?.forEach((element) {
+      cities.add(
+          DropdownMenuItem(
+            value: element.cityNameEn,
+            child: Text(element.cityNameEn!),
+          )
+      );
+    });
+    //get animals
+    for (var element in AnimalsConstants.animalsList) {
+      animals.add(
+          DropdownMenuItem(
+            value: element,
+            child: Text(element),
+          )
+      );
+    }
+    emit(const PetLayoutStates.successGetLocations());
+  }
+
+  void changeLocationValue(String value,String type){
+    emit(const PetLayoutStates.loadChangeLocation());
+    if(type=='city'){
+      city=value;
+    }else if(type=='government'){
+      government=value;
+      for(var element in governLocations!){
+        if(element.governorateNameEn==value){
+          city=null;
+          cities=[];
+          for(var city in citiesLocations!){
+            if(city.governorateId==element.id){
+              cities.add(
+                DropdownMenuItem(
+                  value: city.cityNameEn,
+                  child: Text(city.cityNameEn!),
+                ),
+              );
+            }
+          }
+          break;
+        }
+      }
+      
+    }else if(type=='country'){
+      country=value;
+    }else{
+      animal=value;
+    }
+    emit(const PetLayoutStates.successChangeLocation());
+  }
+
+  void onBackFromFindPet(BuildContext context){
+    city = government = animal = null;
+    addressController.clear();
+    notesController.clear();
+    petImage=null;
+    uploadPet=false;
+    context.pop();
+  }
+
+  void pickImage() async{
+    emit(const PetLayoutStates.loadPetImage());
+    petImage = await _petyRepository.pickImage();
+    emit(const PetLayoutStates.successPetImage());
+  }
+
+  Future<void> uploadMissingPet() async {
+    emit(const PetLayoutStates.loadRegisterPet());
+    uploadPet=false;
+    FindPetBody findPetBody = FindPetBody(
+      base64: [petImage!.imageToBase64()],
+      missing: 0,
+      type: animal,
+      gov: "$country-$government-$city",
+      location: addressController.text,
+      note: notesController.text,
+      petID: DateTime.now().millisecondsSinceEpoch.toString()
+    );
+
+    final response = await _petyRepository.uploadMissingPet(findPetBody);
+    response.when(
+        success: (data){
+          if(data.data?.success!=null){
+            uploadPet=true;
+          }
+          emit(const PetLayoutStates.successRegisterPet());
+        },
+        failure: (error){
+          emit(PetLayoutStates.errorRegisterPet(error: error.apiErrorModel.message!));
+        }
+    );
+
+  }
+
+  Future<void> findMissingPet() async {
+    emit(const PetLayoutStates.loadFindPet());
+    FindPetBody findPetBody = FindPetBody(
+        base64: [petImage!.imageToBase64()],
+        missing: 1,
+        type: animal,
+        gov: "$country-$government-$city",
+    );
+
+    final response = await _petyRepository.findMissingPet(findPetBody);
+    response.when(
+        success: (data){
+          missingPets = data.data;
+          emit(PetLayoutStates.successFindPet(data));
+        },
+        failure: (error){
+          emit(PetLayoutStates.errorFindPet(error: error.apiErrorModel.message!));
+        }
+    );
+
+  }
+
+  // find my pet finishing
+
 
   // pety layout beginning
   int currentIndex = 0;

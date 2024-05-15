@@ -55,5 +55,24 @@ class WidgetFunctions{
     );
   }
 
+  static showErrorSnackBar(BuildContext context,String msg){
+
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content:Center(
+            child: Text(
+              msg,
+              style: TextStyles.font14WhiteRegular,
+            ),
+          ),
+          backgroundColor: Colors.red,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10)
+          ),
+          duration: const Duration(milliseconds: 1000),
+        )
+    );
+  }
+
 
 }

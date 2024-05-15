@@ -15,6 +15,7 @@ class DefaultButton extends StatelessWidget{
   final double? radius;
   final double? horizontalPadding;
   final TextStyle? textStyle;
+  final IconData? prevIcon;
 
   const DefaultButton({
     super.key,
@@ -26,6 +27,7 @@ class DefaultButton extends StatelessWidget{
     this.horizontalPadding,
     this.radius,
     this.textStyle,
+    this.prevIcon,
   });
 
   @override
@@ -41,7 +43,17 @@ class DefaultButton extends StatelessWidget{
           backgroundColor: MaterialStatePropertyAll<Color>(color??ColorManager.defaultColor),
           shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius??10))),
         ),
-        child: Text(text,style: textStyle??TextStyles.font26WhiteMedium),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if(prevIcon!=null)
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Center(child: Icon(prevIcon,color: Colors.white,size: 18,)),
+              ),
+            Text(text,style: textStyle??TextStyles.font26WhiteMedium),
+          ],
+        ),
       ),
     );
   }

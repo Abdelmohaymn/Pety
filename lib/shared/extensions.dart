@@ -1,4 +1,7 @@
 
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 
@@ -34,5 +37,13 @@ extension Regex on String{
 extension ListToString<T> on List<T>{
   String toStringCustom(String separate){
     return map((e) => e.toString()).join(separate);
+  }
+}
+
+extension Base64Image on File{
+  String imageToBase64() {
+    List<int> imageBytes = readAsBytesSync();
+    String base64Image = base64Encode(imageBytes);
+    return base64Image;
   }
 }

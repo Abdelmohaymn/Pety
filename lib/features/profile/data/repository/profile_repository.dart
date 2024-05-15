@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:pety/features/profile/data/models/update_profile_body.dart';
 import 'package:pety/features/profile/data/models/update_profile_response.dart';
 import 'package:pety/shared/network/local/shared_pred_constants.dart';
 import 'package:pety/shared/network/local/shared_pref_helper.dart';

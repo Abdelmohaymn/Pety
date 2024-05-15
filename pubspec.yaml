@@ -59,6 +59,7 @@ dependencies:
   google_fonts: ^6.2.1
   animated_text_kit: ^4.2.2
   loading_animation_widget: ^1.2.1
+  dotted_border: ^2.1.0
 
 
 dev_dependencies:
@@ -86,6 +87,7 @@ flutter:
   assets:
     - assets/images/
     - assets/svgs/
+    - assets/jsons/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

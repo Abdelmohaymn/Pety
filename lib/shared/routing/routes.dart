@@ -10,4 +10,7 @@ class Routes{
   static const String dashboardLayout = '/dashboard_layout';
   static const String editProfileScreen = 'edit_profile';
   static const String chatBotScreen = 'chat_bot_screen';
+  static const String searchForMissingPet = 'search_missing_pet';
+  static const String uploadMissingPet = 'upload_missing_pet';
+  static const String missingPetsScreen = 'missing_pets_screen';
 }

@@ -36,6 +36,7 @@ class BeAVetCard extends StatelessWidget{
                 ),
                 const VerticalSpace(height: 10),
                 DefaultButton(
+                  width: 100,
                   height: 30.h,
                   radius: 5,
                   color: ColorManager.orange,

@@ -39,9 +39,9 @@ class DefaultButton extends StatelessWidget{
         onPressed: onClick,
         style: ButtonStyle(
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          padding: MaterialStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: horizontalPadding??5.w)),
-          backgroundColor: MaterialStatePropertyAll<Color>(color??ColorManager.defaultColor),
-          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius??10))),
+          padding: WidgetStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: horizontalPadding??5.w)),
+          backgroundColor: WidgetStatePropertyAll<Color>(color??ColorManager.defaultColor),
+          shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius??10))),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
@@ -17,17 +18,19 @@ class SenderBox extends StatelessWidget{
         ),
         padding: const EdgeInsets.all(5),
         decoration: const BoxDecoration(
-          color: ColorManager.orange,
+          color: ColorManager.defaultColor,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(10),
-            bottomRight: Radius.circular(10),
+            topRight: Radius.circular(10),
             bottomLeft: Radius.circular(10)
           ),
 
         ),
         child: Text(
           message,
-          style: TextStyles.font12BlackMedium.copyWith(color: Colors.white),
+          style: GoogleFonts.montserrat(
+            textStyle: TextStyles.font12WhiteBold
+          ),
         ),
       ),
     );

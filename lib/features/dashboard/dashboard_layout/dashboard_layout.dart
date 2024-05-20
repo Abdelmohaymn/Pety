@@ -10,8 +10,8 @@ import 'package:pety/shared/widgets/default_back_app_bar.dart';
 
 
 class DashboardLayout extends StatefulWidget {
-  String role;
-  DashboardLayout({super.key,required this.role});
+  final String role;
+  const DashboardLayout({super.key,required this.role});
 
   @override
   State<DashboardLayout> createState() => _DashboardLayoutState();
@@ -43,7 +43,8 @@ class _DashboardLayoutState extends State<DashboardLayout>
           context: context,
           onBack: (){context.read<DashboardCubit>().onBackPressed(context);},
         ),
-        title: const Center(child: Text('Dashboard')),
+        title: const Text('Dashboard'),
+        centerTitle: true,
         bottom: TabBar(
           labelPadding: const EdgeInsets.only(bottom: 10),
           labelStyle: TextStyles.font14DefaultBold,

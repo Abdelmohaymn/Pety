@@ -1,7 +1,6 @@
 
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 part 'pet_layout_states.freezed.dart';
 
 @Freezed()

@@ -1,12 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/network/remote/api_constants.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/texts.dart';
 
 class JobItemWidget extends StatelessWidget{
 
@@ -26,7 +28,7 @@ class JobItemWidget extends StatelessWidget{
           child: Card(
             elevation: 0,
             //surfaceTintColor: Colors.white,
-            color: Colors.white,
+            color: ColorManager.lightBlue3,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
@@ -35,13 +37,17 @@ class JobItemWidget extends StatelessWidget{
                   context.pushNamed(Routes.searchForVet,arguments: getRole(model.title));
                 },
                 borderRadius: BorderRadius.circular(20),
-                splashColor: ColorManager.defaultColor,
                 child: Center(child: Image(image: AssetImage(model.image),height: 80.h,width: 80.w,))
             ),
           ),
         ),
 
-        Text(model.title)
+        Text(
+          model.title,
+          style: GoogleFonts.montserrat(
+            textStyle: TextStyles.font12DarkBlackBold
+          ),
+        )
       ],
     );
   }

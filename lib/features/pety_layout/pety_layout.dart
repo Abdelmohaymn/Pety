@@ -23,7 +23,7 @@ class PetLayout extends StatelessWidget{
               cubit.changeBottomNavIndex(index);
             },
           ),
-          backgroundColor: ColorManager.homeBackground,
+          backgroundColor: ColorManager.backgroundBlue,
         );
       },
     );

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/extensions.dart';
+import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class MessageTextField extends StatelessWidget{
@@ -18,7 +19,7 @@ class MessageTextField extends StatelessWidget{
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
           color: Colors.white,
-          //border: Border.all(width: 0.5,color: ColorManager.defaultColor),
+          border: Border.all(width: 0.5,color: ColorManager.defaultColor),
         ),
         child: TextFormField(
           controller: cubit.chatController,

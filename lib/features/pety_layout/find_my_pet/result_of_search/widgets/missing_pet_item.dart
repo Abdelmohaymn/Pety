@@ -22,7 +22,6 @@ class MissingPetItem extends StatelessWidget {
     return DottedBorder(
       color: ColorManager.lightBlue,
       dashPattern: const [6, 6],
-      padding: const EdgeInsets.all(16),
       radius: const Radius.circular(10),
       borderType: BorderType.RRect,
       strokeWidth: 1.2,
@@ -85,10 +84,14 @@ class MissingPetItem extends StatelessWidget {
             }
           );
         },
-        child: Image.memory(
-          width: double.infinity,
-          height: 190.h,
-          base64Decode(cubit.missingPets![index].base64!)
+        child: Container(
+          color: Colors.white,
+          padding: const EdgeInsets.all(16),
+          child: Image.memory(
+            width: double.infinity,
+            height: 190.h,
+            base64Decode(cubit.missingPets![index].base64!)
+          ),
         )
       ),
     );

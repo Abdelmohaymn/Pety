@@ -30,42 +30,45 @@ class ImagePetUploader extends StatelessWidget {
             DottedBorder(
               color: ColorManager.lightBlue,
               dashPattern: const [6, 6],
-              padding: const EdgeInsets.all(16),
               radius: const Radius.circular(10),
               borderType: BorderType.RRect,
               strokeWidth: 1.2,
               child: InkWell(
+                borderRadius: BorderRadius.circular(10),
                 onTap: (){
                   cubit.pickImage();
                 },
-                borderRadius: BorderRadius.circular(10),
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    if(cubit.petImage!=null)
-                      Image(
-                        image: FileImage(cubit.petImage!,),
-                        width: double.infinity,
-                        height: 250.h,
-                      ),
-                    if(cubit.petImage==null)
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(
-                            width: double.infinity,
-                            height: 250.h,
-                            image: const AssetImage('assets/images/cat_avatar.png'),
-                          ),
-                          Text(
-                            'Upload image',
-                            style: GoogleFonts.montserrat(
-                                textStyle: TextStyles.font18LightBueSemiBold
+                child: Container(
+                  padding: const EdgeInsets.all(16),
+                  color: Colors.white,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      if(cubit.petImage!=null)
+                        Image(
+                          image: FileImage(cubit.petImage!,),
+                          width: double.infinity,
+                          height: 250.h,
+                        ),
+                      if(cubit.petImage==null)
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              width: double.infinity,
+                              height: 250.h,
+                              image: const AssetImage('assets/images/cat_avatar.png'),
                             ),
-                          )
-                        ],
-                      ),
-                  ]
+                            Text(
+                              'Upload image',
+                              style: GoogleFonts.montserrat(
+                                  textStyle: TextStyles.font18LightBueSemiBold
+                              ),
+                            )
+                          ],
+                        ),
+                    ]
+                  ),
                 ),
               ),
             ),

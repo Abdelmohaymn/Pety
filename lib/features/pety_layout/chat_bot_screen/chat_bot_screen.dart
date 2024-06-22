@@ -6,6 +6,8 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/widgets/message_text_field.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/widgets/messages_list.dart';
@@ -31,7 +33,7 @@ class ChatBotScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     PetLayoutCubit cubit = context.read<PetLayoutCubit>();
     return Scaffold(
-      backgroundColor: ColorManager.defaultColor,
+      backgroundColor: ColorManager.backgroundBlue,
       appBar: AppBar(
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: ColorManager.defaultColor,
@@ -64,7 +66,12 @@ class ChatBotScreen extends StatelessWidget{
               ),
             ),
             const SizedBox(width: 3,),
-            Text('PetBot',style: TextStyles.font20WhiteMedium,)
+            Text(
+              'PetBot',
+              style: GoogleFonts.montserrat(
+                  textStyle: TextStyles.font16WhiteBold.copyWith(fontSize: 18.sp)
+              ),
+            )
           ],
         ),
         actions: [
@@ -90,7 +97,7 @@ class ChatBotScreen extends StatelessWidget{
                 builder: (context, state){
                   if(state is LoadingChatBotMessages){
                     return LoadingAnimationWidget.stretchedDots(
-                        color: ColorManager.orange,
+                        color: ColorManager.defaultColor,
                         size: 50
                     );
                   }else if(state is ErrorChatBotMessages){
@@ -103,7 +110,7 @@ class ChatBotScreen extends StatelessWidget{
                           onClick: () {
                             cubit.predictForChatBot();
                           },
-                          color: ColorManager.orange
+                          color: ColorManager.defaultColor
                         )
                       ],
                     );

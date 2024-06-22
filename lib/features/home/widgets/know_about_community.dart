@@ -48,8 +48,8 @@ class KnowAboutCommunity extends StatelessWidget{
                 color: ColorManager.orange,
                 textStyle: TextStyles.font14WhiteRegular,
                 onClick: (){
-                  context.pushNamed(Routes.missingPetsScreen,arguments: context);
-                  //context.read<PetLayoutCubit>().moveToChatBotScreen(context);
+                  //context.pushNamed(Routes.missingPetsScreen,arguments: context);
+                  context.read<PetLayoutCubit>().moveToChatBotScreen(context);
                 }
               )
             ],

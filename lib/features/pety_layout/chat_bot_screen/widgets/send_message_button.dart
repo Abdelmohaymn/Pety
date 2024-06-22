@@ -23,7 +23,7 @@ class SendMessageButton extends StatelessWidget{
         height: 45,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
-            color: ColorManager.orange
+            color: ColorManager.defaultColor
         ),
         child: const Icon(Icons.send,color: Colors.white,),
       ),

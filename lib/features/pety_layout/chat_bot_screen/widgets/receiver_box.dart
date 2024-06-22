@@ -2,6 +2,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
@@ -21,7 +22,7 @@ class ReceiverBox extends StatelessWidget{
         ),
         padding: const EdgeInsets.all(5),
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: ColorManager.lightBlue2,
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(10),
             bottomRight: Radius.circular(10),
@@ -33,7 +34,9 @@ class ReceiverBox extends StatelessWidget{
           builder: (context) {
             if(index==0&&cubit.allowAnimatedText){
               return DefaultTextStyle(
-                style: TextStyles.font12BlackMedium,
+                style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font12WhiteBold.copyWith(color: Colors.black)
+                ),
                 child: AnimatedTextKit(
                   animatedTexts: [
                     TyperAnimatedText(
@@ -53,7 +56,9 @@ class ReceiverBox extends StatelessWidget{
             }else{
               return Text(
                 cubit.chatBotMessages[index],
-                style: TextStyles.font12BlackMedium,
+                style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font12WhiteBold.copyWith(color: Colors.black)
+                ),
               );
             }
           }

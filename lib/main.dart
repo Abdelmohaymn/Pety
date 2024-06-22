@@ -28,7 +28,7 @@ void main() async{
   await setupGetIt();
   await SharedPrefHelper.init();
 
-  String initialRoute = Routes.petLayout;
+  String initialRoute = Routes.loginScreen;
   String? token = SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey);
   if(token!=null){
      initialRoute = Routes.petLayout;

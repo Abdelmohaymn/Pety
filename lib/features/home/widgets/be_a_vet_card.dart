@@ -25,7 +25,7 @@ class BeAVetCard extends StatelessWidget{
             alignment: Alignment.center,
             child: Container(
               width: double.infinity,
-              height: 150.h,
+              height: 170.h,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   color: ColorManager.lightBlue3

@@ -38,7 +38,9 @@ class _DashboardLayoutState extends State<DashboardLayout>
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: ColorManager.backgroundBlue,
       appBar: AppBar(
+        backgroundColor: ColorManager.backgroundBlue,
         leading: DefaultBackAppBar(
           context: context,
           onBack: (){context.read<DashboardCubit>().onBackPressed(context);},

@@ -15,7 +15,7 @@ class ColorManager{
   static const Color hintOFSearchTextField = Color(0xffa69e9e);
   static const Color resetButtonColor = Color(0xffBFBFBF);
   static const Color filtersGreyColor = Color(0xff555555);
-  static const Color orange = Color(0xffFFA500);
+  static const Color orange = Color(0xffFFCC00);
   static const Color yellow = Color(0xffFFB624);
   static const Color lightBlue = Color(0xffBED6F2);
   static const Color lightBlue2 = Color(0xffDAE8FF);

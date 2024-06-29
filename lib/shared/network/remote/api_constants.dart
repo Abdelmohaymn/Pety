@@ -6,6 +6,7 @@ class ApiConstants{
   static const String searchVet = 'api/pety?';
   static const String petyDetails = 'api/pety/details';
   static const String bookVet = 'api/pety/appointment';
+  static const String reviewsAddNewOne = 'api/reviews';
   static const String updateProfile = 'api/users/updateMe';
   static const String dashboardGetAppointments = 'api/dashboard/allAppointments';
   static const String dashboardPetyInformation = 'api/dashboard/petyInformation';
@@ -14,7 +15,10 @@ class ApiConstants{
   static const String dashboardTimeTable = 'api/dashboard/timeTable';
   static const String dashboardGetWorkHours = 'api/dashboard/workingHours';
   static const String dashboardGetAllRoles = 'api/dashboard/allRoles';
-  static const String reviewsAddNewOne = 'api/reviews';
+  static const String dashboardGetUserHistory = 'api/history/user';
+  static const String dashboardAppointmentHistory = 'api/history/appoinment/{id}';
+  static const String dashboardAddHistory = 'api/history';
+
 }
 
 

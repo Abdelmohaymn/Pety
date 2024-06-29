@@ -128,6 +128,12 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
   );
 
+  static TextStyle font8BlackMedium = TextStyle(
+    color: Colors.black,
+    fontSize: 8.sp,
+    fontWeight: FontWeightHelper.medium,
+  );
+
   static TextStyle font8BlackBold = TextStyle(
     color: Colors.black,
     fontSize: 8.sp,

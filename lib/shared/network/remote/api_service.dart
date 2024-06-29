@@ -5,6 +5,11 @@ import 'package:pety/features/dashboard/appointments/models/appointment_status_b
 import 'package:pety/features/dashboard/appointments/models/appointment_status_response.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/add_history_body.dart';
+import 'package:pety/features/dashboard/history_screen/models/add_history_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/appointment_history_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/get_user_history_body.dart';
+import 'package:pety/features/dashboard/history_screen/models/get_user_history_response.dart';
 import 'package:pety/features/dashboard/pety_information/models/pety_information_body.dart';
 import 'package:pety/features/dashboard/pety_information/models/pety_information_response.dart';
 import 'package:pety/features/dashboard/pety_information/models/update_pety_data_response.dart';
@@ -68,6 +73,12 @@ abstract class ApiService {
     @Header('Authorization') String token,
   );
 
+  @POST(ApiConstants.reviewsAddNewOne)
+  Future addNewReview(
+      @Body() AddReviewBody reviewBody,
+      @Header('Authorization') String token,
+  );
+
   @PATCH(ApiConstants.updateProfile)
   Future<UpdateProfileResponse> updateProfile(
     @Body() FormData profileBody,
@@ -115,10 +126,23 @@ abstract class ApiService {
       @Header('Authorization') String token,
   );
 
-  @POST(ApiConstants.reviewsAddNewOne)
-  Future addNewReview(
-      @Body() AddReviewBody reviewBody,
+  @POST(ApiConstants.dashboardGetUserHistory)
+  Future<GetUserHistoryResponse> getUserHistory(
+    @Body() GetUserHistoryBody userHistoryBody,
+    @Header('Authorization') String token,
+  );
+
+  @GET(ApiConstants.dashboardAppointmentHistory)
+  Future<AppointmentHistoryResponse> getAppointmentHistory(
+    @Path('id') String id,
+    @Header('Authorization') String token,
+  );
+
+  @POST(ApiConstants.dashboardAddHistory)
+  Future<AddHistoryResponse> addHistory(
+      @Body() AddHistoryBody historyBody,
       @Header('Authorization') String token,
   );
+
 
 }

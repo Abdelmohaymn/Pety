@@ -6,6 +6,11 @@ import 'package:pety/features/dashboard/appointments/models/appointment_status_b
 import 'package:pety/features/dashboard/appointments/models/appointment_status_response.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/add_history_body.dart';
+import 'package:pety/features/dashboard/history_screen/models/add_history_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/appointment_history_response.dart';
+import 'package:pety/features/dashboard/history_screen/models/get_user_history_body.dart';
+import 'package:pety/features/dashboard/history_screen/models/get_user_history_response.dart';
 import 'package:pety/features/dashboard/pety_information/models/pety_information_body.dart';
 import 'package:pety/features/dashboard/pety_information/models/pety_information_response.dart';
 import 'package:pety/features/dashboard/pety_information/models/update_pety_data_response.dart';
@@ -117,6 +122,43 @@ class DashboardRepository {
   Future<ApiResult<AllRolesResponse>> getAllRoles() async{
     try{
       final AllRolesResponse response = await _apiService.getPetyRoles(
+          'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
+      );
+      return ApiResult.success(response);
+    }catch(error){
+      return ApiResult.failure(ErrorHandler.handle(error));
+    }
+  }
+
+  //user history
+  Future<ApiResult<GetUserHistoryResponse>> getUserHistory({required GetUserHistoryBody userHistoryBody}) async{
+    try{
+      final GetUserHistoryResponse response = await _apiService.getUserHistory(
+          userHistoryBody,
+          'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
+      );
+      return ApiResult.success(response);
+    }catch(error){
+      return ApiResult.failure(ErrorHandler.handle(error));
+    }
+  }
+
+  Future<ApiResult<AppointmentHistoryResponse>> getAppointmentHistory({required String id}) async{
+    try{
+      final AppointmentHistoryResponse response = await _apiService.getAppointmentHistory(
+          id,
+          'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
+      );
+      return ApiResult.success(response);
+    }catch(error){
+      return ApiResult.failure(ErrorHandler.handle(error));
+    }
+  }
+
+  Future<ApiResult<AddHistoryResponse>> addHistory({required AddHistoryBody historyBody}) async{
+    try{
+      final AddHistoryResponse response = await _apiService.addHistory(
+          historyBody,
           'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
       );
       return ApiResult.success(response);

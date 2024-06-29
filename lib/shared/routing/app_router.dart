@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pety/features/dashboard/dashboard_layout/dashboard_layout.dart';
+import 'package:pety/features/dashboard/history_screen/history_screen.dart';
 import 'package:pety/features/dashboard/roles/roles_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
@@ -108,6 +109,17 @@ class AppRouter {
                     ..getWorkHours(role)
                     ..getPetyInfo(role),
                   child: DashboardLayout(role: role,)
+              ),
+        );
+      case Routes.dashboardHistoryAppointment:
+        Map<String,dynamic> mp = settings.arguments as Map<String,dynamic>;
+        BuildContext cubitContext = mp['cubitContext'];
+        String id = mp['id'];
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<DashboardCubit>(cubitContext)..getUserHistory(id),
+                  child: const HistoryScreen()
               ),
         );
       case Routes.chatBotScreen :

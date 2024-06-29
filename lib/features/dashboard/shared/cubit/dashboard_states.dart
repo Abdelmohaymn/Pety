@@ -29,4 +29,17 @@ class DashboardStates<T> with _$DashboardStates<T>{
   const factory DashboardStates.loadPetyInfo() = PetyInfoLoading;
   const factory DashboardStates.successPetyInfo(T data) = PetyInfoSuccess;
   const factory DashboardStates.errorPetyInfo({required String error}) = PetyInfoError;
+
+  //prescription
+  const factory DashboardStates.loadGetUserHistory() = LoadGetUserHistory;
+  const factory DashboardStates.successGetUserHistory() = SuccessGetUserHistory;
+  const factory DashboardStates.errorGetUserHistory({required String error}) = ErrorGetUserHistory;
+  const factory DashboardStates.loadGetAppointmentHistory() = LoadGetAppointmentHistory;
+  const factory DashboardStates.successGetAppointmentHistory() = SuccessGetAppointmentHistory;
+  const factory DashboardStates.errorGetAppointmentHistory({required String error}) = ErrorGetAppointmentHistory;
+  const factory DashboardStates.loadAddHistory() = LoadAddHistory;
+  const factory DashboardStates.successAddHistory() = SuccessAddHistory;
+  const factory DashboardStates.errorAddHistory({required String error}) = ErrorAddHistory;
+
+
 }

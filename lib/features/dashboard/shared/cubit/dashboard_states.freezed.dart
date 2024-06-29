@@ -42,6 +42,15 @@ mixin _$DashboardStates<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -70,6 +79,15 @@ mixin _$DashboardStates<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -98,6 +116,15 @@ mixin _$DashboardStates<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -135,6 +162,19 @@ mixin _$DashboardStates<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -166,6 +206,18 @@ mixin _$DashboardStates<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -197,6 +249,18 @@ mixin _$DashboardStates<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -282,6 +346,15 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return initial();
   }
@@ -313,6 +386,15 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return initial?.call();
   }
@@ -344,6 +426,15 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -387,6 +478,19 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return initial(this);
   }
@@ -421,6 +525,18 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return initial?.call(this);
   }
@@ -455,6 +571,18 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -530,6 +658,15 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loading();
   }
@@ -561,6 +698,15 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loading?.call();
   }
@@ -592,6 +738,15 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -635,6 +790,19 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loading(this);
   }
@@ -669,6 +837,18 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loading?.call(this);
   }
@@ -703,6 +883,18 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -805,6 +997,15 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return success(data);
   }
@@ -836,6 +1037,15 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return success?.call(data);
   }
@@ -867,6 +1077,15 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -910,6 +1129,19 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return success(this);
   }
@@ -944,6 +1176,18 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return success?.call(this);
   }
@@ -978,6 +1222,18 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -1084,6 +1340,15 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return error(this.error);
   }
@@ -1115,6 +1380,15 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return error?.call(this.error);
   }
@@ -1146,6 +1420,15 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -1189,6 +1472,19 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return error(this);
   }
@@ -1223,6 +1519,18 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return error?.call(this);
   }
@@ -1257,6 +1565,18 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -1338,6 +1658,15 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadAppointments();
   }
@@ -1369,6 +1698,15 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadAppointments?.call();
   }
@@ -1400,6 +1738,15 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadAppointments != null) {
@@ -1443,6 +1790,19 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadAppointments(this);
   }
@@ -1477,6 +1837,18 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadAppointments?.call(this);
   }
@@ -1511,6 +1883,18 @@ class _$AppointmentsLoadingImpl<T> implements AppointmentsLoading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadAppointments != null) {
@@ -1614,6 +1998,15 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successAppointments(data);
   }
@@ -1645,6 +2038,15 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successAppointments?.call(data);
   }
@@ -1676,6 +2078,15 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successAppointments != null) {
@@ -1719,6 +2130,19 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successAppointments(this);
   }
@@ -1753,6 +2177,18 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successAppointments?.call(this);
   }
@@ -1787,6 +2223,18 @@ class _$AppointmentsSuccessImpl<T> implements AppointmentsSuccess<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successAppointments != null) {
@@ -1896,6 +2344,15 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorAppointments(this.error);
   }
@@ -1927,6 +2384,15 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorAppointments?.call(this.error);
   }
@@ -1958,6 +2424,15 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorAppointments != null) {
@@ -2001,6 +2476,19 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorAppointments(this);
   }
@@ -2035,6 +2523,18 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorAppointments?.call(this);
   }
@@ -2069,6 +2569,18 @@ class _$AppointmentsErrorImpl<T> implements AppointmentsError<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorAppointments != null) {
@@ -2155,6 +2667,15 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadChangeAppointmentsStatus();
   }
@@ -2186,6 +2707,15 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadChangeAppointmentsStatus?.call();
   }
@@ -2217,6 +2747,15 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadChangeAppointmentsStatus != null) {
@@ -2260,6 +2799,19 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadChangeAppointmentsStatus(this);
   }
@@ -2294,6 +2846,18 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadChangeAppointmentsStatus?.call(this);
   }
@@ -2328,6 +2892,18 @@ class _$ChangeAppointmentsStatusLoadingImpl<T>
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadChangeAppointmentsStatus != null) {
@@ -2438,6 +3014,15 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successChangeAppointmentsStatus(data);
   }
@@ -2469,6 +3054,15 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successChangeAppointmentsStatus?.call(data);
   }
@@ -2500,6 +3094,15 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successChangeAppointmentsStatus != null) {
@@ -2543,6 +3146,19 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successChangeAppointmentsStatus(this);
   }
@@ -2577,6 +3193,18 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successChangeAppointmentsStatus?.call(this);
   }
@@ -2611,6 +3239,18 @@ class _$ChangeAppointmentsStatusSuccessImpl<T>
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successChangeAppointmentsStatus != null) {
@@ -2726,6 +3366,15 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorChangeAppointmentsStatus(this.error);
   }
@@ -2757,6 +3406,15 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorChangeAppointmentsStatus?.call(this.error);
   }
@@ -2788,6 +3446,15 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorChangeAppointmentsStatus != null) {
@@ -2831,6 +3498,19 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorChangeAppointmentsStatus(this);
   }
@@ -2865,6 +3545,18 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorChangeAppointmentsStatus?.call(this);
   }
@@ -2899,6 +3591,18 @@ class _$ChangeAppointmentsStatusErrorImpl<T>
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorChangeAppointmentsStatus != null) {
@@ -2985,6 +3689,15 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadUpdatePetyInfo();
   }
@@ -3016,6 +3729,15 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadUpdatePetyInfo?.call();
   }
@@ -3047,6 +3769,15 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadUpdatePetyInfo != null) {
@@ -3090,6 +3821,19 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadUpdatePetyInfo(this);
   }
@@ -3124,6 +3868,18 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadUpdatePetyInfo?.call(this);
   }
@@ -3158,6 +3914,18 @@ class _$UpdatePetyInfoLoadingImpl<T> implements UpdatePetyInfoLoading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadUpdatePetyInfo != null) {
@@ -3264,6 +4032,15 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successUpdatePetyInfo(data);
   }
@@ -3295,6 +4072,15 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successUpdatePetyInfo?.call(data);
   }
@@ -3326,6 +4112,15 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successUpdatePetyInfo != null) {
@@ -3369,6 +4164,19 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successUpdatePetyInfo(this);
   }
@@ -3403,6 +4211,18 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successUpdatePetyInfo?.call(this);
   }
@@ -3437,6 +4257,18 @@ class _$UpdatePetyInfoSuccessImpl<T> implements UpdatePetyInfoSuccess<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successUpdatePetyInfo != null) {
@@ -3545,6 +4377,15 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorUpdatePetyInfo(this.error);
   }
@@ -3576,6 +4417,15 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorUpdatePetyInfo?.call(this.error);
   }
@@ -3607,6 +4457,15 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorUpdatePetyInfo != null) {
@@ -3650,6 +4509,19 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorUpdatePetyInfo(this);
   }
@@ -3684,6 +4556,18 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorUpdatePetyInfo?.call(this);
   }
@@ -3718,6 +4602,18 @@ class _$UpdatePetyInfoErrorImpl<T> implements UpdatePetyInfoError<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorUpdatePetyInfo != null) {
@@ -3800,6 +4696,15 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadGetWorkHours();
   }
@@ -3831,6 +4736,15 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadGetWorkHours?.call();
   }
@@ -3862,6 +4776,15 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadGetWorkHours != null) {
@@ -3905,6 +4828,19 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadGetWorkHours(this);
   }
@@ -3939,6 +4875,18 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadGetWorkHours?.call(this);
   }
@@ -3973,6 +4921,18 @@ class _$GetWorkHoursLoadingImpl<T> implements GetWorkHoursLoading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadGetWorkHours != null) {
@@ -4076,6 +5036,15 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successGetWorkHours(data);
   }
@@ -4107,6 +5076,15 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successGetWorkHours?.call(data);
   }
@@ -4138,6 +5116,15 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successGetWorkHours != null) {
@@ -4181,6 +5168,19 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successGetWorkHours(this);
   }
@@ -4215,6 +5215,18 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successGetWorkHours?.call(this);
   }
@@ -4249,6 +5261,18 @@ class _$GetWorkHoursSuccessImpl<T> implements GetWorkHoursSuccess<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successGetWorkHours != null) {
@@ -4358,6 +5382,15 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorGetWorkHours(this.error);
   }
@@ -4389,6 +5422,15 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorGetWorkHours?.call(this.error);
   }
@@ -4420,6 +5462,15 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorGetWorkHours != null) {
@@ -4463,6 +5514,19 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorGetWorkHours(this);
   }
@@ -4497,6 +5561,18 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorGetWorkHours?.call(this);
   }
@@ -4531,6 +5607,18 @@ class _$GetWorkHoursErrorImpl<T> implements GetWorkHoursError<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorGetWorkHours != null) {
@@ -4616,6 +5704,15 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadUpdateWorkHours();
   }
@@ -4647,6 +5744,15 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadUpdateWorkHours?.call();
   }
@@ -4678,6 +5784,15 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadUpdateWorkHours != null) {
@@ -4721,6 +5836,19 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadUpdateWorkHours(this);
   }
@@ -4755,6 +5883,18 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadUpdateWorkHours?.call(this);
   }
@@ -4789,6 +5929,18 @@ class _$UpdateWorkHoursLoadingImpl<T> implements UpdateWorkHoursLoading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadUpdateWorkHours != null) {
@@ -4895,6 +6047,15 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successUpdateWorkHours(data);
   }
@@ -4926,6 +6087,15 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successUpdateWorkHours?.call(data);
   }
@@ -4957,6 +6127,15 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successUpdateWorkHours != null) {
@@ -5000,6 +6179,19 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successUpdateWorkHours(this);
   }
@@ -5034,6 +6226,18 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successUpdateWorkHours?.call(this);
   }
@@ -5068,6 +6272,18 @@ class _$UpdateWorkHoursSuccessImpl<T> implements UpdateWorkHoursSuccess<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successUpdateWorkHours != null) {
@@ -5178,6 +6394,15 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorUpdateWorkHours(this.error);
   }
@@ -5209,6 +6434,15 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorUpdateWorkHours?.call(this.error);
   }
@@ -5240,6 +6474,15 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorUpdateWorkHours != null) {
@@ -5283,6 +6526,19 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorUpdateWorkHours(this);
   }
@@ -5317,6 +6573,18 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorUpdateWorkHours?.call(this);
   }
@@ -5351,6 +6619,18 @@ class _$UpdateWorkHoursErrorImpl<T> implements UpdateWorkHoursError<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorUpdateWorkHours != null) {
@@ -5432,6 +6712,15 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadGeneralData();
   }
@@ -5463,6 +6752,15 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadGeneralData?.call();
   }
@@ -5494,6 +6792,15 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadGeneralData != null) {
@@ -5537,6 +6844,19 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadGeneralData(this);
   }
@@ -5571,6 +6891,18 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadGeneralData?.call(this);
   }
@@ -5605,6 +6937,18 @@ class _$LoadGeneralDataImpl<T> implements LoadGeneralData<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadGeneralData != null) {
@@ -5681,6 +7025,15 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successGeneralData();
   }
@@ -5712,6 +7065,15 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successGeneralData?.call();
   }
@@ -5743,6 +7105,15 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successGeneralData != null) {
@@ -5786,6 +7157,19 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successGeneralData(this);
   }
@@ -5820,6 +7204,18 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successGeneralData?.call(this);
   }
@@ -5854,6 +7250,18 @@ class _$SuccessGeneralDataImpl<T> implements SuccessGeneralData<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successGeneralData != null) {
@@ -5929,6 +7337,15 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return loadPetyInfo();
   }
@@ -5960,6 +7377,15 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return loadPetyInfo?.call();
   }
@@ -5991,6 +7417,15 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadPetyInfo != null) {
@@ -6034,6 +7469,19 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return loadPetyInfo(this);
   }
@@ -6068,6 +7516,18 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return loadPetyInfo?.call(this);
   }
@@ -6102,6 +7562,18 @@ class _$PetyInfoLoadingImpl<T> implements PetyInfoLoading<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (loadPetyInfo != null) {
@@ -6205,6 +7677,15 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return successPetyInfo(data);
   }
@@ -6236,6 +7717,15 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return successPetyInfo?.call(data);
   }
@@ -6267,6 +7757,15 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successPetyInfo != null) {
@@ -6310,6 +7809,19 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return successPetyInfo(this);
   }
@@ -6344,6 +7856,18 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return successPetyInfo?.call(this);
   }
@@ -6378,6 +7902,18 @@ class _$PetyInfoSuccessImpl<T> implements PetyInfoSuccess<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (successPetyInfo != null) {
@@ -6485,6 +8021,15 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     required TResult Function() loadPetyInfo,
     required TResult Function(T data) successPetyInfo,
     required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
   }) {
     return errorPetyInfo(this.error);
   }
@@ -6516,6 +8061,15 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     TResult? Function()? loadPetyInfo,
     TResult? Function(T data)? successPetyInfo,
     TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
   }) {
     return errorPetyInfo?.call(this.error);
   }
@@ -6547,6 +8101,15 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     TResult Function()? loadPetyInfo,
     TResult Function(T data)? successPetyInfo,
     TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorPetyInfo != null) {
@@ -6590,6 +8153,19 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
     required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
     required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
   }) {
     return errorPetyInfo(this);
   }
@@ -6624,6 +8200,18 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
   }) {
     return errorPetyInfo?.call(this);
   }
@@ -6658,6 +8246,18 @@ class _$PetyInfoErrorImpl<T> implements PetyInfoError<T> {
     TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
     TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
     TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
     required TResult orElse(),
   }) {
     if (errorPetyInfo != null) {
@@ -6674,5 +8274,2936 @@ abstract class PetyInfoError<T> implements DashboardStates<T> {
   String get error;
   @JsonKey(ignore: true)
   _$$PetyInfoErrorImplCopyWith<T, _$PetyInfoErrorImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadGetUserHistoryImplCopyWith<T, $Res> {
+  factory _$$LoadGetUserHistoryImplCopyWith(_$LoadGetUserHistoryImpl<T> value,
+          $Res Function(_$LoadGetUserHistoryImpl<T>) then) =
+      __$$LoadGetUserHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadGetUserHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res, _$LoadGetUserHistoryImpl<T>>
+    implements _$$LoadGetUserHistoryImplCopyWith<T, $Res> {
+  __$$LoadGetUserHistoryImplCopyWithImpl(_$LoadGetUserHistoryImpl<T> _value,
+      $Res Function(_$LoadGetUserHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadGetUserHistoryImpl<T> implements LoadGetUserHistory<T> {
+  const _$LoadGetUserHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.loadGetUserHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadGetUserHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return loadGetUserHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return loadGetUserHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadGetUserHistory != null) {
+      return loadGetUserHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return loadGetUserHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return loadGetUserHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadGetUserHistory != null) {
+      return loadGetUserHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadGetUserHistory<T> implements DashboardStates<T> {
+  const factory LoadGetUserHistory() = _$LoadGetUserHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetUserHistoryImplCopyWith<T, $Res> {
+  factory _$$SuccessGetUserHistoryImplCopyWith(
+          _$SuccessGetUserHistoryImpl<T> value,
+          $Res Function(_$SuccessGetUserHistoryImpl<T>) then) =
+      __$$SuccessGetUserHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessGetUserHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res,
+        _$SuccessGetUserHistoryImpl<T>>
+    implements _$$SuccessGetUserHistoryImplCopyWith<T, $Res> {
+  __$$SuccessGetUserHistoryImplCopyWithImpl(
+      _$SuccessGetUserHistoryImpl<T> _value,
+      $Res Function(_$SuccessGetUserHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessGetUserHistoryImpl<T> implements SuccessGetUserHistory<T> {
+  const _$SuccessGetUserHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.successGetUserHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetUserHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return successGetUserHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return successGetUserHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successGetUserHistory != null) {
+      return successGetUserHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return successGetUserHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return successGetUserHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successGetUserHistory != null) {
+      return successGetUserHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetUserHistory<T> implements DashboardStates<T> {
+  const factory SuccessGetUserHistory() = _$SuccessGetUserHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetUserHistoryImplCopyWith<T, $Res> {
+  factory _$$ErrorGetUserHistoryImplCopyWith(_$ErrorGetUserHistoryImpl<T> value,
+          $Res Function(_$ErrorGetUserHistoryImpl<T>) then) =
+      __$$ErrorGetUserHistoryImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorGetUserHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res, _$ErrorGetUserHistoryImpl<T>>
+    implements _$$ErrorGetUserHistoryImplCopyWith<T, $Res> {
+  __$$ErrorGetUserHistoryImplCopyWithImpl(_$ErrorGetUserHistoryImpl<T> _value,
+      $Res Function(_$ErrorGetUserHistoryImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorGetUserHistoryImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetUserHistoryImpl<T> implements ErrorGetUserHistory<T> {
+  const _$ErrorGetUserHistoryImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.errorGetUserHistory(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetUserHistoryImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetUserHistoryImplCopyWith<T, _$ErrorGetUserHistoryImpl<T>>
+      get copyWith => __$$ErrorGetUserHistoryImplCopyWithImpl<T,
+          _$ErrorGetUserHistoryImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return errorGetUserHistory(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return errorGetUserHistory?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorGetUserHistory != null) {
+      return errorGetUserHistory(this.error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return errorGetUserHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return errorGetUserHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorGetUserHistory != null) {
+      return errorGetUserHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetUserHistory<T> implements DashboardStates<T> {
+  const factory ErrorGetUserHistory({required final String error}) =
+      _$ErrorGetUserHistoryImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorGetUserHistoryImplCopyWith<T, _$ErrorGetUserHistoryImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadGetAppointmentHistoryImplCopyWith<T, $Res> {
+  factory _$$LoadGetAppointmentHistoryImplCopyWith(
+          _$LoadGetAppointmentHistoryImpl<T> value,
+          $Res Function(_$LoadGetAppointmentHistoryImpl<T>) then) =
+      __$$LoadGetAppointmentHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadGetAppointmentHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res,
+        _$LoadGetAppointmentHistoryImpl<T>>
+    implements _$$LoadGetAppointmentHistoryImplCopyWith<T, $Res> {
+  __$$LoadGetAppointmentHistoryImplCopyWithImpl(
+      _$LoadGetAppointmentHistoryImpl<T> _value,
+      $Res Function(_$LoadGetAppointmentHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadGetAppointmentHistoryImpl<T>
+    implements LoadGetAppointmentHistory<T> {
+  const _$LoadGetAppointmentHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.loadGetAppointmentHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadGetAppointmentHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return loadGetAppointmentHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return loadGetAppointmentHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadGetAppointmentHistory != null) {
+      return loadGetAppointmentHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return loadGetAppointmentHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return loadGetAppointmentHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadGetAppointmentHistory != null) {
+      return loadGetAppointmentHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadGetAppointmentHistory<T> implements DashboardStates<T> {
+  const factory LoadGetAppointmentHistory() =
+      _$LoadGetAppointmentHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetAppointmentHistoryImplCopyWith<T, $Res> {
+  factory _$$SuccessGetAppointmentHistoryImplCopyWith(
+          _$SuccessGetAppointmentHistoryImpl<T> value,
+          $Res Function(_$SuccessGetAppointmentHistoryImpl<T>) then) =
+      __$$SuccessGetAppointmentHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessGetAppointmentHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res,
+        _$SuccessGetAppointmentHistoryImpl<T>>
+    implements _$$SuccessGetAppointmentHistoryImplCopyWith<T, $Res> {
+  __$$SuccessGetAppointmentHistoryImplCopyWithImpl(
+      _$SuccessGetAppointmentHistoryImpl<T> _value,
+      $Res Function(_$SuccessGetAppointmentHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessGetAppointmentHistoryImpl<T>
+    implements SuccessGetAppointmentHistory<T> {
+  const _$SuccessGetAppointmentHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.successGetAppointmentHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetAppointmentHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return successGetAppointmentHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return successGetAppointmentHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successGetAppointmentHistory != null) {
+      return successGetAppointmentHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return successGetAppointmentHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return successGetAppointmentHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successGetAppointmentHistory != null) {
+      return successGetAppointmentHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetAppointmentHistory<T> implements DashboardStates<T> {
+  const factory SuccessGetAppointmentHistory() =
+      _$SuccessGetAppointmentHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetAppointmentHistoryImplCopyWith<T, $Res> {
+  factory _$$ErrorGetAppointmentHistoryImplCopyWith(
+          _$ErrorGetAppointmentHistoryImpl<T> value,
+          $Res Function(_$ErrorGetAppointmentHistoryImpl<T>) then) =
+      __$$ErrorGetAppointmentHistoryImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorGetAppointmentHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res,
+        _$ErrorGetAppointmentHistoryImpl<T>>
+    implements _$$ErrorGetAppointmentHistoryImplCopyWith<T, $Res> {
+  __$$ErrorGetAppointmentHistoryImplCopyWithImpl(
+      _$ErrorGetAppointmentHistoryImpl<T> _value,
+      $Res Function(_$ErrorGetAppointmentHistoryImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorGetAppointmentHistoryImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetAppointmentHistoryImpl<T>
+    implements ErrorGetAppointmentHistory<T> {
+  const _$ErrorGetAppointmentHistoryImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.errorGetAppointmentHistory(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetAppointmentHistoryImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetAppointmentHistoryImplCopyWith<T,
+          _$ErrorGetAppointmentHistoryImpl<T>>
+      get copyWith => __$$ErrorGetAppointmentHistoryImplCopyWithImpl<T,
+          _$ErrorGetAppointmentHistoryImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return errorGetAppointmentHistory(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return errorGetAppointmentHistory?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorGetAppointmentHistory != null) {
+      return errorGetAppointmentHistory(this.error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return errorGetAppointmentHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return errorGetAppointmentHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorGetAppointmentHistory != null) {
+      return errorGetAppointmentHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetAppointmentHistory<T> implements DashboardStates<T> {
+  const factory ErrorGetAppointmentHistory({required final String error}) =
+      _$ErrorGetAppointmentHistoryImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorGetAppointmentHistoryImplCopyWith<T,
+          _$ErrorGetAppointmentHistoryImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadAddHistoryImplCopyWith<T, $Res> {
+  factory _$$LoadAddHistoryImplCopyWith(_$LoadAddHistoryImpl<T> value,
+          $Res Function(_$LoadAddHistoryImpl<T>) then) =
+      __$$LoadAddHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadAddHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res, _$LoadAddHistoryImpl<T>>
+    implements _$$LoadAddHistoryImplCopyWith<T, $Res> {
+  __$$LoadAddHistoryImplCopyWithImpl(_$LoadAddHistoryImpl<T> _value,
+      $Res Function(_$LoadAddHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadAddHistoryImpl<T> implements LoadAddHistory<T> {
+  const _$LoadAddHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.loadAddHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LoadAddHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return loadAddHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return loadAddHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadAddHistory != null) {
+      return loadAddHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return loadAddHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return loadAddHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (loadAddHistory != null) {
+      return loadAddHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadAddHistory<T> implements DashboardStates<T> {
+  const factory LoadAddHistory() = _$LoadAddHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessAddHistoryImplCopyWith<T, $Res> {
+  factory _$$SuccessAddHistoryImplCopyWith(_$SuccessAddHistoryImpl<T> value,
+          $Res Function(_$SuccessAddHistoryImpl<T>) then) =
+      __$$SuccessAddHistoryImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessAddHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res, _$SuccessAddHistoryImpl<T>>
+    implements _$$SuccessAddHistoryImplCopyWith<T, $Res> {
+  __$$SuccessAddHistoryImplCopyWithImpl(_$SuccessAddHistoryImpl<T> _value,
+      $Res Function(_$SuccessAddHistoryImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessAddHistoryImpl<T> implements SuccessAddHistory<T> {
+  const _$SuccessAddHistoryImpl();
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.successAddHistory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessAddHistoryImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return successAddHistory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return successAddHistory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successAddHistory != null) {
+      return successAddHistory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return successAddHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return successAddHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (successAddHistory != null) {
+      return successAddHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessAddHistory<T> implements DashboardStates<T> {
+  const factory SuccessAddHistory() = _$SuccessAddHistoryImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorAddHistoryImplCopyWith<T, $Res> {
+  factory _$$ErrorAddHistoryImplCopyWith(_$ErrorAddHistoryImpl<T> value,
+          $Res Function(_$ErrorAddHistoryImpl<T>) then) =
+      __$$ErrorAddHistoryImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorAddHistoryImplCopyWithImpl<T, $Res>
+    extends _$DashboardStatesCopyWithImpl<T, $Res, _$ErrorAddHistoryImpl<T>>
+    implements _$$ErrorAddHistoryImplCopyWith<T, $Res> {
+  __$$ErrorAddHistoryImplCopyWithImpl(_$ErrorAddHistoryImpl<T> _value,
+      $Res Function(_$ErrorAddHistoryImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorAddHistoryImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorAddHistoryImpl<T> implements ErrorAddHistory<T> {
+  const _$ErrorAddHistoryImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'DashboardStates<$T>.errorAddHistory(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorAddHistoryImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorAddHistoryImplCopyWith<T, _$ErrorAddHistoryImpl<T>> get copyWith =>
+      __$$ErrorAddHistoryImplCopyWithImpl<T, _$ErrorAddHistoryImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadAppointments,
+    required TResult Function(T data) successAppointments,
+    required TResult Function(String error) errorAppointments,
+    required TResult Function() loadChangeAppointmentsStatus,
+    required TResult Function(T data) successChangeAppointmentsStatus,
+    required TResult Function(String error) errorChangeAppointmentsStatus,
+    required TResult Function() loadUpdatePetyInfo,
+    required TResult Function(T data) successUpdatePetyInfo,
+    required TResult Function(String error) errorUpdatePetyInfo,
+    required TResult Function() loadGetWorkHours,
+    required TResult Function(T data) successGetWorkHours,
+    required TResult Function(String error) errorGetWorkHours,
+    required TResult Function() loadUpdateWorkHours,
+    required TResult Function(T data) successUpdateWorkHours,
+    required TResult Function(String error) errorUpdateWorkHours,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadPetyInfo,
+    required TResult Function(T data) successPetyInfo,
+    required TResult Function(String error) errorPetyInfo,
+    required TResult Function() loadGetUserHistory,
+    required TResult Function() successGetUserHistory,
+    required TResult Function(String error) errorGetUserHistory,
+    required TResult Function() loadGetAppointmentHistory,
+    required TResult Function() successGetAppointmentHistory,
+    required TResult Function(String error) errorGetAppointmentHistory,
+    required TResult Function() loadAddHistory,
+    required TResult Function() successAddHistory,
+    required TResult Function(String error) errorAddHistory,
+  }) {
+    return errorAddHistory(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadAppointments,
+    TResult? Function(T data)? successAppointments,
+    TResult? Function(String error)? errorAppointments,
+    TResult? Function()? loadChangeAppointmentsStatus,
+    TResult? Function(T data)? successChangeAppointmentsStatus,
+    TResult? Function(String error)? errorChangeAppointmentsStatus,
+    TResult? Function()? loadUpdatePetyInfo,
+    TResult? Function(T data)? successUpdatePetyInfo,
+    TResult? Function(String error)? errorUpdatePetyInfo,
+    TResult? Function()? loadGetWorkHours,
+    TResult? Function(T data)? successGetWorkHours,
+    TResult? Function(String error)? errorGetWorkHours,
+    TResult? Function()? loadUpdateWorkHours,
+    TResult? Function(T data)? successUpdateWorkHours,
+    TResult? Function(String error)? errorUpdateWorkHours,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadPetyInfo,
+    TResult? Function(T data)? successPetyInfo,
+    TResult? Function(String error)? errorPetyInfo,
+    TResult? Function()? loadGetUserHistory,
+    TResult? Function()? successGetUserHistory,
+    TResult? Function(String error)? errorGetUserHistory,
+    TResult? Function()? loadGetAppointmentHistory,
+    TResult? Function()? successGetAppointmentHistory,
+    TResult? Function(String error)? errorGetAppointmentHistory,
+    TResult? Function()? loadAddHistory,
+    TResult? Function()? successAddHistory,
+    TResult? Function(String error)? errorAddHistory,
+  }) {
+    return errorAddHistory?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadAppointments,
+    TResult Function(T data)? successAppointments,
+    TResult Function(String error)? errorAppointments,
+    TResult Function()? loadChangeAppointmentsStatus,
+    TResult Function(T data)? successChangeAppointmentsStatus,
+    TResult Function(String error)? errorChangeAppointmentsStatus,
+    TResult Function()? loadUpdatePetyInfo,
+    TResult Function(T data)? successUpdatePetyInfo,
+    TResult Function(String error)? errorUpdatePetyInfo,
+    TResult Function()? loadGetWorkHours,
+    TResult Function(T data)? successGetWorkHours,
+    TResult Function(String error)? errorGetWorkHours,
+    TResult Function()? loadUpdateWorkHours,
+    TResult Function(T data)? successUpdateWorkHours,
+    TResult Function(String error)? errorUpdateWorkHours,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadPetyInfo,
+    TResult Function(T data)? successPetyInfo,
+    TResult Function(String error)? errorPetyInfo,
+    TResult Function()? loadGetUserHistory,
+    TResult Function()? successGetUserHistory,
+    TResult Function(String error)? errorGetUserHistory,
+    TResult Function()? loadGetAppointmentHistory,
+    TResult Function()? successGetAppointmentHistory,
+    TResult Function(String error)? errorGetAppointmentHistory,
+    TResult Function()? loadAddHistory,
+    TResult Function()? successAddHistory,
+    TResult Function(String error)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorAddHistory != null) {
+      return errorAddHistory(this.error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(AppointmentsLoading<T> value) loadAppointments,
+    required TResult Function(AppointmentsSuccess<T> value) successAppointments,
+    required TResult Function(AppointmentsError<T> value) errorAppointments,
+    required TResult Function(ChangeAppointmentsStatusLoading<T> value)
+        loadChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusSuccess<T> value)
+        successChangeAppointmentsStatus,
+    required TResult Function(ChangeAppointmentsStatusError<T> value)
+        errorChangeAppointmentsStatus,
+    required TResult Function(UpdatePetyInfoLoading<T> value)
+        loadUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoSuccess<T> value)
+        successUpdatePetyInfo,
+    required TResult Function(UpdatePetyInfoError<T> value) errorUpdatePetyInfo,
+    required TResult Function(GetWorkHoursLoading<T> value) loadGetWorkHours,
+    required TResult Function(GetWorkHoursSuccess<T> value) successGetWorkHours,
+    required TResult Function(GetWorkHoursError<T> value) errorGetWorkHours,
+    required TResult Function(UpdateWorkHoursLoading<T> value)
+        loadUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursSuccess<T> value)
+        successUpdateWorkHours,
+    required TResult Function(UpdateWorkHoursError<T> value)
+        errorUpdateWorkHours,
+    required TResult Function(LoadGeneralData<T> value) loadGeneralData,
+    required TResult Function(SuccessGeneralData<T> value) successGeneralData,
+    required TResult Function(PetyInfoLoading<T> value) loadPetyInfo,
+    required TResult Function(PetyInfoSuccess<T> value) successPetyInfo,
+    required TResult Function(PetyInfoError<T> value) errorPetyInfo,
+    required TResult Function(LoadGetUserHistory<T> value) loadGetUserHistory,
+    required TResult Function(SuccessGetUserHistory<T> value)
+        successGetUserHistory,
+    required TResult Function(ErrorGetUserHistory<T> value) errorGetUserHistory,
+    required TResult Function(LoadGetAppointmentHistory<T> value)
+        loadGetAppointmentHistory,
+    required TResult Function(SuccessGetAppointmentHistory<T> value)
+        successGetAppointmentHistory,
+    required TResult Function(ErrorGetAppointmentHistory<T> value)
+        errorGetAppointmentHistory,
+    required TResult Function(LoadAddHistory<T> value) loadAddHistory,
+    required TResult Function(SuccessAddHistory<T> value) successAddHistory,
+    required TResult Function(ErrorAddHistory<T> value) errorAddHistory,
+  }) {
+    return errorAddHistory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult? Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult? Function(AppointmentsError<T> value)? errorAppointments,
+    TResult? Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult? Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult? Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult? Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult? Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult? Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult? Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult? Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult? Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult? Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult? Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult? Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult? Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult? Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult? Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult? Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult? Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult? Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult? Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult? Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult? Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult? Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult? Function(ErrorAddHistory<T> value)? errorAddHistory,
+  }) {
+    return errorAddHistory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(AppointmentsLoading<T> value)? loadAppointments,
+    TResult Function(AppointmentsSuccess<T> value)? successAppointments,
+    TResult Function(AppointmentsError<T> value)? errorAppointments,
+    TResult Function(ChangeAppointmentsStatusLoading<T> value)?
+        loadChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusSuccess<T> value)?
+        successChangeAppointmentsStatus,
+    TResult Function(ChangeAppointmentsStatusError<T> value)?
+        errorChangeAppointmentsStatus,
+    TResult Function(UpdatePetyInfoLoading<T> value)? loadUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoSuccess<T> value)? successUpdatePetyInfo,
+    TResult Function(UpdatePetyInfoError<T> value)? errorUpdatePetyInfo,
+    TResult Function(GetWorkHoursLoading<T> value)? loadGetWorkHours,
+    TResult Function(GetWorkHoursSuccess<T> value)? successGetWorkHours,
+    TResult Function(GetWorkHoursError<T> value)? errorGetWorkHours,
+    TResult Function(UpdateWorkHoursLoading<T> value)? loadUpdateWorkHours,
+    TResult Function(UpdateWorkHoursSuccess<T> value)? successUpdateWorkHours,
+    TResult Function(UpdateWorkHoursError<T> value)? errorUpdateWorkHours,
+    TResult Function(LoadGeneralData<T> value)? loadGeneralData,
+    TResult Function(SuccessGeneralData<T> value)? successGeneralData,
+    TResult Function(PetyInfoLoading<T> value)? loadPetyInfo,
+    TResult Function(PetyInfoSuccess<T> value)? successPetyInfo,
+    TResult Function(PetyInfoError<T> value)? errorPetyInfo,
+    TResult Function(LoadGetUserHistory<T> value)? loadGetUserHistory,
+    TResult Function(SuccessGetUserHistory<T> value)? successGetUserHistory,
+    TResult Function(ErrorGetUserHistory<T> value)? errorGetUserHistory,
+    TResult Function(LoadGetAppointmentHistory<T> value)?
+        loadGetAppointmentHistory,
+    TResult Function(SuccessGetAppointmentHistory<T> value)?
+        successGetAppointmentHistory,
+    TResult Function(ErrorGetAppointmentHistory<T> value)?
+        errorGetAppointmentHistory,
+    TResult Function(LoadAddHistory<T> value)? loadAddHistory,
+    TResult Function(SuccessAddHistory<T> value)? successAddHistory,
+    TResult Function(ErrorAddHistory<T> value)? errorAddHistory,
+    required TResult orElse(),
+  }) {
+    if (errorAddHistory != null) {
+      return errorAddHistory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorAddHistory<T> implements DashboardStates<T> {
+  const factory ErrorAddHistory({required final String error}) =
+      _$ErrorAddHistoryImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorAddHistoryImplCopyWith<T, _$ErrorAddHistoryImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

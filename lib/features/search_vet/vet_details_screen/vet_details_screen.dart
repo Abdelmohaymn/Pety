@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,7 +11,6 @@ import 'package:pety/features/search_vet/vet_details_screen/widgets/reviews_list
 import 'package:pety/features/search_vet/widgets/vet_card_details.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_app_bar.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class VetDetailsScreen extends StatelessWidget{

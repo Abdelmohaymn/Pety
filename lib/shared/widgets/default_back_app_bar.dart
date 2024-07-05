@@ -4,9 +4,9 @@ import 'package:pety/shared/extensions.dart';
 
 class DefaultBackAppBar extends StatelessWidget{
 
-  BuildContext context;
-  Function? onBack;
-  DefaultBackAppBar({
+  final BuildContext context;
+  final Function? onBack;
+  const DefaultBackAppBar({
     super.key,
     required this.context,
     this.onBack
@@ -26,5 +26,4 @@ class DefaultBackAppBar extends StatelessWidget{
       child: const Icon(Icons.arrow_back_ios_new_outlined,size: 20,)
     );
   }
-
 }

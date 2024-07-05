@@ -7,9 +7,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pety/features/community/community_Screen.dart';
 import 'package:pety/features/home/home_Screen.dart';
+import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/data/models/chat_bot_body.dart';
+import 'package:pety/features/pety_layout/data/models/job_list_item.dart';
 import 'package:pety/features/pety_layout/data/repository/pety_repository.dart';
 import 'package:pety/features/pety_layout/find_my_pet/models/cities_model.dart';
 import 'package:pety/features/pety_layout/find_my_pet/models/find_pet_body.dart';
@@ -241,7 +242,6 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
   int currentIndex = 0;
   List<Widget> screens = [
     const HomeScreen(),
-    const CommunityScreen(),
     BlocProvider(
         create: (context) => getIt<ProfileCubit>()..getUserData(),
         child: const PreProfileScreen()
@@ -263,14 +263,17 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
       label: 'Home',
     ),
     const BottomNavigationBarItem(
-        icon: Icon(Icons.chat_bubble_outline,size: 30,),
-        //icon: SvgPicture.asset('assets/svgs/pet_profile.svg',width: 30.w,height: 30.h,color: ColorManager.defaultColor,),
-        label: 'Community'
-    ),
-    BottomNavigationBarItem(
-        icon: SvgPicture.asset('assets/svgs/ppp.svg',width: 30.w,height: 30.h,color: ColorManager.defaultColor,),
-        //icon: Image(image: const AssetImage('assets/images/pet_prof.png'),width: 30.w,height: 30.h),
-        label: 'Profile'
+        icon: Image(
+          width: 30,
+          height: 30,
+          image: AssetImage('assets/images/profile.png'),
+        ),
+        activeIcon: Image(
+          width: 30,
+          height: 30,
+          image: AssetImage('assets/images/profile_act.png'),
+        ),
+        label: 'Profile',
     ),
   ];
 
@@ -278,55 +281,24 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
     AppBar(
       automaticallyImplyLeading: false,
       backgroundColor: ColorManager.backgroundBlue,
+      title: Image(
+        width: 60.w,
+        height: 60.h,
+        image: const AssetImage('assets/images/logo.png'),
+      ),
+    ),
+    AppBar(
+      automaticallyImplyLeading: false,
+      backgroundColor: ColorManager.backgroundBlue,
       title: Row(
-        children: [
-          SvgPicture.asset('assets/svgs/menu.svg',width: 25.w,height: 25.h),
-          SizedBox(width: 20.w,),
-          Text(
-            'Pety',
-            style: GoogleFonts.montserrat(
-              textStyle: TextStyles.font16BlackBold.copyWith(
-                fontSize: 25.sp
-              )
-            ),
-          )
-        ],
-      ),
-     /* actions: [
-        IconButton(
-          onPressed: (){},
-          icon: SvgPicture.asset('assets/svgs/menu.svg')
-        )
-      ],*/
-    ),
-    AppBar(
-      automaticallyImplyLeading: false,
-      backgroundColor: ColorManager.backgroundBlue,
-      title: const Row(
-        children: [
-          Icon(Icons.arrow_back_ios_new),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Community'),
-              ],
-            ),
-          )
-        ],
-      ),
-    ),
-    AppBar(
-      automaticallyImplyLeading: false,
-      backgroundColor: ColorManager.backgroundBlue,
-      /*leading: const Padding(
-        padding: EdgeInsets.only(left: 5.0),
-        child: Icon(Icons.arrow_back_ios_new),
-      ),*/
-      title: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Profile'),
+          Text(
+            'Profile',
+            style: GoogleFonts.montserrat(
+              textStyle: TextStyles.font18LightBlackBold
+            ),
+          ),
         ],
       ),
     ),
@@ -336,12 +308,11 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
     JobListItem(title: 'Veterinarian', image:'assets/images/pet_vet.png'),
     JobListItem(title: 'Pet sitter', image:'assets/images/pet_sitter.png'),
     JobListItem(title: 'Pet groomer', image:'assets/images/pet_groomer.png'),
-    //JobListItem(title: 'Pet taxi', image:'assets/images/pet_taxi.png'),
   ];
 
   void changeBottomNavIndex(int index){
+    emit(const PetLayoutStates.loadChangeBottomNavIndexState());
     currentIndex = index;
-    emit(const PetLayoutStates.initial());
     emit(const PetLayoutStates.changeBottomNavIndexState());
   }
 
@@ -360,12 +331,3 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
 }
 
 
-class JobListItem{
-  final String title;
-  final String image;
-  JobListItem({
-    required this.title,
-    required this.image
-  });
-
-}

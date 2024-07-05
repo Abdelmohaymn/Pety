@@ -11,4 +11,8 @@ class ProfileStates<T> with _$ProfileStates<T>{
   const factory ProfileStates.error({required String error}) = Error;
   const factory ProfileStates.loadGeneralData() = GeneralDataLoading;
   const factory ProfileStates.successGeneralData() = GeneralDataSuccess;
+
+  const factory ProfileStates.loadUserVisits() = UserVisitsLoading;
+  const factory ProfileStates.successUserVisits() = UserVisitsSuccess;
+  const factory ProfileStates.errorUserVisits({required String error}) = UserVisitsError;
 }

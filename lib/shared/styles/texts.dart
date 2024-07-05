@@ -7,6 +7,12 @@ import 'package:pety/shared/styles/font_weights.dart';
 
 class TextStyles {
 
+  static TextStyle font10LightBlue3Bold = TextStyle(
+      color: ColorManager.lightBlue3,
+      fontSize: 10.sp,
+      fontWeight: FontWeightHelper.bold
+  );
+
   static TextStyle font13HintGreyRegular = TextStyle(
     color: ColorManager.hintGrey,
     fontSize: 13.sp,
@@ -24,9 +30,21 @@ class TextStyles {
     fontSize: 12.sp,
   );
 
+  static TextStyle font12LightGreyMedium = TextStyle(
+    color: ColorManager.lightGrey,
+    fontSize: 12.sp,
+    fontWeight: FontWeightHelper.medium
+  );
+
+  static TextStyle font16LightGreyMedium = TextStyle(
+      color: ColorManager.lightGrey,
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.medium
+  );
+
   static TextStyle font12GreyLight = TextStyle(
     color: ColorManager.hintOFSearchTextField,
-    fontSize: 10.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeightHelper.light,
   );
 
@@ -39,6 +57,11 @@ class TextStyles {
   static TextStyle font10WhiteRegular = TextStyle(
     color: Colors.white,
     fontSize: 10.sp,
+  );
+
+  static TextStyle font12WhiteRegular = TextStyle(
+    color: Colors.white,
+    fontSize: 12.sp,
   );
 
   static TextStyle font12WhiteBold = TextStyle(
@@ -57,6 +80,12 @@ class TextStyles {
       color: Colors.white,
       fontSize: 20.sp,
       fontWeight: FontWeightHelper.medium
+  );
+
+  static TextStyle font20WhiteRegular = TextStyle(
+      color: Colors.white,
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelper.regular
   );
 
   static TextStyle font14WhiteRegular = TextStyle(
@@ -92,6 +121,12 @@ class TextStyles {
     fontSize: 12.sp,
   );
 
+  static TextStyle font12DefaultSemiBold = TextStyle(
+    color: ColorManager.defaultColor,//resetColorButton
+    fontSize: 12.sp,
+    fontWeight: FontWeightHelper.semiBold
+  );
+
   static TextStyle font7DefaultBold = TextStyle(
     color: ColorManager.defaultColor,
     fontSize: 7.sp,
@@ -108,6 +143,12 @@ class TextStyles {
       color: ColorManager.defaultColor,
       fontSize: 16.sp,
       fontWeight: FontWeightHelper.semiBold
+  );
+
+  static TextStyle font16DefaultMedium = TextStyle(
+      color: ColorManager.defaultColor,
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.medium
   );
 
   static TextStyle font12DarkBlackBold = TextStyle(
@@ -140,6 +181,12 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold,
   );
 
+  static TextStyle font8BlackSemiBold = TextStyle(
+    color: Colors.black,
+    fontSize: 8.sp,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+
   static TextStyle font10BlackRegular = TextStyle(
     color: Colors.black,
     fontSize: 10.sp,
@@ -155,6 +202,12 @@ class TextStyles {
     color: Colors.black,
     fontSize: 12.sp,
     fontWeight: FontWeightHelper.medium
+  );
+
+  static TextStyle font14BlackMedium = TextStyle(
+      color: Colors.black,
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.medium
   );
 
   static TextStyle font12BlackSemiBold = TextStyle(
@@ -175,9 +228,21 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold
   );
 
+  static TextStyle font13BlackRegular = TextStyle(
+      color: Colors.black,
+      fontSize: 13.sp,
+      fontWeight: FontWeightHelper.regular
+  );
+
   static TextStyle font16BlackSemiBold = TextStyle(
       color: Colors.black,
       fontSize: 16.sp,
+      fontWeight: FontWeightHelper.semiBold
+  );
+
+  static TextStyle font20BlackSemiBold = TextStyle(
+      color: Colors.black,
+      fontSize: 20.sp,
       fontWeight: FontWeightHelper.semiBold
   );
 
@@ -225,6 +290,24 @@ class TextStyles {
     color: ColorManager.lightBlue,
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.semiBold,
+  );
+
+  static TextStyle font10LightBlack2Bold = TextStyle(
+    color: ColorManager.lightBlack2,
+    fontSize: 10.sp,
+    fontWeight: FontWeightHelper.bold,
+  );
+
+  static TextStyle font10LightGrey4Medium = TextStyle(
+    color: ColorManager.lightGrey4,
+    fontSize: 10.sp,
+    fontWeight: FontWeightHelper.medium,
+  );
+
+  static TextStyle font12LightGrey5Medium = TextStyle(
+    color: ColorManager.lightGrey5,
+    fontSize: 12.sp,
+    fontWeight: FontWeightHelper.medium,
   );
 
 }

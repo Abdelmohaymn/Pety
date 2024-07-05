@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
 import 'package:pety/features/login/data/models/login_request_body.dart';
 import 'package:pety/features/login/widgets/login_bloc_listener.dart';
@@ -15,6 +17,7 @@ import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/vertical_space.dart';
 
 class LoginScreen extends StatelessWidget{
 
@@ -26,6 +29,11 @@ class LoginScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+      statusBarColor: Colors.white
+    ));
+
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -34,11 +42,21 @@ class LoginScreen extends StatelessWidget{
             child: Form(
               key: formKey,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 50.h,),
+                  const VerticalSpace(height: 20),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Image(
+                      height: 60.h,
+                      width: 100.w,
+                      image: const AssetImage(
+                        'assets/images/logo.png'
+                      )
+                    ),
+                  ),
+                  const VerticalSpace(height: 20),
                   textTitle(context: context, text: 'Sign in'),
-                  SizedBox(height: 30.h,),
+                  const VerticalSpace(height: 30,),
                   DefaultTextField(
                       context: context,
                       controller: emailController,
@@ -51,7 +69,7 @@ class LoginScreen extends StatelessWidget{
                         return null;
                       }
                   ),
-                  SizedBox(height: 20.h,),
+                  const VerticalSpace(height: 20,),
                   PasswordTextField(
                     label: 'Password',
                     controller: passwordController,
@@ -62,7 +80,7 @@ class LoginScreen extends StatelessWidget{
                       return null;
                     },
                   ),
-                  SizedBox(height: 60.h,),
+                  const VerticalSpace(height: 60,),
                   DefaultButton(
                       horizontalPadding: 30.w,
                       text: 'Sign in',
@@ -75,7 +93,7 @@ class LoginScreen extends StatelessWidget{
                         }
                       }
                   ),
-                  SizedBox(height: 40.h,),
+                  const VerticalSpace(height: 40,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -84,14 +102,19 @@ class LoginScreen extends StatelessWidget{
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 2.w),
-                        child: Text('Or sign in with',style: TextStyles.font16BlackRegular,),
+                        child: Text(
+                          'Or sign in with',
+                          style: GoogleFonts.robotoFlex(
+                            textStyle: TextStyles.font16BlackRegular
+                          ),
+                        ),
                       ),
                       const Expanded(
                           child:Divider(thickness: 1,color: ColorManager.dashLineColor,)
                       ),
                     ],
                   ),
-                  SizedBox(height: 40.h,),
+                  const VerticalSpace(height: 40,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -108,7 +131,7 @@ class LoginScreen extends StatelessWidget{
                       ),
                     ],
                   ),
-                  SizedBox(height: 50.h,),
+                  const VerticalSpace(height: 50,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

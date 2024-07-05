@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/circle_avatar_default_image.dart';
@@ -10,7 +11,7 @@ import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class ReviewItem extends StatelessWidget{
-  int index;
+  final int index;
   ReviewItem({super.key,required this.index});
 
   @override
@@ -34,7 +35,9 @@ class ReviewItem extends StatelessWidget{
                 Text(
                   '${cubit.reviews?[index].user?.firstName} ${cubit.reviews?[index].user?.lastName}',
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyles.font13BlackBold,
+                  style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font13BlackBold
+                  ),
                 ),
                 DefaultRatingIndicator(rate: cubit.reviews![index].rating!.toDouble())
               ],
@@ -42,14 +45,18 @@ class ReviewItem extends StatelessWidget{
             const Spacer(),
             Text(
               cubit.reviews![index].createdAt!,
-              style: TextStyles.font12GreyLight,
+              style: GoogleFonts.montserrat(
+                textStyle: TextStyles.font12GreyLight
+              ),
             )
           ],
         ),
         const VerticalSpace(height: 20),
         Text(
           cubit.reviews![index].review!,
-          style: TextStyles.font12BlackRegular,
+          style: GoogleFonts.montserrat(
+            textStyle: TextStyles.font12BlackRegular
+          ),
         )
       ],
     );

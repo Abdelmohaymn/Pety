@@ -2,15 +2,13 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pety/features/login/data/models/login_response.dart';
 import 'package:pety/features/profile/cubit/profile_states.dart';
 import 'package:pety/features/profile/data/models/update_profile_body.dart';
 import 'package:pety/features/profile/data/models/update_profile_response.dart';
 import 'package:pety/features/profile/data/repository/profile_repository.dart';
-import 'package:pety/features/register/data/models/register_response.dart';
+import 'package:pety/features/profile/user_visits_screen/models/user_visits_response.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/network/local/shared_pred_constants.dart';
 import 'package:pety/shared/network/local/shared_pref_helper.dart';
@@ -36,11 +34,12 @@ class ProfileCubit extends Cubit<ProfileStates>{
   void getUserData() async{
     emit(const ProfileStates.loadGeneralData());
     User user = User.fromJson(jsonDecode(SharedPrefHelper.getData(key: SharedPrefConstants.userData)));
-    profileImage = user.photo!.url;
+    profileImage = user.photo?.url;
     firstNameController.text = user.firstName!;
     lastNameController.text = user.lastName!;
     emailController.text = user.email!;
     phoneController.text = user.phone!;
+
     emit(const ProfileStates.successGeneralData());
   }
 
@@ -52,9 +51,7 @@ class ProfileCubit extends Cubit<ProfileStates>{
       email: emailController.text,
       phone: phoneController.text,
     );
-    /*if(passwordController.text.isNotBlank()&&passwordController.text==confPasswordController.text){
-      profileBody.password=passwordController.text;
-    }*/
+
     if(profImage!=null)profileBody.photo=profImage;
 
     final response = await _profileRepository.updateProfile(profileBody: await profileBody.toFormData());
@@ -90,5 +87,26 @@ class ProfileCubit extends Cubit<ProfileStates>{
       throw Exception('Could not launch $url');
     }
   }
+
+
+  //get user visits
+  UserVisitsResponse? userVisits;
+  late int appointmentIndex;
+
+  void getUserVisits() async{
+    emit(const ProfileStates.loadUserVisits());
+    final response = await _profileRepository.getUserVisits();
+    response.when(
+        success: (data){
+          userVisits=data;
+          emit(const ProfileStates.successUserVisits());
+        },
+        failure: (error){
+          emit(ProfileStates.errorUserVisits(error: error.apiErrorModel.message!));
+        }
+    );
+
+  }
+
 
 }

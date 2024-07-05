@@ -2,13 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class TimeRangeItem extends StatelessWidget{
 
-  Appointments item;
+  final Appointments item;
   TimeRangeItem({
     super.key,
     required this.item,
@@ -24,18 +25,20 @@ class TimeRangeItem extends StatelessWidget{
           context.read<SearchVetCubit>().moveToBookVet(context,item.time!);
         }:null,
         style: ButtonStyle(
-            padding: MaterialStateProperty.all(EdgeInsets.zero),
+            padding: WidgetStateProperty.all(EdgeInsets.zero),
             tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            shape: MaterialStateProperty.all(
+            shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(6),
                 )
             ),
-            side: MaterialStateProperty.all(BorderSide(color: item.isAvailable!?Colors.black:Colors.grey)),
+            side: WidgetStateProperty.all(BorderSide(color: item.isAvailable!?Colors.black:Colors.grey)),
         ),
         child: Text(
           item.isAvailable!?item.time.toString():'Booked',
-          style: item.isAvailable!?TextStyles.font12BlackMedium:TextStyles.font12BlackMedium.copyWith(color: Colors.grey),
+          style: GoogleFonts.montserrat(
+            textStyle: item.isAvailable!?TextStyles.font14BlackMedium:TextStyles.font14BlackMedium.copyWith(color: Colors.grey)
+          ),
         ),
       ),
     );

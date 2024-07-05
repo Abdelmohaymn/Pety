@@ -6,6 +6,7 @@ part 'pet_layout_states.freezed.dart';
 @Freezed()
 class PetLayoutStates<T> with _$PetLayoutStates<T>{
   const factory PetLayoutStates.initial() = _Initial;
+  const factory PetLayoutStates.loadChangeBottomNavIndexState() = PetLayoutChangeBottomNavIndexStateLoading;
   const factory PetLayoutStates.changeBottomNavIndexState() = PetLayoutChangeBottomNavIndexState;
   // chatBot states
   const factory PetLayoutStates.loadChatBotMessages() = LoadingChatBotMessages;

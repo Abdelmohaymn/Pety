@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:pety/features/home/widgets/find_pet_card.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
-import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 
 class FindMyPetCards extends StatelessWidget{

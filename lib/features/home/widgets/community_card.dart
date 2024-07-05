@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pety/shared/extensions.dart';
+import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 
@@ -52,7 +54,7 @@ class CommunityCard extends StatelessWidget{
                       radius: 6,
                       text: 'Community',
                       onClick: (){
-
+                        context.pushNamed(Routes.communityScreen);
                       }
                   )
                 ],

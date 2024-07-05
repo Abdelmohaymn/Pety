@@ -37,7 +37,6 @@ class WidgetFunctions{
   }
 
   static showSuccessSnackBar(BuildContext context,String msg){
-
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content:Center(

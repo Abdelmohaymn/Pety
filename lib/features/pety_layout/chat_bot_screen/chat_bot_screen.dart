@@ -59,7 +59,7 @@ class ChatBotScreen extends StatelessWidget{
                     SizedBox(width: 3,),
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('assets/images/pet_prof.png'),
+                      backgroundImage: AssetImage('assets/images/chatbot.png'),
                     ),
                   ],
                 ),

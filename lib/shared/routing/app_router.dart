@@ -1,6 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pety/features/community/add_post_screen/add_post_screen.dart';
+import 'package:pety/features/community/community_screen/community_screen.dart';
+import 'package:pety/features/community/shared/cubit/community_cubit.dart';
 import 'package:pety/features/dashboard/dashboard_layout/dashboard_layout.dart';
 import 'package:pety/features/dashboard/history_screen/history_screen.dart';
 import 'package:pety/features/dashboard/roles/roles_screen.dart';
@@ -13,6 +16,7 @@ import 'package:pety/features/pety_layout/find_my_pet/search_for_pet/search_for_
 import 'package:pety/features/pety_layout/find_my_pet/upload_pet/upload_missing_pet.dart';
 import 'package:pety/features/profile/cubit/profile_cubit.dart';
 import 'package:pety/features/profile/profile_screen.dart';
+import 'package:pety/features/profile/user_visits_screen/user_visits_screen.dart';
 import 'package:pety/features/register/cubit/register_cubit.dart';
 import 'package:pety/features/register/register_screen.dart';
 import 'package:pety/features/search_vet/book_vet_screen/book_vet.dart';
@@ -87,6 +91,14 @@ class AppRouter {
                   child: const ProfileScreen()
               ),
         );
+      case Routes.userVisitsScreen :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<ProfileCubit>(settings.arguments as BuildContext)..getUserVisits(),
+                  child: const UserVisitsScreen()
+              ),
+        );
       case Routes.dashboardRoles :
         return MaterialPageRoute(
           builder: (_) =>
@@ -152,6 +164,22 @@ class AppRouter {
               BlocProvider.value(
                   value: BlocProvider.of<PetLayoutCubit>(settings.arguments as BuildContext),
                   child: const MissingPetsScreen()
+              ),
+        );
+      case Routes.communityScreen :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider(
+                create: (context) => getIt<CommunityCubit>()..getPosts()..getUserData(),
+                child: const CommunityScreen(),
+              ),
+      );
+      case Routes.communityAddPost :
+        return MaterialPageRoute(
+          builder: (_) =>
+              BlocProvider.value(
+                  value: BlocProvider.of<CommunityCubit>(settings.arguments as BuildContext),
+                  child: const AddPostScreen()
               ),
         );
       default :

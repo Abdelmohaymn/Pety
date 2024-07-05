@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/appointments_list.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/location_and_fees.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/reviews_list.dart';
 import 'package:pety/features/search_vet/widgets/vet_card_details.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/default_app_bar.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -29,8 +31,8 @@ class VetDetailsScreen extends StatelessWidget{
         cubit.onBackPressedFromDetails(context);
       },
       child: Scaffold(
-        appBar: AppBar(
-          leading: DefaultBackAppBar(context: context,onBack: (){cubit.onBackPressedFromDetails(context);},),
+        appBar: DefaultAppBar(
+          title: 'Pety profile',
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 8.0),
@@ -46,6 +48,7 @@ class VetDetailsScreen extends StatelessWidget{
               ),
             ),
           ],
+          onBack: (){cubit.onBackPressedFromDetails(context);}
         ),
         body: SingleChildScrollView(
           child: Padding(
@@ -54,19 +57,23 @@ class VetDetailsScreen extends StatelessWidget{
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const VetCardDetails(),
-                const VerticalSpace(height: 20),
+                const VerticalSpace(height: 30),
                 const LocationAndFees(),
                 const VerticalSpace(height: 30),
                 const AppointmentsList(),
                 const VerticalSpace(height: 30),
                 Text(
                   'About vet',
-                  style: TextStyles.font12BlackSemiBold,
+                  style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font12BlackSemiBold
+                  ),
                 ),
+                const VerticalSpace(height: 10),
                 Text(
                   cubit.chosenVet!.description!,
-                  //'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly bel middle of text.',
-                  style: TextStyles.font12DefaultRegular,
+                  style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font12DefaultRegular
+                  ),
                 ),
                 const VerticalSpace(height: 30),
                 const ReviewsList(),

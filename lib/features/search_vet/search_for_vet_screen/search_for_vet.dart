@@ -60,7 +60,7 @@ class _SearchForVetState extends State<SearchForVet> {
               children: [
                 DefaultSearch(
                   controller: getCubit(context).searchController,
-                  text: 'search',
+                  text: 'Search',
                   showFilters: (){
                     showFiltersBottomSheet(cubitContext:context);
                   },

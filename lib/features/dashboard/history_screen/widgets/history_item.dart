@@ -4,14 +4,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pety/features/dashboard/appointments/models/appointment_status_body.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/history_screen/widgets/appointment_history.dart';
-import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
-import 'package:pety/shared/widgets/text_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class HistoryItem extends StatefulWidget {
@@ -40,7 +38,7 @@ class _HistoryItemState extends State<HistoryItem> {
           cubit.appointmentHistoryResponse=null;
           if(!clicked){
             cubit.getAppointmentHistory(appointment.id!);
-            cubit.appointmentIndex=widget.index;
+            cubit.appointmentIndexOfHistory=widget.index;
           }
           clicked=!clicked;
         });
@@ -74,81 +72,35 @@ class _HistoryItemState extends State<HistoryItem> {
                     children: [
                       Text(
                         "${user.owner!.firstName!} ${user.owner!.lastName!}",
-                        style: TextStyles.font12BlackMedium,
+                        style: GoogleFonts.montserrat(
+                          textStyle: TextStyles.font12BlackBold
+                        ),
                         overflow: TextOverflow.ellipsis,
                       ),
                       const VerticalSpace(height: 1),
                       Text(
                         appointment.date!,
-                        style: TextStyles.font12filtersGreyColorRegular,
+                        style: GoogleFonts.montserrat(
+                          textStyle: TextStyles.font12filtersGreyColorRegular
+                        ),
                       ),
                       Text(
                         appointment.time!,
-                        style: TextStyles.font12filtersGreyColorRegular,
+                        style: GoogleFonts.montserrat(
+                            textStyle: TextStyles.font12filtersGreyColorRegular
+                        ),
                       ),
                     ],
                   ),
                 ),
-                BlocBuilder<DashboardCubit,DashboardStates>(
-                    builder: (context,state) {
-                      DashboardCubit cubit = context.read<DashboardCubit>();
-                      if(appointment.status!='Pending'){
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: Text(
-                            appointment.status!,
-                            style: TextStyles.font12BlackRegular.copyWith(color: statusColor(appointment.status!)),
-                          ),
-                        );
-                      }else if(state is ChangeAppointmentsStatusLoading){
-                        return const SizedBox(width: 25,height: 25,child: CircularProgressIndicator(),);
-                      }else if(state is ChangeAppointmentsStatusSuccess){
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: Text(
-                              state.data.data.status,
-                              style: TextStyles.font12BlackRegular.copyWith(color: statusColor(state.data.data.status))
-                          ),
-                        );
-                      }
-                      else {
-                        return Row(
-                          children: [
-                            defaultTextButton(
-                                text: 'Approve',
-                                color: ColorManager.defaultColor,
-                                onClick: () {
-                                  context.read<DashboardCubit>().changeAppointmentStatus(
-                                      statusBody:AppointmentStatusBody(
-                                          id: appointment.id,
-                                          role: cubit.currentRole,
-                                          status: 'approved'
-                                      )
-                                  );
-                                }
-                            ),
-                            defaultTextButton(
-                                text: 'Reject',
-                                color: Colors.redAccent,
-                                onClick: () {
-                                  context.read<DashboardCubit>().changeAppointmentStatus(
-                                      statusBody:AppointmentStatusBody(
-                                          id: appointment.id,
-                                          role: cubit.currentRole,
-                                          status: 'rejected'
-                                      )
-                                  );
-                                }
-                            ),
-                          ],
-                        );
-                      }
-                    }
+                Text(
+                  appointment.status!,
+                  style: TextStyles.font12BlackRegular.copyWith(color: statusColor(appointment.status!)),
                 ),
               ],
             ),
           ),
-          if(clicked&&widget.index==cubit.appointmentIndex)
+          if(clicked&&widget.index==cubit.appointmentIndexOfHistory)
             AppointmentHistory(index:widget.index),
         ],
       ),

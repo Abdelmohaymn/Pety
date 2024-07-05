@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/extensions.dart';
@@ -24,12 +25,16 @@ class VetNameAndOffers extends StatelessWidget{
             children: [
               Text(
                 'Vet name: ',
-                style: TextStyles.font13BlackBold,
+                style: GoogleFonts.inter(
+                  textStyle: TextStyles.font16BlackSemiBold
+                ),
               ),
               Expanded(
                 child: Text(
                   cubitContext.read<SearchVetCubit>().searchController.text,
-                  style: TextStyles.font12filtersGreyColorRegular,
+                  style: GoogleFonts.inter(
+                    textStyle: TextStyles.font12BlackRegular
+                  ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -40,7 +45,9 @@ class VetNameAndOffers extends StatelessWidget{
           children: [
             Text(
               'Are you searching for offers?',
-              style: TextStyles.font13BlackBold,
+              style: GoogleFonts.inter(
+                  textStyle: TextStyles.font16BlackSemiBold
+              ),
             ),
             const Spacer(),
             BlocProvider.value(

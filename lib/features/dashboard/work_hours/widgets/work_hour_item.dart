@@ -5,15 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/dashboard/work_hours/widgets/box_time.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class WorkHourItem extends StatelessWidget{
-  int index;
+  final int index;
   final TextEditingController controller;
-  WorkHourItem({super.key,required this.index,required this.controller});
+  const WorkHourItem({super.key,required this.index,required this.controller});
 
 
   @override
@@ -53,15 +54,19 @@ class WorkHourItem extends StatelessWidget{
             children: [
               Text(
                 'From',
-                style: TextStyles.font8BlackRegular.copyWith(
-                    color: ColorManager.hintOFSearchTextField
+                style: GoogleFonts.montserrat(
+                  textStyle: TextStyles.font12BlackRegular.copyWith(
+                      color: ColorManager.hintOFSearchTextField
+                  )
                 ),
               ),
               BoxTime(index: index, from: true,),
               Text(
                 'to',
-                style: TextStyles.font8BlackRegular.copyWith(
-                    color: ColorManager.hintOFSearchTextField
+                style: GoogleFonts.montserrat(
+                    textStyle: TextStyles.font12BlackRegular.copyWith(
+                        color: ColorManager.hintOFSearchTextField
+                    )
                 ),
               ),
               BoxTime(index: index, from: false,),

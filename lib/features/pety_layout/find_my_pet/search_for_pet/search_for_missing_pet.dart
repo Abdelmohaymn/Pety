@@ -1,4 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,9 +10,9 @@ import 'package:pety/features/pety_layout/find_my_pet/widgets/image_pet_uploader
 import 'package:pety/features/pety_layout/find_my_pet/widgets/location_of_pet.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/default_app_bar.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/default_button.dart';
-import 'package:pety/shared/widgets/default_drop_down_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class SearchForMissingPetScreen extends StatelessWidget {
@@ -32,16 +31,9 @@ class SearchForMissingPetScreen extends StatelessWidget {
       },
       child: Scaffold(
         backgroundColor: ColorManager.backgroundBlue,
-        appBar: AppBar(
-          backgroundColor: ColorManager.backgroundBlue,
-          leading: DefaultBackAppBar(context: context,onBack: (){cubit.onBackFromFindPet(context);},),
-          title: Text(
-            'Find a missing pet',
-            style: GoogleFonts.montserrat(
-                textStyle:TextStyles.font18LightBlackBold
-            ),
-          ),
-          centerTitle: true,
+        appBar: DefaultAppBar(
+          title: 'Find a missing pet',
+          onBack: (){cubit.onBackFromFindPet(context);},
         ),
         body: SingleChildScrollView(
           child: Padding(

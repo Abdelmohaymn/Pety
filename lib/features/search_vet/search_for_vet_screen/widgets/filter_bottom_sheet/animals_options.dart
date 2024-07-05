@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/styles/texts.dart';
@@ -19,7 +20,9 @@ class AnimalsOptions extends StatelessWidget {
       children: [
         Text(
           'Animals',
-          style: TextStyles.font13BlackBold,
+          style: GoogleFonts.inter(
+              textStyle: TextStyles.font16BlackSemiBold
+          ),
         ),
         SizedBox(
           height: 80,

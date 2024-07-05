@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
+import 'package:pety/shared/widgets/default_app_bar.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
 class RolesScreen extends StatelessWidget {
@@ -16,11 +17,11 @@ class RolesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: DefaultBackAppBar(context: context,),
+      appBar: const DefaultAppBar(
+        title: 'Roles',
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 8.w),
+        padding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 16.w),
         child: BlocBuilder<DashboardCubit, DashboardStates>(
           builder: (context, state) {
             if (state is Loading) {
@@ -79,7 +80,9 @@ class RolesScreen extends StatelessWidget {
                                 const VerticalSpace(height: 20),
                                 Text(
                                   role,
-                                  style: TextStyles.font13WhiteBold,
+                                  style: GoogleFonts.montserrat(
+                                    textStyle: TextStyles.font13WhiteBold
+                                  ),
                                 ),
                               ],
                             ),

@@ -8,7 +8,6 @@ import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
-import 'package:pety/shared/widgets/vertical_space.dart';
 
 class BeAVetCard extends StatelessWidget{
   const BeAVetCard({super.key});
@@ -28,7 +27,7 @@ class BeAVetCard extends StatelessWidget{
               height: 170.h,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  color: ColorManager.lightBlue3
+                  color: ColorManager.lightBlue3Ops30
               ),
               child: Align(
                 alignment: Alignment.centerLeft,

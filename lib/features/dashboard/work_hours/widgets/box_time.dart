@@ -2,14 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class BoxTime extends StatelessWidget{
-  int index;
-  bool from;
-  BoxTime({super.key,required this.index, required this.from});
+  final int index;
+  final bool from;
+  const BoxTime({super.key,required this.index, required this.from});
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +34,12 @@ class BoxTime extends StatelessWidget{
           decoration: const BoxDecoration(
               color: ColorManager.dashLineColor
           ),
-          child: Center(
-            child: Text(
-              from?cubit.workHours![index].from:cubit.workHours![index].to,
-              style: TextStyles.font10BlackRegular,
+          child: Text(
+            from?cubit.workHours![index].from:cubit.workHours![index].to,
+            style: GoogleFonts.montserrat(
+              textStyle: TextStyles.font12BlackRegular
             ),
+            textAlign: TextAlign.center,
           ),
         ),
       ),

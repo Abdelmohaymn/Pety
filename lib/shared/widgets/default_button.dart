@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
@@ -51,7 +52,11 @@ class DefaultButton extends StatelessWidget{
                 padding: const EdgeInsets.only(right: 8.0),
                 child: Center(child: Icon(prevIcon,color: Colors.white,size: 18,)),
               ),
-            Text(text,style: textStyle??TextStyles.font26WhiteMedium),
+            Text(
+                text,
+                style:GoogleFonts.montserrat(
+                  textStyle: textStyle??TextStyles.font26WhiteMedium
+              )),
           ],
         ),
       ),

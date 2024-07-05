@@ -19,6 +19,7 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -44,6 +45,7 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -69,6 +71,7 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -95,6 +98,9 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -129,6 +135,8 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -156,6 +164,8 @@ mixin _$PetLayoutStates<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -240,6 +250,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -268,6 +279,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -296,6 +308,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -328,6 +341,9 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -365,6 +381,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -395,6 +413,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -428,6 +448,255 @@ class _$InitialImpl<T> implements _Initial<T> {
 
 abstract class _Initial<T> implements PetLayoutStates<T> {
   const factory _Initial() = _$InitialImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWith<T,
+    $Res> {
+  factory _$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWith(
+          _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T> value,
+          $Res Function(_$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>)
+              then) =
+      __$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWithImpl<T, $Res>
+    extends _$PetLayoutStatesCopyWithImpl<T, $Res,
+        _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>>
+    implements
+        _$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWith<T, $Res> {
+  __$$PetLayoutChangeBottomNavIndexStateLoadingImplCopyWithImpl(
+      _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T> _value,
+      $Res Function(_$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>
+    implements PetLayoutChangeBottomNavIndexStateLoading<T> {
+  const _$PetLayoutChangeBottomNavIndexStateLoadingImpl();
+
+  @override
+  String toString() {
+    return 'PetLayoutStates<$T>.loadChangeBottomNavIndexState()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
+    required TResult Function() changeBottomNavIndexState,
+    required TResult Function() loadChatBotMessages,
+    required TResult Function() successChatBotMessages,
+    required TResult Function(String error) errorChatBotMessages,
+    required TResult Function() loadClearMessages,
+    required TResult Function() successClearMessages,
+    required TResult Function() loadAllowAnimatedText,
+    required TResult Function() successAllowAnimatedText,
+    required TResult Function() loadChangeLocation,
+    required TResult Function() successChangeLocation,
+    required TResult Function() loadGetLocations,
+    required TResult Function() successGetLocations,
+    required TResult Function() loadPetImage,
+    required TResult Function() successPetImage,
+    required TResult Function() loadRegisterPet,
+    required TResult Function() successRegisterPet,
+    required TResult Function(String error) errorRegisterPet,
+    required TResult Function() loadFindPet,
+    required TResult Function(T data) successFindPet,
+    required TResult Function(String error) errorFindPet,
+  }) {
+    return loadChangeBottomNavIndexState();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
+    TResult? Function()? changeBottomNavIndexState,
+    TResult? Function()? loadChatBotMessages,
+    TResult? Function()? successChatBotMessages,
+    TResult? Function(String error)? errorChatBotMessages,
+    TResult? Function()? loadClearMessages,
+    TResult? Function()? successClearMessages,
+    TResult? Function()? loadAllowAnimatedText,
+    TResult? Function()? successAllowAnimatedText,
+    TResult? Function()? loadChangeLocation,
+    TResult? Function()? successChangeLocation,
+    TResult? Function()? loadGetLocations,
+    TResult? Function()? successGetLocations,
+    TResult? Function()? loadPetImage,
+    TResult? Function()? successPetImage,
+    TResult? Function()? loadRegisterPet,
+    TResult? Function()? successRegisterPet,
+    TResult? Function(String error)? errorRegisterPet,
+    TResult? Function()? loadFindPet,
+    TResult? Function(T data)? successFindPet,
+    TResult? Function(String error)? errorFindPet,
+  }) {
+    return loadChangeBottomNavIndexState?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
+    TResult Function()? changeBottomNavIndexState,
+    TResult Function()? loadChatBotMessages,
+    TResult Function()? successChatBotMessages,
+    TResult Function(String error)? errorChatBotMessages,
+    TResult Function()? loadClearMessages,
+    TResult Function()? successClearMessages,
+    TResult Function()? loadAllowAnimatedText,
+    TResult Function()? successAllowAnimatedText,
+    TResult Function()? loadChangeLocation,
+    TResult Function()? successChangeLocation,
+    TResult Function()? loadGetLocations,
+    TResult Function()? successGetLocations,
+    TResult Function()? loadPetImage,
+    TResult Function()? successPetImage,
+    TResult Function()? loadRegisterPet,
+    TResult Function()? successRegisterPet,
+    TResult Function(String error)? errorRegisterPet,
+    TResult Function()? loadFindPet,
+    TResult Function(T data)? successFindPet,
+    TResult Function(String error)? errorFindPet,
+    required TResult orElse(),
+  }) {
+    if (loadChangeBottomNavIndexState != null) {
+      return loadChangeBottomNavIndexState();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
+    required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
+        changeBottomNavIndexState,
+    required TResult Function(LoadingChatBotMessages<T> value)
+        loadChatBotMessages,
+    required TResult Function(SuccessChatBotMessages<T> value)
+        successChatBotMessages,
+    required TResult Function(ErrorChatBotMessages<T> value)
+        errorChatBotMessages,
+    required TResult Function(LoadingClearMessages<T> value) loadClearMessages,
+    required TResult Function(SuccessClearMessages<T> value)
+        successClearMessages,
+    required TResult Function(LoadingAllowAnimatedText<T> value)
+        loadAllowAnimatedText,
+    required TResult Function(SuccessAllowAnimatedText<T> value)
+        successAllowAnimatedText,
+    required TResult Function(LoadingChangeLocation<T> value)
+        loadChangeLocation,
+    required TResult Function(SuccessChangeLocation<T> value)
+        successChangeLocation,
+    required TResult Function(LoadingGetLocations<T> value) loadGetLocations,
+    required TResult Function(SuccessGetLocations<T> value) successGetLocations,
+    required TResult Function(LoadingPetImage<T> value) loadPetImage,
+    required TResult Function(SuccessPetImage<T> value) successPetImage,
+    required TResult Function(LoadingRegisterPet<T> value) loadRegisterPet,
+    required TResult Function(SuccessRegisterPet<T> value) successRegisterPet,
+    required TResult Function(ErrorRegisterPet<T> value) errorRegisterPet,
+    required TResult Function(LoadingFindPet<T> value) loadFindPet,
+    required TResult Function(SuccessFindPet<T> value) successFindPet,
+    required TResult Function(ErrorFindPet<T> value) errorFindPet,
+  }) {
+    return loadChangeBottomNavIndexState(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
+    TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
+        changeBottomNavIndexState,
+    TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
+    TResult? Function(SuccessChatBotMessages<T> value)? successChatBotMessages,
+    TResult? Function(ErrorChatBotMessages<T> value)? errorChatBotMessages,
+    TResult? Function(LoadingClearMessages<T> value)? loadClearMessages,
+    TResult? Function(SuccessClearMessages<T> value)? successClearMessages,
+    TResult? Function(LoadingAllowAnimatedText<T> value)? loadAllowAnimatedText,
+    TResult? Function(SuccessAllowAnimatedText<T> value)?
+        successAllowAnimatedText,
+    TResult? Function(LoadingChangeLocation<T> value)? loadChangeLocation,
+    TResult? Function(SuccessChangeLocation<T> value)? successChangeLocation,
+    TResult? Function(LoadingGetLocations<T> value)? loadGetLocations,
+    TResult? Function(SuccessGetLocations<T> value)? successGetLocations,
+    TResult? Function(LoadingPetImage<T> value)? loadPetImage,
+    TResult? Function(SuccessPetImage<T> value)? successPetImage,
+    TResult? Function(LoadingRegisterPet<T> value)? loadRegisterPet,
+    TResult? Function(SuccessRegisterPet<T> value)? successRegisterPet,
+    TResult? Function(ErrorRegisterPet<T> value)? errorRegisterPet,
+    TResult? Function(LoadingFindPet<T> value)? loadFindPet,
+    TResult? Function(SuccessFindPet<T> value)? successFindPet,
+    TResult? Function(ErrorFindPet<T> value)? errorFindPet,
+  }) {
+    return loadChangeBottomNavIndexState?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
+    TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
+        changeBottomNavIndexState,
+    TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
+    TResult Function(SuccessChatBotMessages<T> value)? successChatBotMessages,
+    TResult Function(ErrorChatBotMessages<T> value)? errorChatBotMessages,
+    TResult Function(LoadingClearMessages<T> value)? loadClearMessages,
+    TResult Function(SuccessClearMessages<T> value)? successClearMessages,
+    TResult Function(LoadingAllowAnimatedText<T> value)? loadAllowAnimatedText,
+    TResult Function(SuccessAllowAnimatedText<T> value)?
+        successAllowAnimatedText,
+    TResult Function(LoadingChangeLocation<T> value)? loadChangeLocation,
+    TResult Function(SuccessChangeLocation<T> value)? successChangeLocation,
+    TResult Function(LoadingGetLocations<T> value)? loadGetLocations,
+    TResult Function(SuccessGetLocations<T> value)? successGetLocations,
+    TResult Function(LoadingPetImage<T> value)? loadPetImage,
+    TResult Function(SuccessPetImage<T> value)? successPetImage,
+    TResult Function(LoadingRegisterPet<T> value)? loadRegisterPet,
+    TResult Function(SuccessRegisterPet<T> value)? successRegisterPet,
+    TResult Function(ErrorRegisterPet<T> value)? errorRegisterPet,
+    TResult Function(LoadingFindPet<T> value)? loadFindPet,
+    TResult Function(SuccessFindPet<T> value)? successFindPet,
+    TResult Function(ErrorFindPet<T> value)? errorFindPet,
+    required TResult orElse(),
+  }) {
+    if (loadChangeBottomNavIndexState != null) {
+      return loadChangeBottomNavIndexState(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PetLayoutChangeBottomNavIndexStateLoading<T>
+    implements PetLayoutStates<T> {
+  const factory PetLayoutChangeBottomNavIndexStateLoading() =
+      _$PetLayoutChangeBottomNavIndexStateLoadingImpl<T>;
 }
 
 /// @nodoc
@@ -474,6 +743,7 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -502,6 +772,7 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -530,6 +801,7 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -562,6 +834,9 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -599,6 +874,8 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -629,6 +906,8 @@ class _$PetLayoutChangeBottomNavIndexStateImpl<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -709,6 +988,7 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -737,6 +1017,7 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -765,6 +1046,7 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -797,6 +1079,9 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -834,6 +1119,8 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -864,6 +1151,8 @@ class _$LoadingChatBotMessagesImpl<T> implements LoadingChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -942,6 +1231,7 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -970,6 +1260,7 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -998,6 +1289,7 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -1030,6 +1322,9 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -1067,6 +1362,8 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1097,6 +1394,8 @@ class _$SuccessChatBotMessagesImpl<T> implements SuccessChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1200,6 +1499,7 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -1228,6 +1528,7 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -1256,6 +1557,7 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -1288,6 +1590,9 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -1325,6 +1630,8 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1355,6 +1662,8 @@ class _$ErrorChatBotMessagesImpl<T> implements ErrorChatBotMessages<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1438,6 +1747,7 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -1466,6 +1776,7 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -1494,6 +1805,7 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -1526,6 +1838,9 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -1563,6 +1878,8 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1593,6 +1910,8 @@ class _$LoadingClearMessagesImpl<T> implements LoadingClearMessages<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1670,6 +1989,7 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -1698,6 +2018,7 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -1726,6 +2047,7 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -1758,6 +2080,9 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -1795,6 +2120,8 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1825,6 +2152,8 @@ class _$SuccessClearMessagesImpl<T> implements SuccessClearMessages<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -1903,6 +2232,7 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -1931,6 +2261,7 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -1959,6 +2290,7 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -1991,6 +2323,9 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -2028,6 +2363,8 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2058,6 +2395,8 @@ class _$LoadingAllowAnimatedTextImpl<T> implements LoadingAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2136,6 +2475,7 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -2164,6 +2504,7 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -2192,6 +2533,7 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -2224,6 +2566,9 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -2261,6 +2606,8 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2291,6 +2638,8 @@ class _$SuccessAllowAnimatedTextImpl<T> implements SuccessAllowAnimatedText<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2369,6 +2718,7 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -2397,6 +2747,7 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -2425,6 +2776,7 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -2457,6 +2809,9 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -2494,6 +2849,8 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2524,6 +2881,8 @@ class _$LoadingChangeLocationImpl<T> implements LoadingChangeLocation<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2602,6 +2961,7 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -2630,6 +2990,7 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -2658,6 +3019,7 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -2690,6 +3052,9 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -2727,6 +3092,8 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2757,6 +3124,8 @@ class _$SuccessChangeLocationImpl<T> implements SuccessChangeLocation<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2832,6 +3201,7 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -2860,6 +3230,7 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -2888,6 +3259,7 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -2920,6 +3292,9 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -2957,6 +3332,8 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -2987,6 +3364,8 @@ class _$LoadingGetLocationsImpl<T> implements LoadingGetLocations<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3062,6 +3441,7 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -3090,6 +3470,7 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -3118,6 +3499,7 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -3150,6 +3532,9 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -3187,6 +3572,8 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3217,6 +3604,8 @@ class _$SuccessGetLocationsImpl<T> implements SuccessGetLocations<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3291,6 +3680,7 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -3319,6 +3709,7 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -3347,6 +3738,7 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -3379,6 +3771,9 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -3416,6 +3811,8 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3446,6 +3843,8 @@ class _$LoadingPetImageImpl<T> implements LoadingPetImage<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3520,6 +3919,7 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -3548,6 +3948,7 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -3576,6 +3977,7 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -3608,6 +4010,9 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -3645,6 +4050,8 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3675,6 +4082,8 @@ class _$SuccessPetImageImpl<T> implements SuccessPetImage<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3750,6 +4159,7 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -3778,6 +4188,7 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -3806,6 +4217,7 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -3838,6 +4250,9 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -3875,6 +4290,8 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3905,6 +4322,8 @@ class _$LoadingRegisterPetImpl<T> implements LoadingRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -3980,6 +4399,7 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -4008,6 +4428,7 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -4036,6 +4457,7 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -4068,6 +4490,9 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -4105,6 +4530,8 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4135,6 +4562,8 @@ class _$SuccessRegisterPetImpl<T> implements SuccessRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4236,6 +4665,7 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -4264,6 +4694,7 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -4292,6 +4723,7 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -4324,6 +4756,9 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -4361,6 +4796,8 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4391,6 +4828,8 @@ class _$ErrorRegisterPetImpl<T> implements ErrorRegisterPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4471,6 +4910,7 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -4499,6 +4939,7 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -4527,6 +4968,7 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -4559,6 +5001,9 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -4596,6 +5041,8 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4626,6 +5073,8 @@ class _$LoadingFindPetImpl<T> implements LoadingFindPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4728,6 +5177,7 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -4756,6 +5206,7 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -4784,6 +5235,7 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -4816,6 +5268,9 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -4853,6 +5308,8 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4883,6 +5340,8 @@ class _$SuccessFindPetImpl<T> implements SuccessFindPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -4989,6 +5448,7 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() loadChangeBottomNavIndexState,
     required TResult Function() changeBottomNavIndexState,
     required TResult Function() loadChatBotMessages,
     required TResult Function() successChatBotMessages,
@@ -5017,6 +5477,7 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? loadChangeBottomNavIndexState,
     TResult? Function()? changeBottomNavIndexState,
     TResult? Function()? loadChatBotMessages,
     TResult? Function()? successChatBotMessages,
@@ -5045,6 +5506,7 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? loadChangeBottomNavIndexState,
     TResult Function()? changeBottomNavIndexState,
     TResult Function()? loadChatBotMessages,
     TResult Function()? successChatBotMessages,
@@ -5077,6 +5539,9 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
+    required TResult Function(
+            PetLayoutChangeBottomNavIndexStateLoading<T> value)
+        loadChangeBottomNavIndexState,
     required TResult Function(PetLayoutChangeBottomNavIndexState<T> value)
         changeBottomNavIndexState,
     required TResult Function(LoadingChatBotMessages<T> value)
@@ -5114,6 +5579,8 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult? Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult? Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,
@@ -5144,6 +5611,8 @@ class _$ErrorFindPetImpl<T> implements ErrorFindPet<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
+    TResult Function(PetLayoutChangeBottomNavIndexStateLoading<T> value)?
+        loadChangeBottomNavIndexState,
     TResult Function(PetLayoutChangeBottomNavIndexState<T> value)?
         changeBottomNavIndexState,
     TResult Function(LoadingChatBotMessages<T> value)? loadChatBotMessages,

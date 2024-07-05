@@ -7,6 +7,7 @@ import 'package:pety/features/dashboard/pety_information/widgets/pety_info_bloc_
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/default_text_field.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -127,6 +128,7 @@ class PetyInfoScreen extends StatelessWidget{
             const VerticalSpace(height: 40),
             DefaultButton(
                 text: 'Save changes',
+                textStyle: TextStyles.font16WhiteBold,
                 color: ColorManager.orange,
                 width: double.infinity,
                 onClick: (){

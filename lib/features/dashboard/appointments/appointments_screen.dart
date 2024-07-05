@@ -30,7 +30,7 @@ class AppointmentsScreen extends StatelessWidget {
               children: [
                 Expanded(
                     child: ListView.separated(
-                        itemBuilder: (context, index) => AppointmentItem(appointment:cubit.appointmentsResponse!.data![index]),
+                        itemBuilder: (context, index) => AppointmentItem(index:index),
                         separatorBuilder: (context, index) => const VerticalSpace(height: 10),
                         itemCount: cubit.appointmentsResponse!.results!.toInt()
                     )

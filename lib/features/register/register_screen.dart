@@ -1,9 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/register/cubit/register_cubit.dart';
-import 'package:pety/features/register/cubit/register_states.dart';
 import 'package:pety/features/register/data/models/register_request_body.dart';
 import 'package:pety/features/register/widgets/register_bloc_listener.dart';
 import 'package:pety/shared/widgets/button_image.dart';
@@ -15,6 +16,7 @@ import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
+import 'package:pety/shared/widgets/vertical_space.dart';
 
 import '../../shared/widgets/text_button.dart';
 
@@ -31,6 +33,13 @@ class RegisterScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+            statusBarColor: Colors.white,
+            statusBarIconBrightness: Brightness.dark
+    ));
+
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -39,9 +48,19 @@ class RegisterScreen extends StatelessWidget{
             child: Form(
               key: formKey,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 50.h,),
+                  const VerticalSpace(height: 20),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Image(
+                        height: 60.h,
+                        width: 100.w,
+                        image: const AssetImage(
+                            'assets/images/logo.png'
+                        )
+                    ),
+                  ),
+                  SizedBox(height: 20.h,),
                   textTitle(context: context, text: 'Sign up'),
                   SizedBox(height: 30.h,),
                   Row(
@@ -154,7 +173,12 @@ class RegisterScreen extends StatelessWidget{
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 2.w),
-                        child: Text('Or sign up with',style: TextStyles.font16BlackRegular,),
+                        child: Text(
+                          'Or sign up with',
+                          style: GoogleFonts.robotoFlex(
+                              textStyle: TextStyles.font16BlackRegular
+                          ),
+                        ),
                       ),
                       const Expanded(
                           child:Divider(thickness: 1,color: ColorManager.dashLineColor,)

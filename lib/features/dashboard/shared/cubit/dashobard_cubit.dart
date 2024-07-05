@@ -68,13 +68,22 @@ class DashboardCubit extends Cubit<DashboardStates>{
     );
   }
 
-  void changeAppointmentStatus({required AppointmentStatusBody statusBody}) async{
+  int appointmentIndexOfAppointments=-1;
+
+  void changeAppointmentStatus({required int index, required String status}) async{
     emit(const DashboardStates.loadChangeAppointmentsStatus());
+    appointmentIndexOfAppointments=index;
+    AppointmentStatusBody statusBody = AppointmentStatusBody(
+        id: appointmentsResponse!.data![index].id,
+        role: currentRole,
+        status: status
+    );
     final response = await _dashboardRepository.changeAppointmentStatus(
         appointmentStatusBody: statusBody
     );
     response.when(
         success: (data){
+          appointmentsResponse!.data![index].status=data.data!.status;
           emit(DashboardStates.successChangeAppointmentsStatus(data));
         },
         failure: (error){
@@ -194,7 +203,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
   // user history
   GetUserHistoryResponse? userHistoryResponse;
   AppointmentHistoryResponse? appointmentHistoryResponse;
-  late int appointmentIndex;
+  int appointmentIndexOfHistory=-1;
   TextEditingController petNameController = TextEditingController();
   TextEditingController petTypeController = TextEditingController();
   TextEditingController symptomsController = TextEditingController();
@@ -238,7 +247,7 @@ class DashboardCubit extends Cubit<DashboardStates>{
     emit(const DashboardStates.loadAddHistory());
     final response = await _dashboardRepository.addHistory(
         historyBody: AddHistoryBody(
-          appointmentId: userHistoryResponse!.data!.appointments![appointmentIndex].id!,
+          appointmentId: userHistoryResponse!.data!.appointments![appointmentIndexOfHistory].id!,
           history: [
             History(
             animalName: petNameController.text,

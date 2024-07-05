@@ -24,6 +24,9 @@ mixin _$ProfileStates<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -34,6 +37,9 @@ mixin _$ProfileStates<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -44,6 +50,9 @@ mixin _$ProfileStates<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -55,6 +64,9 @@ mixin _$ProfileStates<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +77,9 @@ mixin _$ProfileStates<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,6 +90,9 @@ mixin _$ProfileStates<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -142,6 +160,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return initial();
   }
@@ -155,6 +176,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return initial?.call();
   }
@@ -168,6 +192,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -185,6 +212,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return initial(this);
   }
@@ -198,6 +228,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return initial?.call(this);
   }
@@ -211,6 +244,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -268,6 +304,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return loading();
   }
@@ -281,6 +320,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return loading?.call();
   }
@@ -294,6 +336,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -311,6 +356,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return loading(this);
   }
@@ -324,6 +372,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return loading?.call(this);
   }
@@ -337,6 +388,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -421,6 +475,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return success(data);
   }
@@ -434,6 +491,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return success?.call(data);
   }
@@ -447,6 +507,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -464,6 +527,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return success(this);
   }
@@ -477,6 +543,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return success?.call(this);
   }
@@ -490,6 +559,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -578,6 +650,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return error(this.error);
   }
@@ -591,6 +666,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return error?.call(this.error);
   }
@@ -604,6 +682,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -621,6 +702,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return error(this);
   }
@@ -634,6 +718,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return error?.call(this);
   }
@@ -647,6 +734,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -710,6 +800,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return loadGeneralData();
   }
@@ -723,6 +816,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return loadGeneralData?.call();
   }
@@ -736,6 +832,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (loadGeneralData != null) {
@@ -753,6 +852,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return loadGeneralData(this);
   }
@@ -766,6 +868,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return loadGeneralData?.call(this);
   }
@@ -779,6 +884,9 @@ class _$GeneralDataLoadingImpl<T> implements GeneralDataLoading<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (loadGeneralData != null) {
@@ -837,6 +945,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     required TResult Function(String error) error,
     required TResult Function() loadGeneralData,
     required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
   }) {
     return successGeneralData();
   }
@@ -850,6 +961,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     TResult? Function(String error)? error,
     TResult? Function()? loadGeneralData,
     TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
   }) {
     return successGeneralData?.call();
   }
@@ -863,6 +977,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     TResult Function(String error)? error,
     TResult Function()? loadGeneralData,
     TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (successGeneralData != null) {
@@ -880,6 +997,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     required TResult Function(Error<T> value) error,
     required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
     required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
   }) {
     return successGeneralData(this);
   }
@@ -893,6 +1013,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     TResult? Function(Error<T> value)? error,
     TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
   }) {
     return successGeneralData?.call(this);
   }
@@ -906,6 +1029,9 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
     TResult Function(Error<T> value)? error,
     TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
     TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
     required TResult orElse(),
   }) {
     if (successGeneralData != null) {
@@ -917,4 +1043,471 @@ class _$GeneralDataSuccessImpl<T> implements GeneralDataSuccess<T> {
 
 abstract class GeneralDataSuccess<T> implements ProfileStates<T> {
   const factory GeneralDataSuccess() = _$GeneralDataSuccessImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$UserVisitsLoadingImplCopyWith<T, $Res> {
+  factory _$$UserVisitsLoadingImplCopyWith(_$UserVisitsLoadingImpl<T> value,
+          $Res Function(_$UserVisitsLoadingImpl<T>) then) =
+      __$$UserVisitsLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$UserVisitsLoadingImplCopyWithImpl<T, $Res>
+    extends _$ProfileStatesCopyWithImpl<T, $Res, _$UserVisitsLoadingImpl<T>>
+    implements _$$UserVisitsLoadingImplCopyWith<T, $Res> {
+  __$$UserVisitsLoadingImplCopyWithImpl(_$UserVisitsLoadingImpl<T> _value,
+      $Res Function(_$UserVisitsLoadingImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UserVisitsLoadingImpl<T> implements UserVisitsLoading<T> {
+  const _$UserVisitsLoadingImpl();
+
+  @override
+  String toString() {
+    return 'ProfileStates<$T>.loadUserVisits()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UserVisitsLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
+  }) {
+    return loadUserVisits();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
+  }) {
+    return loadUserVisits?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (loadUserVisits != null) {
+      return loadUserVisits();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
+    required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
+  }) {
+    return loadUserVisits(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
+  }) {
+    return loadUserVisits?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (loadUserVisits != null) {
+      return loadUserVisits(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserVisitsLoading<T> implements ProfileStates<T> {
+  const factory UserVisitsLoading() = _$UserVisitsLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$UserVisitsSuccessImplCopyWith<T, $Res> {
+  factory _$$UserVisitsSuccessImplCopyWith(_$UserVisitsSuccessImpl<T> value,
+          $Res Function(_$UserVisitsSuccessImpl<T>) then) =
+      __$$UserVisitsSuccessImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$UserVisitsSuccessImplCopyWithImpl<T, $Res>
+    extends _$ProfileStatesCopyWithImpl<T, $Res, _$UserVisitsSuccessImpl<T>>
+    implements _$$UserVisitsSuccessImplCopyWith<T, $Res> {
+  __$$UserVisitsSuccessImplCopyWithImpl(_$UserVisitsSuccessImpl<T> _value,
+      $Res Function(_$UserVisitsSuccessImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UserVisitsSuccessImpl<T> implements UserVisitsSuccess<T> {
+  const _$UserVisitsSuccessImpl();
+
+  @override
+  String toString() {
+    return 'ProfileStates<$T>.successUserVisits()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UserVisitsSuccessImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
+  }) {
+    return successUserVisits();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
+  }) {
+    return successUserVisits?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (successUserVisits != null) {
+      return successUserVisits();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
+    required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
+  }) {
+    return successUserVisits(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
+  }) {
+    return successUserVisits?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (successUserVisits != null) {
+      return successUserVisits(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserVisitsSuccess<T> implements ProfileStates<T> {
+  const factory UserVisitsSuccess() = _$UserVisitsSuccessImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$UserVisitsErrorImplCopyWith<T, $Res> {
+  factory _$$UserVisitsErrorImplCopyWith(_$UserVisitsErrorImpl<T> value,
+          $Res Function(_$UserVisitsErrorImpl<T>) then) =
+      __$$UserVisitsErrorImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$UserVisitsErrorImplCopyWithImpl<T, $Res>
+    extends _$ProfileStatesCopyWithImpl<T, $Res, _$UserVisitsErrorImpl<T>>
+    implements _$$UserVisitsErrorImplCopyWith<T, $Res> {
+  __$$UserVisitsErrorImplCopyWithImpl(_$UserVisitsErrorImpl<T> _value,
+      $Res Function(_$UserVisitsErrorImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$UserVisitsErrorImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UserVisitsErrorImpl<T> implements UserVisitsError<T> {
+  const _$UserVisitsErrorImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'ProfileStates<$T>.errorUserVisits(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UserVisitsErrorImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UserVisitsErrorImplCopyWith<T, _$UserVisitsErrorImpl<T>> get copyWith =>
+      __$$UserVisitsErrorImplCopyWithImpl<T, _$UserVisitsErrorImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() loadGeneralData,
+    required TResult Function() successGeneralData,
+    required TResult Function() loadUserVisits,
+    required TResult Function() successUserVisits,
+    required TResult Function(String error) errorUserVisits,
+  }) {
+    return errorUserVisits(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? loadGeneralData,
+    TResult? Function()? successGeneralData,
+    TResult? Function()? loadUserVisits,
+    TResult? Function()? successUserVisits,
+    TResult? Function(String error)? errorUserVisits,
+  }) {
+    return errorUserVisits?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? loadGeneralData,
+    TResult Function()? successGeneralData,
+    TResult Function()? loadUserVisits,
+    TResult Function()? successUserVisits,
+    TResult Function(String error)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (errorUserVisits != null) {
+      return errorUserVisits(this.error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(GeneralDataLoading<T> value) loadGeneralData,
+    required TResult Function(GeneralDataSuccess<T> value) successGeneralData,
+    required TResult Function(UserVisitsLoading<T> value) loadUserVisits,
+    required TResult Function(UserVisitsSuccess<T> value) successUserVisits,
+    required TResult Function(UserVisitsError<T> value) errorUserVisits,
+  }) {
+    return errorUserVisits(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult? Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult? Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult? Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult? Function(UserVisitsError<T> value)? errorUserVisits,
+  }) {
+    return errorUserVisits?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(GeneralDataLoading<T> value)? loadGeneralData,
+    TResult Function(GeneralDataSuccess<T> value)? successGeneralData,
+    TResult Function(UserVisitsLoading<T> value)? loadUserVisits,
+    TResult Function(UserVisitsSuccess<T> value)? successUserVisits,
+    TResult Function(UserVisitsError<T> value)? errorUserVisits,
+    required TResult orElse(),
+  }) {
+    if (errorUserVisits != null) {
+      return errorUserVisits(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserVisitsError<T> implements ProfileStates<T> {
+  const factory UserVisitsError({required final String error}) =
+      _$UserVisitsErrorImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$UserVisitsErrorImplCopyWith<T, _$UserVisitsErrorImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
 }

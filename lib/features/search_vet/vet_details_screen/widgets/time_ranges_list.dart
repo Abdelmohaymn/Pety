@@ -9,7 +9,7 @@ import 'package:pety/shared/widgets/vertical_space.dart';
 
 class TimeRangesList extends StatelessWidget{
 
-  List<Appointments>? appointmentsList;
+  final List<Appointments>? appointmentsList;
   TimeRangesList({
     super.key,
     required this.appointmentsList
@@ -18,14 +18,15 @@ class TimeRangesList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    SearchVetCubit cubit = context.read<SearchVetCubit>();
-
     return Column(
       children: [
         const VerticalSpace(height: 30),
-        SizedBox(
-          height: 100.h,
+        Container(
+          constraints: BoxConstraints(
+            maxHeight: 300.h
+          ),
           child: GridView.builder(
+            shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 90.w,
               mainAxisExtent: 30.h,

@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pety/features/profile/data/models/update_profile_response.dart';
+import 'package:pety/features/profile/user_visits_screen/models/user_visits_response.dart';
 import 'package:pety/shared/network/local/shared_pred_constants.dart';
 import 'package:pety/shared/network/local/shared_pref_helper.dart';
 import 'package:pety/shared/network/remote/api_result.dart';
@@ -38,6 +39,18 @@ class ProfileRepository {
       return File(pickedImage.path);
     }
     return null;
+  }
+
+  // user visits
+  Future<ApiResult<UserVisitsResponse>> getUserVisits() async{
+    try{
+      final UserVisitsResponse response = await _apiService.getUserVisits(
+          'Bearer ${SharedPrefHelper.getData(key: SharedPrefConstants.tokenKey)}'
+      );
+      return ApiResult.success(response);
+    }catch(error){
+      return ApiResult.failure(ErrorHandler.handle(error));
+    }
   }
 
 }

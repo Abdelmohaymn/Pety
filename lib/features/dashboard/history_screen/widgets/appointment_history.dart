@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/history_screen/widgets/add_history_bloc_listener.dart';
 import 'package:pety/features/dashboard/history_screen/widgets/prescription_item.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_text_field.dart';
 import 'package:pety/shared/widgets/text_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -82,7 +84,12 @@ class AppointmentHistory extends StatelessWidget {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Add Prescription'),
+          title: Text(
+            'Add Prescription',
+            style: GoogleFonts.montserrat(
+              textStyle: TextStyles.font16BlackBold
+            ),
+          ),
           content: SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 12.h),

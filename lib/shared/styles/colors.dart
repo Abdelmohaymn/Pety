@@ -9,6 +9,8 @@ class ColorManager{
   static const Color lightGrey = Color(0xff838383);
   static const Color lightGrey2 = Color(0xffCECECE);
   static const Color lightGrey3 = Color(0xfff6f4f4);
+  static const Color lightGrey4 = Color(0xff959595);
+  static const Color lightGrey5 = Color(0xffA1A1A1);
   static const Color textFieldFillColor = Color(0xffF4F4F4);
   static const Color dashLineColor = Color(0xffD9D9D9);
   static const Color homeBackground = Color(0xffEDF5F6);
@@ -20,9 +22,14 @@ class ColorManager{
   static const Color lightBlue = Color(0xffBED6F2);
   static const Color lightBlue2 = Color(0xffDAE8FF);
   static const Color lightBlue3 = Color(0xff3F8BE0);
+  static Color lightBlue3Ops30 = const Color(0xff3F8BE0).withOpacity(0.3);
   static const Color backgroundBlue = Color(0xffF3F5F9);
   static const Color hintGrey = Color(0xff666666);
   static const Color lightBlack = Color(0xff2D2D2D);
   static const Color darkBlack = Color(0xff101010);
+  static const Color lightBlack2 = Color(0xff333333);
+  static const Color black5Ops = Color(0x0D000000);
+  static const Color red = Color(0xffC70000);
+
 
 }

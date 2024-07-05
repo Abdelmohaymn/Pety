@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
@@ -21,8 +22,10 @@ Widget defaultTextButton ({
     ),
     child: Text(
       text,
-      style: TextStyles.font12DefaultRegular.copyWith(
-        color: color??ColorManager.defaultColor
-      ),
+      style: GoogleFonts.montserrat(
+        textStyle: TextStyles.font12DefaultSemiBold.copyWith(
+            color: color??ColorManager.defaultColor
+        ),
+      )
     )
 );

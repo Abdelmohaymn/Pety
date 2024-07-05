@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/appointments/appointments_screen.dart';
 import 'package:pety/features/dashboard/pety_information/pety_information_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
@@ -45,11 +46,23 @@ class _DashboardLayoutState extends State<DashboardLayout>
           context: context,
           onBack: (){context.read<DashboardCubit>().onBackPressed(context);},
         ),
-        title: const Text('Dashboard'),
+        title: Text(
+          'Dashboard',
+          style: GoogleFonts.montserrat(
+              textStyle: TextStyles.font18LightBlackBold
+          ),
+        ),
         centerTitle: true,
         bottom: TabBar(
           labelPadding: const EdgeInsets.only(bottom: 10),
-          labelStyle: TextStyles.font14DefaultBold,
+          labelStyle: GoogleFonts.fredoka(
+            textStyle: TextStyles.font16DefaultMedium
+          ),
+          unselectedLabelStyle: GoogleFonts.fredoka(
+              textStyle: TextStyles.font16DefaultMedium.copyWith(
+                color: ColorManager.grey
+              )
+          ),
           controller: _tabController,
           tabs:  const [
             Text('Appointments'),

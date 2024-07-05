@@ -2,12 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/find_my_pet/result_of_search/widgets/missing_pet_item.dart';
 import 'package:pety/shared/styles/colors.dart';
-import 'package:pety/shared/styles/texts.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
+import 'package:pety/shared/widgets/default_app_bar.dart';
 
 class MissingPetsScreen extends StatelessWidget{
   const MissingPetsScreen({super.key});
@@ -18,16 +16,9 @@ class MissingPetsScreen extends StatelessWidget{
     PetLayoutCubit cubit = context.read<PetLayoutCubit>();
     return Scaffold(
       backgroundColor: ColorManager.backgroundBlue,
-      appBar: AppBar(
-        backgroundColor: ColorManager.backgroundBlue,
-        leading: DefaultBackAppBar(context: context,onBack: (){cubit.onBackFromFindPet(context);},),
-        title: Text(
-          'Missing pets',
-          style: GoogleFonts.montserrat(
-              textStyle:TextStyles.font18LightBlackBold
-          ),
-        ),
-        centerTitle: true,
+      appBar: DefaultAppBar(
+        title: 'Missing pets',
+        onBack: (){cubit.onBackFromFindPet(context);}
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

@@ -6,7 +6,7 @@ import 'colors.dart';
 
 ThemeData lightTheme = ThemeData(
 
-  scaffoldBackgroundColor: Colors.white,
+  scaffoldBackgroundColor: ColorManager.backgroundBlue,
   //primaryColor: ColorManager.defaultColor,
   colorScheme: ColorScheme.fromSeed(
       seedColor: ColorManager.defaultColor,

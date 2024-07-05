@@ -1,6 +1,8 @@
 
 
 import 'package:dio/dio.dart';
+import 'package:pety/features/community/community_screen/models/get_posts_response.dart';
+import 'package:pety/features/community/community_screen/models/post_votes_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointment_status_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointment_status_response.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_body.dart';
@@ -21,6 +23,7 @@ import 'package:pety/features/dashboard/work_hours/models/work_hours_response.da
 import 'package:pety/features/login/data/models/login_request_body.dart';
 import 'package:pety/features/login/data/models/login_response.dart';
 import 'package:pety/features/profile/data/models/update_profile_response.dart';
+import 'package:pety/features/profile/user_visits_screen/models/user_visits_response.dart';
 import 'package:pety/features/register/data/models/register_request_body.dart';
 import 'package:pety/features/register/data/models/register_response.dart';
 import 'package:pety/features/search_vet/book_vet_screen/data/models/book_vet_body.dart';
@@ -142,6 +145,38 @@ abstract class ApiService {
   Future<AddHistoryResponse> addHistory(
       @Body() AddHistoryBody historyBody,
       @Header('Authorization') String token,
+  );
+
+  @GET(ApiConstants.userVisitsHistory)
+  Future<UserVisitsResponse> getUserVisits(
+    @Header('Authorization') String token,
+  );
+
+  @POST(ApiConstants.communityCreatePost)
+  Future createPost(
+    @Body() FormData postBody,
+    @Header('Authorization') String token,
+  );
+
+  @GET(ApiConstants.communityGetPosts)
+  Future<GetPostsResponse> getPosts();
+
+  @PATCH(ApiConstants.communityUpVote)
+  Future upVotePost(
+    @Body() PostVotesBody voteBody,
+    @Header('Authorization') String token,
+  );
+
+  @PATCH(ApiConstants.communityDownVote)
+  Future downVotePost(
+    @Body() PostVotesBody voteBody,
+    @Header('Authorization') String token,
+  );
+
+  @PATCH(ApiConstants.communityResetVote)
+  Future resetVotePost(
+    @Body() PostVotesBody voteBody,
+    @Header('Authorization') String token,
   );
 
 

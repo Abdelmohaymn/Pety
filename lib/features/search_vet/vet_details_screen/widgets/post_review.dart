@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
-import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/add_review_bloc_listener.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
@@ -15,7 +15,7 @@ import 'package:pety/shared/widgets/vertical_space.dart';
 class PostReview extends StatelessWidget{
   PostReview({super.key});
 
-  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,9 @@ class PostReview extends StatelessWidget{
       children: [
         Text(
           'How was your experience?',
-          style: TextStyles.font16BlackBold,
+          style: GoogleFonts.montserrat(
+            textStyle: TextStyles.font16BlackBold
+          ),
         ),
         RatingBar.builder(
           initialRating: context.read<SearchVetCubit>().initialRate,
@@ -50,7 +52,9 @@ class PostReview extends StatelessWidget{
               decoration: InputDecoration(
                 border: const OutlineInputBorder(borderSide: BorderSide(width: 1)),
                 hintText: 'Describe your experience',
-                hintStyle: TextStyles.font12LightGreyRegular
+                hintStyle: GoogleFonts.montserrat(
+                  textStyle: TextStyles.font12LightGreyMedium
+                )
               ),
               validator: (value){
                 if(value==null||!value.isNotBlank()){
@@ -67,7 +71,7 @@ class PostReview extends StatelessWidget{
           width: double.infinity,
           height: 50.h,
           color: ColorManager.orange,
-          textStyle: TextStyles.font14WhiteRegular,
+          textStyle: TextStyles.font16WhiteBold,
           text: 'Post Review',
           onClick: (){
             if(formKey.currentState!.validate()){

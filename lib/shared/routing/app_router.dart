@@ -10,6 +10,7 @@ import 'package:pety/features/dashboard/roles/roles_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
 import 'package:pety/features/login/login_screen.dart';
+import 'package:pety/features/opening_screen/opening_screen.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/chat_bot_screen.dart';
 import 'package:pety/features/pety_layout/find_my_pet/result_of_search/missing_pets_screen.dart';
 import 'package:pety/features/pety_layout/find_my_pet/search_for_pet/search_for_missing_pet.dart';
@@ -181,6 +182,10 @@ class AppRouter {
                   value: BlocProvider.of<CommunityCubit>(settings.arguments as BuildContext),
                   child: const AddPostScreen()
               ),
+        );
+      case Routes.openingScreen :
+        return MaterialPageRoute(
+            builder: (_) => OpeningScreen()
         );
       default :
         return MaterialPageRoute(

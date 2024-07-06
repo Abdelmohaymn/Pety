@@ -52,7 +52,7 @@ class Data {
   User? user;
   String? title;
   String? context;
-  num? votes;
+  int? votes;
   List<String>? upvotes;
   List<String>? downvotes;
   List<String>? tags;

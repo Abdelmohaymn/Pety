@@ -34,7 +34,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  #hexcolor: ^3.0.1
   flutter_bloc: ^8.1.3
   shared_preferences: ^2.2.2
   dio: ^5.4.0
@@ -52,7 +51,6 @@ dependencies:
   get_it: ^7.6.7
   conditional_builder_null_safety: ^0.0.6
   intl: ^0.19.0
-  fluttertoast: ^8.2.4
   image_picker: ^1.0.8
   flutter_advanced_switch: ^3.1.0
   url_launcher: ^6.2.6
@@ -96,6 +94,7 @@ flutter:
     - assets/images/
     - assets/svgs/
     - assets/jsons/
+    - assets/ca/
 
   fonts:
     - family: Montserrat
@@ -134,8 +133,10 @@ flutter:
       fonts:
         - asset: assets/fonts/poetsen_one/PoetsenOne-Regular.ttf
           weight: 400
-
-
+    - family: MaterialIcons
+      fonts:
+        - asset: assets/fonts/MaterialIcons-Regular.otf
+          weight: 300
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

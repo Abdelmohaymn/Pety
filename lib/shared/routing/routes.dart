@@ -17,4 +17,6 @@ class Routes{
   static const String missingPetsScreen = 'missing_pets_screen';
   static const String communityScreen = 'community_screen';
   static const String communityAddPost = 'community_add_post';
+
+  static const String openingScreen = 'opening_screen';
 }

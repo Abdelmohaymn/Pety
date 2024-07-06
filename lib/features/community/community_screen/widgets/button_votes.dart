@@ -46,13 +46,17 @@ class _ButtonVotesState extends State<ButtonVotes> {
           children: [
             InkWell(
               onTap: (){
-                //print(cubit.userId);
                 upvote=!upvote;
                 if(upvote){
+                  if(downvote){
+                    cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!+1;
+                  }
                   downvote=false;
-                  cubit.upVotePost(postId: cubit.posts!.data![widget.index].id!);
+                  cubit.upVotePost(index: widget.index);
+                  cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!+1;
                 }else{
-                  cubit.resetVotePost(postId: cubit.posts!.data![widget.index].id!);
+                  cubit.resetVotePost(index: widget.index);
+                  cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!-1;
                 }
                 setState(() {});
               },
@@ -64,7 +68,7 @@ class _ButtonVotesState extends State<ButtonVotes> {
             ),
             const HorizontalSpace(width: 10),
             Text(
-              '10',
+              cubit.posts!.data![widget.index].votes!.toString(),
               style: TextStyles.font12BlackRegular.copyWith(
                 color: (upvote||downvote)?Colors.white:Colors.black,
                 fontFamily: FontFamilyHelper.montserrat
@@ -75,10 +79,15 @@ class _ButtonVotesState extends State<ButtonVotes> {
               onTap: (){
                 downvote=!downvote;
                 if(downvote){
+                  if(upvote){
+                    cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!-1;
+                  }
                   upvote=false;
-                  cubit.downVotePost(postId: cubit.posts!.data![widget.index].id!);
+                  cubit.downVotePost(index: widget.index);
+                  cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!-1;
                 }else{
-                  cubit.resetVotePost(postId: cubit.posts!.data![widget.index].id!);
+                  cubit.resetVotePost(index: widget.index);
+                  cubit.posts!.data![widget.index].votes=cubit.posts!.data![widget.index].votes!+1;
                 }
                 setState(() {});
               },

@@ -90,21 +90,21 @@ class CommunityCubit extends Cubit<CommunityStates>{
     );
   }
 
-  void upVotePost({required String postId}) async{
+  void upVotePost({required int index}) async{
     await _communityRepository.upVotePost(
-      voteBody: PostVotesBody(postId: postId)
+      voteBody: PostVotesBody(postId: posts!.data![index].id!)
     );
   }
 
-  void downVotePost({required String postId}) async{
+  void downVotePost({required int index}) async{
     await _communityRepository.downVotePost(
-        voteBody: PostVotesBody(postId: postId)
+        voteBody: PostVotesBody(postId: posts!.data![index].id!)
     );
   }
 
-  void resetVotePost({required String postId}) async{
+  void resetVotePost({required int index}) async{
     await _communityRepository.resetVotePost(
-        voteBody: PostVotesBody(postId: postId)
+        voteBody: PostVotesBody(postId: posts!.data![index].id!)
     );
   }
 

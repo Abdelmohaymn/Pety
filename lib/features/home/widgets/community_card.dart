@@ -1,10 +1,9 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 
@@ -38,8 +37,8 @@ class CommunityCard extends StatelessWidget{
                     width: 160.w,
                     child: Text(
                       'Join Our Community for Pets Owners',
-                      style: GoogleFonts.fredoka(
-                          textStyle: TextStyles.font16DefaultSemiBold
+                      style: TextStyles.font16DefaultSemiBold.copyWith(
+                        fontFamily: FontFamilyHelper.fredoka
                       ),
                     ),
                   ),
@@ -47,8 +46,9 @@ class CommunityCard extends StatelessWidget{
                   DefaultButton(
                       width: 70.w,
                       height: 30.h,
-                      textStyle: GoogleFonts.montserrat(
-                        textStyle: TextStyles.font7DefaultBold.copyWith(fontSize: 8)
+                      textStyle: TextStyles.font7DefaultBold.copyWith(
+                        fontSize: 8.sp,
+                        fontFamily: FontFamilyHelper.montserrat
                       ),
                       color: Colors.white,
                       radius: 6,

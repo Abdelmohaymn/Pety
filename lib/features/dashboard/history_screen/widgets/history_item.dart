@@ -4,7 +4,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/history_screen/widgets/appointment_history.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
@@ -72,22 +71,22 @@ class _HistoryItemState extends State<HistoryItem> {
                     children: [
                       Text(
                         "${user.owner!.firstName!} ${user.owner!.lastName!}",
-                        style: GoogleFonts.montserrat(
-                          textStyle: TextStyles.font12BlackBold
+                        style: TextStyles.font12BlackBold.copyWith(
+                          fontFamily: "Montserrat"
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
                       const VerticalSpace(height: 1),
                       Text(
                         appointment.date!,
-                        style: GoogleFonts.montserrat(
-                          textStyle: TextStyles.font12filtersGreyColorRegular
+                        style: TextStyles.font12filtersGreyColorRegular.copyWith(
+                            fontFamily: "Montserrat"
                         ),
                       ),
                       Text(
                         appointment.time!,
-                        style: GoogleFonts.montserrat(
-                            textStyle: TextStyles.font12filtersGreyColorRegular
+                        style: TextStyles.font12filtersGreyColorRegular.copyWith(
+                            fontFamily: "Montserrat"
                         ),
                       ),
                     ],

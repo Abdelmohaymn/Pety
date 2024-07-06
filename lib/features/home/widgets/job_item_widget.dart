@@ -1,14 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/data/models/job_list_item.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/extensions.dart';
-import 'package:pety/shared/network/remote/api_constants.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class JobItemWidget extends StatelessWidget{
@@ -45,8 +43,8 @@ class JobItemWidget extends StatelessWidget{
 
         Text(
           model.title,
-          style: GoogleFonts.montserrat(
-            textStyle: TextStyles.font12DarkBlackBold
+          style: TextStyles.font12DarkBlackBold.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         )
       ],

@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/extensions.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class VetNameAndOffers extends StatelessWidget{
@@ -25,15 +25,15 @@ class VetNameAndOffers extends StatelessWidget{
             children: [
               Text(
                 'Vet name: ',
-                style: GoogleFonts.inter(
-                  textStyle: TextStyles.font16BlackSemiBold
+                style: TextStyles.font16BlackSemiBold.copyWith(
+                    fontFamily: FontFamilyHelper.montserrat
                 ),
               ),
               Expanded(
                 child: Text(
                   cubitContext.read<SearchVetCubit>().searchController.text,
-                  style: GoogleFonts.inter(
-                    textStyle: TextStyles.font12BlackRegular
+                  style: TextStyles.font12BlackRegular.copyWith(
+                      fontFamily: FontFamilyHelper.montserrat
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -45,8 +45,8 @@ class VetNameAndOffers extends StatelessWidget{
           children: [
             Text(
               'Are you searching for offers?',
-              style: GoogleFonts.inter(
-                  textStyle: TextStyles.font16BlackSemiBold
+              style: TextStyles.font13BlackBold.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
               ),
             ),
             const Spacer(),

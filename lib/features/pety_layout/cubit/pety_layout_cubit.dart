@@ -6,9 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/home/home_Screen.dart';
-import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/data/models/chat_bot_body.dart';
 import 'package:pety/features/pety_layout/data/models/job_list_item.dart';
 import 'package:pety/features/pety_layout/data/repository/pety_repository.dart';
@@ -295,9 +293,9 @@ class PetLayoutCubit extends Cubit<PetLayoutStates>{
         children: [
           Text(
             'Profile',
-            style: GoogleFonts.montserrat(
-              textStyle: TextStyles.font18LightBlackBold
-            ),
+            style: TextStyles.font18LightBlackBold.copyWith(
+              fontFamily: "Montserrat"
+            )
           ),
         ],
       ),

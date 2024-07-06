@@ -1,13 +1,12 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
-import 'package:pety/shared/styles/font_weights.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class TextNotesField extends StatelessWidget{
-  TextEditingController controller;
-  String hint;
+  final TextEditingController controller;
+  final String hint;
   TextNotesField({
     super.key,
     required this.controller,
@@ -37,12 +36,12 @@ class TextNotesField extends StatelessWidget{
               decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: hint,
-                hintStyle: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font13HintGreyRegular
+                hintStyle: TextStyles.font13HintGreyRegular.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
               ),
-              style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font13HintGreyRegular
+              style: TextStyles.font13HintGreyRegular.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
               ),
             ),
           ),

@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class TimeRangeItem extends StatelessWidget{
@@ -36,9 +36,8 @@ class TimeRangeItem extends StatelessWidget{
         ),
         child: Text(
           item.isAvailable!?item.time.toString():'Booked',
-          style: GoogleFonts.montserrat(
-            textStyle: item.isAvailable!?TextStyles.font14BlackMedium:TextStyles.font14BlackMedium.copyWith(color: Colors.grey)
-          ),
+          style: item.isAvailable!?TextStyles.font14BlackMedium.copyWith(fontFamily: FontFamilyHelper.montserrat):
+          TextStyles.font14BlackMedium.copyWith(color: Colors.grey,fontFamily: FontFamilyHelper.montserrat),
         ),
       ),
     );

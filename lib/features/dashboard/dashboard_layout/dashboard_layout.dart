@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/appointments/appointments_screen.dart';
 import 'package:pety/features/dashboard/pety_information/pety_information_screen.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
@@ -48,20 +47,19 @@ class _DashboardLayoutState extends State<DashboardLayout>
         ),
         title: Text(
           'Dashboard',
-          style: GoogleFonts.montserrat(
-              textStyle: TextStyles.font18LightBlackBold
-          ),
+          style: TextStyles.font18LightBlackBold.copyWith(
+            fontFamily: "Montserrat"
+          )
         ),
         centerTitle: true,
         bottom: TabBar(
           labelPadding: const EdgeInsets.only(bottom: 10),
-          labelStyle: GoogleFonts.fredoka(
-            textStyle: TextStyles.font16DefaultMedium
+          labelStyle: TextStyles.font16DefaultMedium.copyWith(
+            fontFamily: "Fredoka"
           ),
-          unselectedLabelStyle: GoogleFonts.fredoka(
-              textStyle: TextStyles.font16DefaultMedium.copyWith(
-                color: ColorManager.grey
-              )
+          unselectedLabelStyle: TextStyles.font16DefaultMedium.copyWith(
+              color: ColorManager.grey,
+              fontFamily: "Fredoka"
           ),
           controller: _tabController,
           tabs:  const [

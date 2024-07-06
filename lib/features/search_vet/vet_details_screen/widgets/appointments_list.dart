@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/appointment_item.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/time_ranges_list.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -28,8 +28,8 @@ class AppointmentsList extends StatelessWidget{
               children: [
                 Text(
                   'Choose your appointment',
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12BlackMedium
+                  style: TextStyles.font12BlackMedium.copyWith(
+                    fontFamily: FontFamilyHelper.montserrat
                   ),
                 ),
                 const VerticalSpace(height: 10),

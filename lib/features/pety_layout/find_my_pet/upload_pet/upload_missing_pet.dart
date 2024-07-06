@@ -1,9 +1,7 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/find_my_pet/upload_pet/widgets/upload_pet_bloc_listener.dart';
 import 'package:pety/features/pety_layout/find_my_pet/widgets/image_pet_uploader.dart';
@@ -12,7 +10,6 @@ import 'package:pety/features/pety_layout/find_my_pet/widgets/text_notes_field.d
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_app_bar.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -53,9 +50,10 @@ class UploadMissingPetScreen extends StatelessWidget{
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         child: Text(
                           'Or',
-                          style: GoogleFonts.urbanist(
-                            textStyle: TextStyles.font12DefaultRegular.copyWith(fontSize: 18.sp)
-                          ),
+                          style: TextStyles.font12DefaultRegular.copyWith(
+                            fontSize: 18.sp,
+                            fontFamily: "Montserrat"
+                          )
                         ),
                       ),
                       const Expanded(child: Divider(color: ColorManager.hintGrey,)),
@@ -65,8 +63,8 @@ class UploadMissingPetScreen extends StatelessWidget{
                   DefaultButton(
                     width: double.infinity,
                     height: 40,
-                    textStyle: GoogleFonts.montserrat(
-                      textStyle: TextStyles.font16WhiteBold
+                    textStyle: TextStyles.font16WhiteBold.copyWith(
+                      fontFamily: "Montserrat"
                     ),
                     text: 'Open camera',
                     prevIcon: Icons.camera_alt_rounded,
@@ -88,8 +86,8 @@ class UploadMissingPetScreen extends StatelessWidget{
                   DefaultButton(
                     height: 40,
                     width: double.infinity,
-                    textStyle: GoogleFonts.montserrat(
-                        textStyle:TextStyles.font16WhiteBold
+                    textStyle: TextStyles.font16WhiteBold.copyWith(
+                        fontFamily: "Montserrat"
                     ),
                     text: 'Register pet',
                     onClick: () {

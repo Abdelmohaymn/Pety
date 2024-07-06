@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
@@ -27,8 +26,8 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget{
       ),
       title: title!=null?Text(
         title!,
-        style: GoogleFonts.montserrat(
-          textStyle: TextStyles.font18LightBlackBold
+        style: TextStyles.font18LightBlackBold.copyWith(
+          fontFamily: "Montserrat"
         ),
       ):null,
       centerTitle: true,

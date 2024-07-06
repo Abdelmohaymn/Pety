@@ -5,6 +5,7 @@ import 'package:pety/features/profile/cubit/profile_cubit.dart';
 import 'package:pety/features/profile/widgets/image_avatar.dart';
 import 'package:pety/features/profile/widgets/profile_bloc_listener.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/widgets/default_app_bar.dart';
 import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/default_text_field.dart';
@@ -23,8 +24,8 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     ProfileCubit cubit = context.read<ProfileCubit>();
     return Scaffold(
-      appBar: AppBar(
-        leading: DefaultBackAppBar(context: context,),
+      appBar: DefaultAppBar(
+        title: 'Your Information',
       ),
       body: SingleChildScrollView(
         child: Padding(

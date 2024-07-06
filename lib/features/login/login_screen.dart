@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/login/cubit/login_cubit.dart';
 import 'package:pety/features/login/data/models/login_request_body.dart';
 import 'package:pety/features/login/widgets/login_bloc_listener.dart';
@@ -105,9 +104,9 @@ class LoginScreen extends StatelessWidget{
                         padding: EdgeInsets.symmetric(horizontal: 2.w),
                         child: Text(
                           'Or sign in with',
-                          style: GoogleFonts.robotoFlex(
-                            textStyle: TextStyles.font16BlackRegular
-                          ),
+                          style: TextStyles.font16BlackRegular.copyWith(
+                            fontFamily: "Montserrat"
+                          )
                         ),
                       ),
                       const Expanded(

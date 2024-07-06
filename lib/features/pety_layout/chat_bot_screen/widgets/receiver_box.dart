@@ -2,13 +2,13 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class ReceiverBox extends StatelessWidget{
-  int index;
+  final int index;
   ReceiverBox({super.key,required this.index});
 
   @override
@@ -34,8 +34,9 @@ class ReceiverBox extends StatelessWidget{
           builder: (context) {
             if(index==0&&cubit.allowAnimatedText){
               return DefaultTextStyle(
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12WhiteBold.copyWith(color: Colors.black)
+                style: TextStyles.font12WhiteBold.copyWith(
+                  color: Colors.black,
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
                 child: AnimatedTextKit(
                   animatedTexts: [
@@ -56,8 +57,9 @@ class ReceiverBox extends StatelessWidget{
             }else{
               return Text(
                 cubit.chatBotMessages[index],
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12WhiteBold.copyWith(color: Colors.black)
+                style: TextStyles.font12WhiteBold.copyWith(
+                  color: Colors.black,
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
               );
             }

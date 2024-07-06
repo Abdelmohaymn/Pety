@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class DefaultTextField extends StatelessWidget{
@@ -60,7 +60,9 @@ class DefaultTextField extends StatelessWidget{
           fillColor: ColorManager.textFieldFillColor,
           filled: true,
           labelText: label,
-          labelStyle: GoogleFonts.montserrat(textStyle: TextStyles.font15GreyRegular),
+          labelStyle: TextStyles.font15GreyRegular.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
+          ),
           prefixIcon: prefix!=null?Icon(
             prefix,
           ):null,

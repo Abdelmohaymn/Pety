@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/register/cubit/register_cubit.dart';
 import 'package:pety/features/register/data/models/register_request_body.dart';
 import 'package:pety/features/register/widgets/register_bloc_listener.dart';
@@ -175,9 +174,9 @@ class RegisterScreen extends StatelessWidget{
                         padding: EdgeInsets.symmetric(horizontal: 2.w),
                         child: Text(
                           'Or sign up with',
-                          style: GoogleFonts.robotoFlex(
-                              textStyle: TextStyles.font16BlackRegular
-                          ),
+                          style: TextStyles.font16BlackRegular.copyWith(
+                            fontFamily: "Montserrat"
+                          )
                         ),
                       ),
                       const Expanded(
@@ -212,7 +211,7 @@ class RegisterScreen extends StatelessWidget{
                       defaultTextButton(
                           text: 'Login now',
                           onClick: () {
-                            context.pushNamed(Routes.loginScreen);
+                            context.pushNamedAndRemoveUntil(Routes.loginScreen, predicate: (Route<dynamic> route) { return false; });
                           }
                       )
                     ],

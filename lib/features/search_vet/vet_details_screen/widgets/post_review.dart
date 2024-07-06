@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/add_review_bloc_listener.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -23,8 +23,8 @@ class PostReview extends StatelessWidget{
       children: [
         Text(
           'How was your experience?',
-          style: GoogleFonts.montserrat(
-            textStyle: TextStyles.font16BlackBold
+          style: TextStyles.font16BlackBold.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         ),
         RatingBar.builder(
@@ -52,8 +52,8 @@ class PostReview extends StatelessWidget{
               decoration: InputDecoration(
                 border: const OutlineInputBorder(borderSide: BorderSide(width: 1)),
                 hintText: 'Describe your experience',
-                hintStyle: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font12LightGreyMedium
+                hintStyle: TextStyles.font12LightGreyMedium.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
                 )
               ),
               validator: (value){

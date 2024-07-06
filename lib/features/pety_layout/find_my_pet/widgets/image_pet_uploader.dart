@@ -2,10 +2,10 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -22,8 +22,8 @@ class ImagePetUploader extends StatelessWidget {
           children: [
             Text(
               'Upload an image for the missing pet',
-              style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font12BlackSemiBold
+              style: TextStyles.font12BlackSemiBold.copyWith(
+                fontFamily: FontFamilyHelper.montserrat
               ),
             ),
             const VerticalSpace(height: 15),
@@ -61,8 +61,8 @@ class ImagePetUploader extends StatelessWidget {
                             ),
                             Text(
                               'Upload image',
-                              style: GoogleFonts.montserrat(
-                                  textStyle: TextStyles.font18LightBueSemiBold
+                              style: TextStyles.font18LightBueSemiBold.copyWith(
+                                fontFamily: FontFamilyHelper.montserrat
                               ),
                             )
                           ],

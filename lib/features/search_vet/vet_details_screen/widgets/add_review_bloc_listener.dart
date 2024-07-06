@@ -1,18 +1,10 @@
 
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pety/features/register/cubit/register_cubit.dart';
-import 'package:pety/features/register/cubit/register_states.dart';
-import 'package:pety/features/register/data/models/register_response.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/extensions.dart';
-import 'package:pety/shared/network/local/shared_pred_constants.dart';
-import 'package:pety/shared/network/local/shared_pref_helper.dart';
-import 'package:pety/shared/routing/routes.dart';
-import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widget_functions.dart';
 
 class AddReviewBlocListener extends StatelessWidget{
@@ -37,6 +29,7 @@ class AddReviewBlocListener extends StatelessWidget{
             },
             successAddReview: (){
               context.pop();
+              context.read<SearchVetCubit>().reviewController.clear();
             },
             errorAddReview: (error){
               WidgetFunctions.setupErrorState(context, error);

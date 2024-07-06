@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/features/dashboard/work_hours/widgets/box_time.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class WorkHourItem extends StatelessWidget{
@@ -54,19 +54,17 @@ class WorkHourItem extends StatelessWidget{
             children: [
               Text(
                 'From',
-                style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font12BlackRegular.copyWith(
-                      color: ColorManager.hintOFSearchTextField
-                  )
+                style: TextStyles.font12BlackRegular.copyWith(
+                  color: ColorManager.hintOFSearchTextField,
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
               ),
               BoxTime(index: index, from: true,),
               Text(
                 'to',
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12BlackRegular.copyWith(
-                        color: ColorManager.hintOFSearchTextField
-                    )
+                style: TextStyles.font12BlackRegular.copyWith(
+                  color: ColorManager.hintOFSearchTextField,
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
               ),
               BoxTime(index: index, from: false,),

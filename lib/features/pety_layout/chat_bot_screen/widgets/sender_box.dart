@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class SenderBox extends StatelessWidget{
-  String message;
+  final String message;
   SenderBox({super.key,required this.message});
 
   @override
@@ -28,8 +28,8 @@ class SenderBox extends StatelessWidget{
         ),
         child: Text(
           message,
-          style: GoogleFonts.montserrat(
-            textStyle: TextStyles.font12WhiteBold
+          style: TextStyles.font12WhiteBold.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         ),
       ),

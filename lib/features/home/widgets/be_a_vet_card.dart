@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 
@@ -40,8 +40,8 @@ class BeAVetCard extends StatelessWidget{
                         width: 160.w,
                         child: Text(
                           'Become a Pety\nPet Sitter or Pet Groomer',
-                          style: GoogleFonts.fredoka(
-                              textStyle: TextStyles.font16WhiteMedium
+                          style: TextStyles.font16WhiteMedium.copyWith(
+                            fontFamily: FontFamilyHelper.fredoka
                           ),
                         ),
                       ),
@@ -49,8 +49,9 @@ class BeAVetCard extends StatelessWidget{
                       DefaultButton(
                           width: 70.w,
                           height: 30.h,
-                          textStyle: GoogleFonts.montserrat(
-                              textStyle: TextStyles.font7DefaultBold.copyWith(fontSize: 8)
+                          textStyle: TextStyles.font7DefaultBold.copyWith(
+                            fontSize: 8.sp,
+                            fontFamily: FontFamilyHelper.montserrat
                           ),
                           color: Colors.white,
                           radius: 6,

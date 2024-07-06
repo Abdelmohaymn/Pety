@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/community/shared/cubit/community_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 
@@ -65,10 +65,9 @@ class _ButtonVotesState extends State<ButtonVotes> {
             const HorizontalSpace(width: 10),
             Text(
               '10',
-              style: GoogleFonts.montserrat(
-                textStyle: TextStyles.font12BlackRegular.copyWith(
-                  color: (upvote||downvote)?Colors.white:Colors.black
-                )
+              style: TextStyles.font12BlackRegular.copyWith(
+                color: (upvote||downvote)?Colors.white:Colors.black,
+                fontFamily: FontFamilyHelper.montserrat
               ),
             ),
             const HorizontalSpace(width: 10),

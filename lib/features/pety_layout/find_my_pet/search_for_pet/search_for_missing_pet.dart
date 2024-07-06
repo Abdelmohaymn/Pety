@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/find_my_pet/search_for_pet/widgets/find_pet_bloc_listener.dart';
@@ -11,7 +9,6 @@ import 'package:pety/features/pety_layout/find_my_pet/widgets/location_of_pet.da
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_app_bar.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -52,8 +49,8 @@ class SearchForMissingPetScreen extends StatelessWidget {
                       DefaultButton(
                         height: 40,
                         width: double.infinity,
-                        textStyle: GoogleFonts.montserrat(
-                            textStyle:TextStyles.font16WhiteBold
+                        textStyle: TextStyles.font16WhiteBold.copyWith(
+                          fontFamily: "Montserrat"
                         ),
                         text: 'Find pet',
                         onClick: () {

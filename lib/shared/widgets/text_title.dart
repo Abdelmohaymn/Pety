@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 Widget textTitle({
@@ -8,7 +8,7 @@ Widget textTitle({
   required String text,
 })=>Text(
   text,
-  style: GoogleFonts.montserrat(
-    textStyle: TextStyles.font43BlackBold
-  ),
+  style: TextStyles.font43BlackBold.copyWith(
+    fontFamily: FontFamilyHelper.montserrat,
+  )
 );

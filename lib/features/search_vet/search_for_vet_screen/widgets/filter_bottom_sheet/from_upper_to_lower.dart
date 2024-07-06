@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
-import 'package:pety/shared/network/remote/api_constants.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class FromUpperToLower extends StatelessWidget {
@@ -27,7 +27,9 @@ class FromUpperToLower extends StatelessWidget {
               children: [
                 Text(
                   'From max to min',
-                  style: TextStyles.font13BlackBold,
+                  style: TextStyles.font13BlackBold.copyWith(
+                      fontFamily: FontFamilyHelper.montserrat
+                  ),
                 ),
                 const Spacer(),
                 Checkbox(

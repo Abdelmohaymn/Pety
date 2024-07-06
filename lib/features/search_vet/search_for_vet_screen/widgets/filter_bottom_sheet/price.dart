@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/constants/constant_numbers.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -23,8 +23,8 @@ class PriceFilters extends StatelessWidget {
       children: [
         Text(
           'Price range',
-          style: GoogleFonts.inter(
-              textStyle: TextStyles.font16BlackSemiBold
+          style: TextStyles.font13BlackBold.copyWith(
+              fontFamily: FontFamilyHelper.montserrat
           ),
         ),
         const VerticalSpace(height: 50),

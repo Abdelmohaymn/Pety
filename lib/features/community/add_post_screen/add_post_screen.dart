@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/community/add_post_screen/widgets/add_post_listener.dart';
 import 'package:pety/features/community/add_post_screen/widgets/svg_button_text.dart';
 import 'package:pety/features/community/shared/cubit/community_cubit.dart';
@@ -64,11 +63,10 @@ class AddPostScreen extends StatelessWidget{
                 textInputAction: TextInputAction.newline,
                 decoration: InputDecoration.collapsed(
                   hintText: 'What\'s on your mind?',
-                  hintStyle: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font14GreyLight.copyWith(
-                        fontSize: 20.sp
-                    ),
-                  )
+                  hintStyle: TextStyles.font14GreyLight.copyWith(
+                    fontSize: 20.sp,
+                    fontFamily: "Montserrat"
+                  ),
                 ),
                 onTapOutside: (value){
                   FocusScope.of(context).requestFocus(FocusNode());

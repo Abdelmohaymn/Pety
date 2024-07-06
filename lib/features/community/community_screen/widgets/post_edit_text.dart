@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
 
@@ -21,10 +20,9 @@ class PostEditText extends StatelessWidget{
       ),
       child: Text(
         'What\'s on your mind?',
-        style: GoogleFonts.montserrat(
-          textStyle: TextStyles.font14GreyLight.copyWith(
-              fontSize: 13.sp
-          ),
+        style: TextStyles.font14GreyLight.copyWith(
+          fontSize: 13.sp,
+          fontFamily: "Montserrat"
         ),
       )
     );

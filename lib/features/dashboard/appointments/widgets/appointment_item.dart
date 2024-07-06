@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:pety/features/dashboard/appointments/models/appointment_status_body.dart';
 import 'package:pety/features/dashboard/appointments/models/appointments_response.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/routing/routes.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/text_button.dart';
@@ -49,22 +48,22 @@ class AppointmentItem extends StatelessWidget {
               children: [
                 Text(
                   "${appointment.owner![0].firstName!} ${appointment.owner![0].lastName!}",
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12BlackBold
+                  style: TextStyles.font12BlackBold.copyWith(
+                    fontFamily: FontFamilyHelper.montserrat
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
                 const VerticalSpace(height: 1),
                 Text(
                   appointment.date!,
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12filtersGreyColorRegular
+                  style: TextStyles.font12filtersGreyColorRegular.copyWith(
+                      fontFamily: FontFamilyHelper.montserrat
                   ),
                 ),
                 Text(
                   appointment.time!,
-                  style: GoogleFonts.montserrat(
-                      textStyle: TextStyles.font12filtersGreyColorRegular
+                  style: TextStyles.font12filtersGreyColorRegular.copyWith(
+                      fontFamily: FontFamilyHelper.montserrat
                   ),
                 ),
               ],
@@ -77,8 +76,9 @@ class AppointmentItem extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 8.0),
                     child: Text(
                       appointment.status!,
-                      style: GoogleFonts.montserrat(
-                        textStyle: TextStyles.font12BlackRegular.copyWith(color: statusColor(appointment.status!))
+                      style: TextStyles.font12BlackRegular.copyWith(
+                        color: statusColor(appointment.status!),
+                        fontFamily: FontFamilyHelper.montserrat
                       ),
                     ),
                   );
@@ -94,8 +94,9 @@ class AppointmentItem extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 8.0),
                     child: Text(
                       state.data.data.status,
-                      style: GoogleFonts.montserrat(
-                        textStyle: TextStyles.font12BlackRegular.copyWith(color: statusColor(state.data.data.status))
+                      style: TextStyles.font12BlackRegular.copyWith(
+                        color: statusColor(state.data.data.status),
+                        fontFamily: FontFamilyHelper.montserrat
                       )
                     ),
                   );

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashboard_states.dart';
 import 'package:pety/features/dashboard/shared/cubit/dashobard_cubit.dart';
 import 'package:pety/shared/extensions.dart';
@@ -80,9 +79,9 @@ class RolesScreen extends StatelessWidget {
                                 const VerticalSpace(height: 20),
                                 Text(
                                   role,
-                                  style: GoogleFonts.montserrat(
-                                    textStyle: TextStyles.font13WhiteBold
-                                  ),
+                                  style: TextStyles.font13WhiteBold.copyWith(
+                                    fontFamily: "Montserrat"
+                                  )
                                 ),
                               ],
                             ),

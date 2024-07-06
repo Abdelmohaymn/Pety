@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/data/models/search_vets_response.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/circle_avatar_default_image.dart';
 import 'package:pety/shared/widgets/default_rating_indicator.dart';
@@ -44,8 +44,8 @@ class VetItemWidget extends StatelessWidget{
                   item.petyName!,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.fredoka(
-                    textStyle: TextStyles.font16BlackMedium
+                  style: TextStyles.font16BlackMedium.copyWith(
+                    fontFamily: FontFamilyHelper.fredoka
                   ),
                 ),
                 Row(
@@ -54,8 +54,8 @@ class VetItemWidget extends StatelessWidget{
                     const HorizontalSpace(width: 3),
                     Text(
                       '(${item.ratingsAverage!})',
-                      style: GoogleFonts.montserrat(
-                        textStyle: TextStyles.font12DefaultSemiBold
+                      style: TextStyles.font12DefaultSemiBold.copyWith(
+                        fontFamily: FontFamilyHelper.montserrat
                       )
                     ),
                   ],
@@ -68,8 +68,8 @@ class VetItemWidget extends StatelessWidget{
                     HorizontalSpace(width: 5,),
                     Text(
                       'Price ${item.price}',
-                      style: GoogleFonts.montserrat(
-                          textStyle: TextStyles.font12LightGrey5Medium
+                      style: TextStyles.font12LightGrey5Medium.copyWith(
+                        fontFamily: FontFamilyHelper.montserrat
                       )
                     )
                   ],
@@ -88,8 +88,8 @@ class VetItemWidget extends StatelessWidget{
                       item.animals==null?'':item.animals!.toStringCustom(' - '),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.montserrat(
-                          textStyle: TextStyles.font12LightGrey5Medium
+                      style: TextStyles.font12LightGrey5Medium.copyWith(
+                          fontFamily: FontFamilyHelper.montserrat
                       )
                     )
                   ],

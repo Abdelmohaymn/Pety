@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class TagBox extends StatelessWidget{
@@ -18,8 +18,8 @@ class TagBox extends StatelessWidget{
       ),
       child: Text(
         'Funny/Cute',
-        style: GoogleFonts.montserrat(
-          textStyle: TextStyles.font8BlackSemiBold
+        style: TextStyles.font8BlackSemiBold.copyWith(
+          fontFamily: FontFamilyHelper.montserrat
         ),
       ),
     );

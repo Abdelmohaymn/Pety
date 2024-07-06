@@ -7,20 +7,14 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/widgets/message_text_field.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/widgets/messages_list.dart';
-import 'package:pety/features/pety_layout/chat_bot_screen/widgets/receiver_box.dart';
 import 'package:pety/features/pety_layout/chat_bot_screen/widgets/send_message_button.dart';
-import 'package:pety/features/pety_layout/chat_bot_screen/widgets/sender_box.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
-import 'package:pety/shared/constants/pety_constants.dart';
-import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
 import 'package:pety/shared/styles/texts.dart';
-import 'package:pety/shared/widgets/default_back_app_bar.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/text_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -68,9 +62,10 @@ class ChatBotScreen extends StatelessWidget{
             const SizedBox(width: 3,),
             Text(
               'PetBot',
-              style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font16WhiteBold.copyWith(fontSize: 18.sp)
-              ),
+              style: TextStyles.font16WhiteBold.copyWith(
+                fontSize: 18.sp,
+                fontFamily: "Montserrat"
+              )
             )
           ],
         ),

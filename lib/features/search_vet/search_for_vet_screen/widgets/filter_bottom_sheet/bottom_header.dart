@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/extensions.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class HeaderBottomSheet extends StatelessWidget{
@@ -23,8 +23,8 @@ class HeaderBottomSheet extends StatelessWidget{
             ),
             Text(
               'Filters',
-              style: GoogleFonts.inter(
-                textStyle: TextStyles.font20BlackSemiBold
+              style: TextStyles.font20BlackSemiBold.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
               ),
             )
           ],

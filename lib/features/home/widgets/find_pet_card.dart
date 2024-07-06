@@ -1,9 +1,8 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_button.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -77,11 +76,10 @@ class FindPetCard extends StatelessWidget{
                     height: 50.h,
                     child: Text(
                       title,
-                      style: GoogleFonts.fredoka(
-                          textStyle: TextStyles.font10WhiteRegular.copyWith(
-                            fontSize: 12.sp,
-                            height: 1.1
-                          )
+                      style: TextStyles.font10WhiteRegular.copyWith(
+                        fontSize: 12.sp,
+                        height: 1.1,
+                        fontFamily: FontFamilyHelper.fredoka
                       ),
                     ),
                   ),
@@ -92,8 +90,8 @@ class FindPetCard extends StatelessWidget{
                       height: 20.h,
                       width: 70.w,
                       text: buttonText,
-                      textStyle: GoogleFonts.montserrat(
-                          textStyle: TextStyles.font7DefaultBold
+                      textStyle: TextStyles.font7DefaultBold.copyWith(
+                        fontFamily: FontFamilyHelper.montserrat
                       ),
                       onClick: onClick
                   )

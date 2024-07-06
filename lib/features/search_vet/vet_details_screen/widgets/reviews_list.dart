@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/post_review.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/review_item.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
 
@@ -20,8 +20,8 @@ class ReviewsList extends StatelessWidget{
       children: [
         Text(
           'Reviews',
-          style: GoogleFonts.montserrat(
-            textStyle: TextStyles.font12BlackSemiBold
+          style: TextStyles.font12BlackSemiBold.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         ),
         const VerticalSpace(height: 20),

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/appointments_list.dart';
 import 'package:pety/features/search_vet/vet_details_screen/widgets/location_and_fees.dart';
@@ -62,15 +61,15 @@ class VetDetailsScreen extends StatelessWidget{
                 const VerticalSpace(height: 30),
                 Text(
                   'About vet',
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12BlackSemiBold
+                  style: TextStyles.font12BlackSemiBold.copyWith(
+                    fontFamily: "Montserrat"
                   ),
                 ),
                 const VerticalSpace(height: 10),
                 Text(
                   cubit.chosenVet!.description!,
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font12DefaultRegular
+                  style: TextStyles.font12DefaultRegular.copyWith(
+                    fontFamily: "Montserrat"
                   ),
                 ),
                 const VerticalSpace(height: 30),

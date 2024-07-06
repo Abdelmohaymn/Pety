@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/profile/cubit/profile_cubit.dart';
 import 'package:pety/features/profile/pre_profile/widgets/icon_text_row.dart';
 import 'package:pety/features/profile/widgets/image_avatar.dart';
@@ -27,8 +26,8 @@ class PreProfileScreen extends StatelessWidget {
             const VerticalSpace(height: 15),
             Text(
               '${cubit.firstNameController.text} ${cubit.lastNameController.text}',
-              style: GoogleFonts.montserrat(
-                textStyle: TextStyles.font13BlackBold
+              style: TextStyles.font13BlackBold.copyWith(
+                fontFamily: "Montserrat"
               ),
             ),
             const VerticalSpace(height: 15),

@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class AppointmentItem extends StatelessWidget{
@@ -38,20 +38,25 @@ class AppointmentItem extends StatelessWidget{
               children: [
                 Text(
                   item.formatedDate![0],
-                  style: GoogleFonts.montserrat(textStyle: TextStyles.font12WhiteRegular
-                      .copyWith(color: index==cubit.clickedAppointment?Colors.black:Colors.white)
+                  style: TextStyles.font12WhiteRegular.copyWith(
+                    color: index==cubit.clickedAppointment?Colors.black:Colors.white,
+                    fontFamily: FontFamilyHelper.montserrat
                   ),
                 ),
                 Text(
                   item.formatedDate![1],
-                  style: GoogleFonts.paytoneOne(textStyle: TextStyles.font20WhiteRegular
-                      .copyWith(height: 0.7,color: index==cubit.clickedAppointment?Colors.black:Colors.white)
+                  style: TextStyles.font20WhiteRegular.copyWith(
+                      height: 0.7,
+                      color: index==cubit.clickedAppointment?Colors.black:Colors.white,
+                      fontFamily: FontFamilyHelper.poetsenOne
                   ),
                 ),
                 Text(
                   item.formatedDate![2],
-                  style: GoogleFonts.montserrat(textStyle: TextStyles.font12WhiteRegular)
-                      .copyWith(color: index==cubit.clickedAppointment?Colors.black:Colors.white),
+                  style: TextStyles.font12WhiteRegular.copyWith(
+                      color: index==cubit.clickedAppointment?Colors.black:Colors.white,
+                      fontFamily: FontFamilyHelper.montserrat
+                  ),
                 ),
               ],
             ),

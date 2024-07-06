@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/community/community_screen/widgets/button_votes.dart';
 import 'package:pety/features/community/community_screen/widgets/comments_box.dart';
 import 'package:pety/features/community/community_screen/widgets/profile_image.dart';
@@ -42,8 +41,8 @@ class PostItem extends StatelessWidget{
                 ),
                 child: Text(
                   '${cubit.posts!.data![index].user!.firstName!} ${cubit.posts!.data![index].user!.lastName!}. ',
-                  style: GoogleFonts.montserrat(
-                      textStyle: TextStyles.font10LightBlack2Bold
+                  style: TextStyles.font10LightBlack2Bold.copyWith(
+                    fontFamily: "Montserrat"
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -51,8 +50,8 @@ class PostItem extends StatelessWidget{
               const HorizontalSpace(width: 1),
               Text(
                 cubit.posts!.data![index].createdAt!,
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font10LightGrey4Medium
+                style: TextStyles.font10LightGrey4Medium.copyWith(
+                  fontFamily: "Montserrat"
                 ),
               )
             ],
@@ -72,8 +71,8 @@ class PostItem extends StatelessWidget{
                       child: SingleChildScrollView(
                         child: Text(
                           cubit.posts!.data![index].context!,
-                          style: GoogleFonts.montserrat(
-                              textStyle: TextStyles.font16BlackRegular
+                          style: TextStyles.font16BlackRegular.copyWith(
+                            fontFamily: "Montserrat"
                           ),
                         ),
                       ),

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 
@@ -29,8 +29,8 @@ class LocationAndFees extends StatelessWidget{
               const HorizontalSpace(width: 5),
               Text(
                 '${cubit.chosenVet!.price!.toString()} EGP',
-                style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font12LightGreyMedium
+                style: TextStyles.font12LightGreyMedium.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
               ),
             ],
@@ -49,8 +49,8 @@ class LocationAndFees extends StatelessWidget{
               Expanded(
                 child: Text(
                   cubit.chosenVet!.address!,
-                  style: GoogleFonts.montserrat(
-                      textStyle: TextStyles.font12LightGreyMedium
+                  style: TextStyles.font12LightGreyMedium.copyWith(
+                      fontFamily: FontFamilyHelper.montserrat
                   ),
                   maxLines: 3,
                 ),

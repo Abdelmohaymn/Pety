@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 
 class IconTextRow extends StatelessWidget{
   final IconData icon;
   final String title;
-  Function()? onTab;
+  final Function()? onTab;
   IconTextRow({
     super.key,
     required this.icon,
@@ -26,8 +26,8 @@ class IconTextRow extends StatelessWidget{
           const HorizontalSpace(width: 10),
           Text(
             title,
-            style: GoogleFonts.montserrat(
-              textStyle: TextStyles.font12BlackMedium
+            style: TextStyles.font12BlackMedium.copyWith(
+              fontFamily: FontFamilyHelper.montserrat
             ),
           ),
           const Spacer(),

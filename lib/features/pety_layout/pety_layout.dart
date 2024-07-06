@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
 import 'package:pety/features/pety_layout/cubit/pet_layout_states.dart';
 import 'package:pety/shared/extensions.dart';
@@ -26,13 +25,12 @@ class PetLayout extends StatelessWidget{
             onTap: (index){
               cubit.changeBottomNavIndex(index);
             },
-            selectedLabelStyle: GoogleFonts.montserrat(
-              textStyle: TextStyles.font10LightBlue3Bold
+            selectedLabelStyle: TextStyles.font10LightBlue3Bold.copyWith(
+              fontFamily: "Montserrat"
             ),
-            unselectedLabelStyle: GoogleFonts.montserrat(
-                textStyle: TextStyles.font10LightBlue3Bold.copyWith(
-                  color: Colors.black.withOpacity(0.25)
-                )
+            unselectedLabelStyle: TextStyles.font10LightBlue3Bold.copyWith(
+              color: Colors.black.withOpacity(0.25),
+              fontFamily: "Montserrat"
             ),
           ),
           floatingActionButton: FloatingActionButton(

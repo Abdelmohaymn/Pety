@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -27,8 +27,8 @@ class FeesLocationCalendar extends StatelessWidget{
             Expanded(
               child: Text(
                 cubit.chosenVet!.address!,
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font16LightGreyMedium
+                style: TextStyles.font16LightGreyMedium.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
                 ),
                 maxLines: 3,
               ),
@@ -47,8 +47,8 @@ class FeesLocationCalendar extends StatelessWidget{
             Expanded(
               child: Text(
                 '${cubit.chosenTime}\n${cubit.chosenVet!.availabilityFormatted![cubit.clickedAppointment].formate2Date}',
-                style: GoogleFonts.montserrat(
-                    textStyle: TextStyles.font16LightGreyMedium
+                style: TextStyles.font16LightGreyMedium.copyWith(
+                    fontFamily: FontFamilyHelper.montserrat
                 ),
                 maxLines: 3,
               ),
@@ -66,8 +66,8 @@ class FeesLocationCalendar extends StatelessWidget{
             const HorizontalSpace(width: 20),
             Text(
               '${cubit.chosenVet!.price!.toString()} EGP',
-              style: GoogleFonts.montserrat(
-                  textStyle: TextStyles.font16LightGreyMedium
+              style: TextStyles.font16LightGreyMedium.copyWith(
+                  fontFamily: FontFamilyHelper.montserrat
               ),
             ),
           ],

@@ -56,7 +56,6 @@ dependencies:
   image_picker: ^1.0.8
   flutter_advanced_switch: ^3.1.0
   url_launcher: ^6.2.6
-  google_fonts: ^6.2.1
   animated_text_kit: ^4.2.2
   loading_animation_widget: ^1.2.1
   dotted_border: ^2.1.0
@@ -97,6 +96,45 @@ flutter:
     - assets/images/
     - assets/svgs/
     - assets/jsons/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat/Montserrat-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/montserrat/Montserrat-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/montserrat/Montserrat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/montserrat/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/montserrat/Montserrat-Black.ttf
+          weight: 900
+    - family: Fredoka
+      fonts:
+        - asset: assets/fonts/fredoka/Fredoka-Light.ttf
+          weight: 300
+        - asset: assets/fonts/fredoka/Fredoka-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/fredoka/Fredoka-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/fredoka/Fredoka-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/fredoka/Fredoka-Bold.ttf
+          weight: 700
+    - family: PoetsenOne
+      fonts:
+        - asset: assets/fonts/poetsen_one/PoetsenOne-Regular.ttf
+          weight: 400
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

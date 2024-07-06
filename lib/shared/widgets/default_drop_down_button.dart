@@ -1,17 +1,16 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/shared/styles/colors.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 
 class DefaultDropdownButton extends StatelessWidget{
 
-  String? value;
-  String hint;
-  List<DropdownMenuItem<String>>items;
-  Function(String?)? onChange;
-  String? Function(String?)? validate;
+  final String? value;
+  final String hint;
+  final List<DropdownMenuItem<String>>items;
+  final Function(String?)? onChange;
+  final String? Function(String?)? validate;
 
   DefaultDropdownButton({
     super.key,
@@ -42,8 +41,8 @@ class DefaultDropdownButton extends StatelessWidget{
           onChanged: onChange,
           validator: validate,
           hint: Text(hint),
-          style: GoogleFonts.montserrat(
-            textStyle: TextStyles.font13HintGreyRegular
+          style: TextStyles.font13HintGreyRegular.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         ),
       ),

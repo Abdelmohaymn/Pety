@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_cubit.dart';
 import 'package:pety/features/search_vet/cubit/search_vet_states.dart';
 import 'package:pety/shared/constants/pety_constants.dart';
-import 'package:pety/shared/network/remote/api_constants.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/default_radio_button.dart';
 
@@ -24,7 +24,9 @@ class SortOptions extends StatelessWidget {
       children: [
         Text(
           'Sort by',
-          style: TextStyles.font13BlackBold,
+          style: TextStyles.font13BlackBold.copyWith(
+              fontFamily: FontFamilyHelper.montserrat
+          ),
         ),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 16.h),

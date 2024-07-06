@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pety/features/home/widgets/job_item_widget.dart';
 import 'package:pety/features/pety_layout/cubit/pety_layout_cubit.dart';
+import 'package:pety/shared/styles/font_families.dart';
 import 'package:pety/shared/styles/texts.dart';
 import 'package:pety/shared/widgets/horizontal_space.dart';
 import 'package:pety/shared/widgets/vertical_space.dart';
@@ -23,8 +23,8 @@ class JobsList extends StatelessWidget {
       children: [
         Text(
           'Book an appointment',
-          style: GoogleFonts.montserrat(
-              textStyle: TextStyles.font12BlackBold
+          style: TextStyles.font12BlackBold.copyWith(
+            fontFamily: FontFamilyHelper.montserrat
           ),
         ),
         const VerticalSpace(height: 5),

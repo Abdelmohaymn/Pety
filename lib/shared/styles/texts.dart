@@ -279,6 +279,7 @@ class TextStyles {
   static TextStyle font43BlackBold = TextStyle(
     color: Colors.black,
     fontSize: 43.sp,
+    fontWeight: FontWeightHelper.bold
   );
 
   static TextStyle font12filtersGreyColorRegular = TextStyle(

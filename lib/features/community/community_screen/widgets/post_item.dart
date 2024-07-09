@@ -33,7 +33,7 @@ class PostItem extends StatelessWidget{
         children: [
           Row(
             children: [
-              ProfileImage(radius: 10,img: cubit.posts!.data![index].user!.photo!.url,),
+              ProfileImage(radius: 10,img: cubit.posts!.data![index].user?.photo?.url,),
               const HorizontalSpace(width: 4),
               ConstrainedBox(
                 constraints: BoxConstraints(

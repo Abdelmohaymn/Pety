@@ -45,7 +45,8 @@ class RolesScreen extends StatelessWidget {
                       itemCount: cubit.roles!.length,
                       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                           maxCrossAxisExtent: (MediaQuery.of(context).size.width) / 2,
-                          crossAxisSpacing: 10.w
+                          crossAxisSpacing: 10.w,
+                          mainAxisSpacing: 10.h,
                       ),
                       itemBuilder: (BuildContext context, int index) {
                         String role = cubit.roles![index];

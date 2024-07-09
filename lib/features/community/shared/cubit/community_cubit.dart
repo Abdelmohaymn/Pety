@@ -60,7 +60,9 @@ class CommunityCubit extends Cubit<CommunityStates>{
     );
     response.when(
         success: (data){
+          posts=null;
           emit(const CommunityStates.successAddPost());
+          getPosts();
         },
         failure: (error){
           emit(CommunityStates.errorAddPost(error: error.apiErrorModel.message!));
@@ -71,7 +73,6 @@ class CommunityCubit extends Cubit<CommunityStates>{
   void onBackFromAddPost(){
     postController.clear();
     postImageFile=null;
-    getPosts();
   }
 
   GetPostsResponse? posts;

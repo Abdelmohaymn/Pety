@@ -36,7 +36,7 @@ class CommunityScreen extends StatelessWidget {
               },
               child: Row(
                 children: [
-                  const ProfileImage(),
+                  ProfileImage(img: cubit.profileImage,),
                   const HorizontalSpace(width: 8),
                   const Expanded(child: PostEditText()),
                   const HorizontalSpace(width: 8),

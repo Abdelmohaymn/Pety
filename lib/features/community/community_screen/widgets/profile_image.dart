@@ -20,10 +20,10 @@ class ProfileImage extends StatelessWidget {
 
     return BlocBuilder<CommunityCubit, CommunityStates>(
       builder: (context, state) {
-        if(cubit.profileImage != null) {
+        if(img != null) {
           return CircleAvatar(
             radius: radius??20,
-            backgroundImage: NetworkImage(img??cubit.profileImage!),
+            backgroundImage: NetworkImage(img!),
           );
         }else{
           return CircleAvatar(

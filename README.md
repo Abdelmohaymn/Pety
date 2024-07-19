@@ -35,7 +35,7 @@ Pety is a comprehensive web and mobile application designed to cater to the need
 
 ## Project structure
 
-<img src="https://raw.githubusercontent.com/Abdelmohaymn/Pety/development/screenshots/system_design.png" width="375" height="800"/>  <img src="https://raw.githubusercontent.com/Abdelmohaymn/Pety/development/screenshots/system_design.png" width="375" height="800"/>
+<img src="https://raw.githubusercontent.com/Abdelmohaymn/Pety/development/screenshots/system_design.png" width="375" height="800"/>  <img src="https://raw.githubusercontent.com/Abdelmohaymn/Pety/development/screenshots/system_design2.png" width="375" height="800"/>
 
 ## Architecture pattern
 
